@@ -89,7 +89,7 @@ ENV/
 .ropeproject
 
 #sql
-db.sqlite3
+db.sqlite3*
 
 #Pycharm
 .idea

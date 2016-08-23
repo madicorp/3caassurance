@@ -1,0 +1,28 @@
+= 3caassurance
+:hardbreaks:
+
+== Requirements
+Python 2.7
+
+== Install work environment
+If virtualenv is not installed
+`pip install virtualenv`
+
+Create virtualenv
+`virtualenv venv`
+
+Install dependencies
+`pip install -r requirements.txt`
+
+== Launch
+Install migration scripts
+`python manage.py migrate`
+
+If admin account is not created
+`python manage.py createsuperuser` (admin, changeme)
+
+Start the server
+`python manage.py runserver`
+
+Deployed on `http://127.0.0.1:8000/`
+Admin page accessible at `http://127.0.0.1:8000/admin/`
