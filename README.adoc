@@ -30,4 +30,5 @@ Admin page accessible at `http://127.0.0.1:8000/admin/`
 == Launch with vagrant
 `vagrant up --provision`
 `vagrant ssh`
+In the VM
 `./manage.py runserver 0.0.0.0:8000`
