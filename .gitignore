@@ -93,3 +93,9 @@ db.sqlite3*
 
 #Pycharm
 .idea
+
+#Vagrant
+.vagrant
+
+# Wagtail
+media

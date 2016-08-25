@@ -1,0 +1,40 @@
+{% extends "_3caassurance/base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-9 column top-buffer">
+            {% block search_box %}
+                {% include "_3caassurance/includes/search_box.html" only %}
+            {% endblock %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9 column top-buffer">
+            <div class="stream-field portfolio-mini-sec">
+                <div class="row">
+                    {% for child in self.body %}
+                        {% if child.block_type == 'image' %}
+                            <div class="col-md-4">
+                                <div class="mini-portfolio">
+                                    {% image child.value.image width-300 as theimage %}
+                                    <img src="{{ theimage.url }}" width="{{ theimage.width }}"
+                                         height="{{ theimage.height }}"
+                                            {% if child.value.caption %} alt="{{ child.value.caption }}" {% endif %}/>
+
+                                    {% if child.value.title %}
+                                        <div class="portfolio-info">
+                                            <h3>{{ child.value.title|richtext }}</h3>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% else %}
+                            {{ child }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

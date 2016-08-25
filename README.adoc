@@ -14,7 +14,7 @@ Create virtualenv
 Install dependencies
 `pip install -r requirements.txt`
 
-== Launch
+== Launch locally
 Install migration scripts
 `python manage.py migrate`
 
@@ -26,3 +26,8 @@ Start the server
 
 Deployed on `http://127.0.0.1:8000/`
 Admin page accessible at `http://127.0.0.1:8000/admin/`
+
+== Launch with vagrant
+`vagrant up --provision`
+`vagrant ssh`
+`./manage.py runserver 0.0.0.0:8000`

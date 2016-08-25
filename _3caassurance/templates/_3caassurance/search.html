@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "_3caassurance/base.html" %}
 {% load static wagtailcore_tags %}
 
 {% block body_class %}template-searchresults{% endblock %}
@@ -6,12 +6,19 @@
 {% block title %}Search{% endblock %}
 
 {% block content %}
-    <h1>Search</h1>
+    <div class="row">
+        <div class="col-md-9 column top-buffer">
+            <h1>Search</h1>
+        </div>
+    </div>
 
-    <form action="{% url 'search' %}" method="get">
-        <input type="text" name="query"{% if search_query %} value="{{ search_query }}"{% endif %}>
-        <input type="submit" value="Search" class="button">
-    </form>
+    <div class="row">
+        <div class="col-md-9 column top-buffer">
+            {% block search_box %}
+                {% include "_3caassurance/includes/search_box.html" only %}
+            {% endblock %}
+        </div>
+    </div>
 
     {% if search_results %}
         <ul>
