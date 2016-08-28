@@ -1,4 +1,4 @@
-{% load static compress wagtailuserbar %}
+{% load static compress wagtailuserbar wagtailcore_tags _3cassurance_tags i18n %}
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -9,9 +9,17 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
     <title>
-        {% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}
-                {% block title_suffix %}{% endblock %}</title>
+        {% block title %}
+            {% if self.seo_title %}
+                {% trans self.seo_title %}
+            {% else %}
+                {% trans self.title %}
+            {% endif %}
+        {% endblock %}
+        {% block title_suffix %}{% endblock %}
+    </title>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -34,7 +42,15 @@
 </head>
 
 <body class="{% block body_class %}{% endblock %}">
+<div class="theme-layout" style="padding-top: 184px;">
+</div>
 {% wagtailuserbar %}
+
+{% block menu %}
+    {% get_site_root as site_root %}
+    {% top_menu parent=site_root calling_page=self %}
+{% endblock %}
+
 <div class="theme-layout">
     <section class="block">
         <div class="container">
@@ -42,6 +58,12 @@
         </div>
     </section>
 </div>
+
+
+{% block footer %}
+    {% get_site_root as site_root %}
+    {% footer parent=site_root calling_page=self %}
+{% endblock %}
 
 {# Global javascript #}
 <script type="text/javascript" src="{% static 'js/_3caassurance.js' %}"></script>

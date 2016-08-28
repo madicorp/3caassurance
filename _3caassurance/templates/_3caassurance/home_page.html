@@ -1,11 +1,25 @@
 {% extends "_3caassurance/base.html" %}
 
+{% load wagtailcore_tags wagtailimages_tags %}
+
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-    <h1>Welcome to your new Wagtail site!</h1>
-
-    <p>You can access the admin interface <a href="{% url 'wagtailadmin_home' %}">here</a> (make sure you have run "./manage.py createsuperuser" in the console first).
-
-    <p>If you haven't already given the documentation a read, head over to <a href="http://docs.wagtail.io/">http://docs.wagtail.io</a> to start building on Wagtail</p>
+    {% if self.products %}
+        {% for product in self.products %}
+            <div class="cool-features {% if forloop.counter|divisibleby:2 %}flip{% endif %}">
+                <div class="prdct-mockup">
+                    {% image product.value.image width-800 as theimage %}
+                    <img src="{{ theimage.url }}" width="{{ theimage.width }}" height="{{ theimage.height }}"
+                         alt="{{ theimage.alt }}"/>
+                </div>
+                <i class="fa fa-arrows-h"></i>
+                <div class="prdct-mockup-info">
+                    {{ product.value.caption|richtext }}
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        No Product
+    {% endif %}
 {% endblock %}

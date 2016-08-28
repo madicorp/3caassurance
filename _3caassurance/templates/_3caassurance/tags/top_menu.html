@@ -1,0 +1,40 @@
+{% load _3cassurance_tags wagtailcore_tags %}
+
+
+<header class="simple-header for-sticky white">
+    <div class="top-bar">
+        <div class="container">
+            <ul class="contact-item">
+                <li><i class="fa fa-envelope-o"></i>{{ email }}</li>
+                <li><i class="fa fa-mobile"></i>{{ phone }}</li>
+            </ul>
+            <div class="choose-language">
+                <!-- TODO Contextuel -->
+                <a href="/fr">FR</a>
+                <a href="/en">EN</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="container">
+            {% block logo %}
+                {% get_site_root as site_root %}
+                {% logo parent=site_root calling_page=self %}
+            {% endblock %}
+            <nav>
+                <ul>
+                    {% for menuitem in menuitems %}
+                        {% if menuitem.show_dropdown %}
+                            <li>
+                                <a class="menu-item-has-children" href="#">{{ menuitem.title }}</a>
+                                {% top_menu_children parent=menuitem %}
+                            </li>
+                        {% else %}
+                            <li><a href="{% pageurl menuitem %}">{{ menuitem.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
