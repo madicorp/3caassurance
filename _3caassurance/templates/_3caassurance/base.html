@@ -27,12 +27,12 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/_3caassurance.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/colors/colors.min.css' %}">
     {% compress css %}
         {# Custom stylesheets #}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/_3caassurance.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/colors/colors.css' %}">
         {# SCSS compilation relies on django compressor #}
         <link rel="stylesheet" type="text/x-scss" href="{% static "css/main.scss" %}"/>
     {% endcompress %}
@@ -52,11 +52,7 @@
 {% endblock %}
 
 <div class="theme-layout">
-    <section class="block">
-        <div class="container">
-            {% block content %}{% endblock %}
-        </div>
-    </section>
+    {% block content %}{% endblock %}
 </div>
 
 

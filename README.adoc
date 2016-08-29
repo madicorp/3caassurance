@@ -36,3 +36,4 @@ In the VM
 == I18N
 Add I18N key and translations to `locale/fr/LC_MESSAGES/django.po`
 Once done, `python manage.py compilemessages -l fr`
+This is automatically done when using the Vagrant configuration

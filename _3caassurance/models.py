@@ -35,3 +35,7 @@ HomePage.content_panels = [
 ]
 
 HomePage.promote_panels = Page.promote_panels
+
+
+class ContactPage(Page):
+    pass

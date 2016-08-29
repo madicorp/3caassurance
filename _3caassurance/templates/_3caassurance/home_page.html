@@ -6,20 +6,22 @@
 
 {% block content %}
     {% if self.products %}
-        {% for product in self.products %}
-            <div class="cool-features {% if forloop.counter|divisibleby:2 %}flip{% endif %}">
-                <div class="prdct-mockup">
-                    {% image product.value.image width-800 as theimage %}
-                    <img src="{{ theimage.url }}" width="{{ theimage.width }}" height="{{ theimage.height }}"
-                         alt="{{ theimage.alt }}"/>
-                </div>
-                <i class="fa fa-arrows-h"></i>
-                <div class="prdct-mockup-info">
-                    {{ product.value.caption|richtext }}
-                </div>
+        <section class="block">
+            <div class="container">
+                {% for product in self.products %}
+                    <div class="cool-features {% if forloop.counter|divisibleby:2 %}flip{% endif %}">
+                        <div class="prdct-mockup">
+                            {% image product.value.image width-800 as theimage %}
+                            <img src="{{ theimage.url }}" width="{{ theimage.width }}" height="{{ theimage.height }}"
+                                 alt="{{ theimage.alt }}"/>
+                        </div>
+                        <i class="fa fa-arrows-h"></i>
+                        <div class="prdct-mockup-info">
+                            {{ product.value.caption|richtext }}
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
-        {% endfor %}
-    {% else %}
-        No Product
+        </section>
     {% endif %}
 {% endblock %}

@@ -1,9 +1,10 @@
 from django import template
+from django.conf import settings
+from django.core.urlresolvers import resolve
+from django.core.urlresolvers import reverse
+from django.utils import translation
 
 register = template.Library()
-# TODO mettre dans fichier de config
-email = 'contact@3caassurance.com'
-phone = '+221 33 822 55 00'
 
 
 def has_menu_children(page):
@@ -27,10 +28,9 @@ def top_menu(context, parent, calling_page=None):
         # if the variable passed as calling_page does not exist.
         menuitem.active = (calling_page.url.startswith(menuitem.url)
                            if calling_page else False)
-    # TODO mettre dans fichier de config
     return {
-        'email': email,
-        'phone': phone,
+        'email': settings.CONTACT_EMAIL,
+        'phone': settings.CONTACT_PHONE,
         'calling_page': calling_page,
         'menuitems': menuitems,
         # required by the pageurl tag that we want to use within this template
@@ -64,10 +64,40 @@ def logo(context, parent, calling_page=None):
 @register.inclusion_tag('_3caassurance/tags/footer.html', takes_context=True)
 def footer(context, parent, calling_page=None):
     return {
-        'email': email,
-        'phone': phone,
+        'email': settings.CONTACT_EMAIL,
+        'phone': settings.CONTACT_PHONE,
         'parent': parent,
         'calling_page': calling_page,
         # required by the pageurl tag that we want to use within this template
         'request': context['request']
     }
+
+
+# Thanks to http://stackoverflow.com/questions/11437454/django-templates-get-current-url-in-another-language
+class TranslatedURL(template.Node):
+    def __init__(self, language):
+        self.language = language
+
+    def render(self, context):
+        view = resolve(context['request'].path)
+        request_language = translation.get_language()
+        translation.activate(self.language)
+        url = reverse(view.url_name, args=view.args, kwargs=view.kwargs)
+        translation.activate(request_language)
+        return url
+
+
+@register.tag(name='translate_url')
+def do_translate_url(parser, token):
+    language = token.split_contents()[1]
+    return TranslatedURL(language)
+
+
+class HomeURL(template.Node):
+    def render(self, context):
+        return '/'.join(context['request'].path.split('/')[:2])
+
+
+@register.tag(name='home_url')
+def get_home_url(parser, token):
+    return HomeURL()

@@ -24,3 +24,15 @@ msgstr "COURTAGE ET<br>CONSEILS EN<br>ASSURANCE"
 
 msgid "3CA: INSURANCE BROKER AND ADVISOR"
 msgstr "3CA : COURTAGE ET CONSEILS EN ASSURANCE"
+
+msgid "CONTACT US"
+msgstr "CONTACTEZ NOUS"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "SEND NOW"
+msgstr "ENVOYEZ"
+
+msgid "Address"
+msgstr "Adresse"
