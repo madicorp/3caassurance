@@ -36,3 +36,15 @@ msgstr "ENVOYEZ"
 
 msgid "Address"
 msgstr "Adresse"
+
+msgid "OUR PRODUCTS"
+msgstr "NOS PRODUITS"
+
+msgid "Our team"
+msgstr "Notre équipe"
+
+msgid "Insurance broker and advisor"
+msgstr "Courtier et conseiller en assurance"
+
+msgid "Our job: ensure you are fully confident about your goods protection."
+msgstr "Notre métier : s'assurer que vous avez pleinement confiance dans la protection de vos biens."

@@ -1,6 +1,6 @@
 {% extends "_3caassurance/base.html" %}
 
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags wagtailimages_tags i18n static _3cassurance_tags %}
 
 {% block body_class %}template-homepage{% endblock %}
 
@@ -8,19 +8,57 @@
     {% if self.products %}
         <section class="block">
             <div class="container">
-                {% for product in self.products %}
-                    <div class="cool-features {% if forloop.counter|divisibleby:2 %}flip{% endif %}">
-                        <div class="prdct-mockup">
-                            {% image product.value.image width-800 as theimage %}
-                            <img src="{{ theimage.url }}" width="{{ theimage.width }}" height="{{ theimage.height }}"
-                                 alt="{{ theimage.alt }}"/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading4">
+                            <h2>{% trans "OUR PRODUCTS" %}</h2>
                         </div>
-                        <i class="fa fa-arrows-h"></i>
-                        <div class="prdct-mockup-info">
-                            {{ product.value.caption|richtext }}
+                        <div class="square-services-sec">
+                            <div class="row">
+                                {% for product in self.products %}
+                                    <div class="col-md-4">
+                                        <div class="square-services">
+                                            {% image product.value.image width-500 as theimage %}
+                                            <img src="{{ theimage.url }}" width="{{ theimage.width }}"
+                                                 height="{{ theimage.height }}"
+                                                 alt="{{ theimage.alt }}"/>
+                                            <div class="square-infos">
+                                                <h3>
+                                                    {% dynamic_trans product.value 'caption' %}
+                                                </h3>
+                                                <p>
+                                                    {% dynamic_trans product.value 'description' %}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
-                {% endfor %}
+                </div>
+            </div>
+        </section>
+        <section class="block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ceo-message-sec">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <img src="{% static "images/team.jpg" %}" alt="Team">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="ceo-message">
+                                        <span>{% trans "Our team" %}</span>
+                                        <h3>{% trans "Insurance broker and advisor" %}</h3>
+                                        <p>{% trans "Our job: ensure you are fully confident about your goods protection." %}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     {% endif %}

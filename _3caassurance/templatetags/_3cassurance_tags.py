@@ -101,3 +101,10 @@ class HomeURL(template.Node):
 @register.tag(name='home_url')
 def get_home_url(parser, token):
     return HomeURL()
+
+
+@register.simple_tag(name='dynamic_trans', takes_context=True)
+def dynamic_trans(context, obj, field_name):
+    language = context['request'].path.split('/')[1]
+    field_name_language = field_name + '_' + language
+    return obj[field_name_language]
