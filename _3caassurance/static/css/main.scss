@@ -21,3 +21,18 @@ section.block {
 .ceo-message-sec .ceo-message {
   margin-left: -15%;
 }
+
+form div.ephemeral-message-success, form div.ephemeral-message-error {
+  visibility: hidden;
+  font-size: 1em;
+  font-family: Montserrat, serif;
+  font-weight: bold;
+}
+
+form div.ephemeral-message-success {
+  color: forestgreen;
+}
+
+form div.ephemeral-message-error {
+  color: darkred;
+}

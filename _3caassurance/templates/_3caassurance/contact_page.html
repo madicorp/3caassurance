@@ -44,22 +44,36 @@
                         <div class="row">
                             <div class="col-md-6 column">
                                 <div class="contact-form">
-                                    <form>
+                                    <form method="post" action="/api/messages" onsubmit="return sendMessage(this)">
+                                        {% csrf_token %}
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <i class="fa fa-user"></i>
-                                                <input type="text" placeholder="{% trans "Name" %}">
+                                                <input type="text" name="contact_name" placeholder="{% trans "Name" %}">
                                             </div>
                                             <div class="col-md-12">
                                                 <i class="fa fa-at"></i>
-                                                <input type="text" placeholder="Email">
+                                                <input type="text" name="contact_email" placeholder="Email">
                                             </div>
                                             <div class="col-md-12">
                                                 <i class="fa fa-pencil"></i>
-                                                <textarea placeholder="Message"></textarea>
+                                                <textarea name="message" placeholder="Message"></textarea>
                                             </div>
                                             <div class="col-md-12">
-                                                <button class="flat-btn" type="submit">{% trans "SEND NOW" %}</button>
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <button class="flat-btn"
+                                                                type="submit">{% trans "SEND NOW" %}</button>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="ephemeral-message-success">
+                                                            {% trans "Your message has been successfully sent." %}
+                                                        </div>
+                                                        <div class="ephemeral-message-error">
+                                                            {% trans "Your message could not be sent. Try again later." %}
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </form>
@@ -88,4 +102,20 @@
             </div>
         </div>
     </section>
+{% endblock %}
+
+
+{% block extra_js %}
+    <script type="text/javascript">
+        function sendMessage(form) {
+            submitForm(form, function displayMessage(err, res) {
+                if (err) {
+                    fadeHiddenElement(form.querySelector('.ephemeral-message-error'));
+                } else {
+                    fadeHiddenElement(form.querySelector('.ephemeral-message-success'));
+                }
+            });
+            return false;
+        }
+    </script>
 {% endblock %}

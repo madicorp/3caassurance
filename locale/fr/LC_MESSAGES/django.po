@@ -48,3 +48,9 @@ msgstr "Courtier et conseiller en assurance"
 
 msgid "Our job: ensure you are fully confident about your goods protection."
 msgstr "Notre métier : s'assurer que vous avez pleinement confiance dans la protection de vos biens."
+
+msgid "Your message has been successfully sent."
+msgstr "Votre message a bien été envoyé."
+
+msgid "Your message could not be sent."
+msgstr "Votre message n'a pas pu être envoyé."

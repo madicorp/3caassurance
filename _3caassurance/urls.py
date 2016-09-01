@@ -9,16 +9,18 @@ from wagtail.wagtailcore import urls as wagtail_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
 
 from _3caassurance import views as search_views
+from _3caassurance import views
 
 urlpatterns = [
-    url(r'^documents/', include(wagtaildocs_urls))
+    url(r'^documents/', include(wagtaildocs_urls)),
+    url(r'^api/messages', views.post_message),
 ]
 
 urlpatterns += i18n_patterns(
     url(r'^django-admin/', include(admin.site.urls)),
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^search/$', search_views.search, name='search'),
-    url(r'', include(wagtail_urls))
+    url(r'^(?!api)', include(wagtail_urls))
 )
 
 if settings.DEBUG:
