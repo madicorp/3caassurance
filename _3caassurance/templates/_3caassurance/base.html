@@ -1,4 +1,4 @@
-{% load static compress wagtailuserbar %}
+{% load static compress wagtailuserbar wagtailcore_tags _3cassurance_tags i18n %}
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -9,9 +9,17 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
     <title>
-        {% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}
-                {% block title_suffix %}{% endblock %}</title>
+        {% block title %}
+            {% if self.seo_title %}
+                {% trans self.seo_title %}
+            {% else %}
+                {% trans self.title %}
+            {% endif %}
+        {% endblock %}
+        {% block title_suffix %}{% endblock %}
+    </title>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -19,12 +27,12 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/_3caassurance.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/colors/colors.min.css' %}">
     {% compress css %}
         {# Custom stylesheets #}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/_3caassurance.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/colors/colors.css' %}">
         {# SCSS compilation relies on django compressor #}
         <link rel="stylesheet" type="text/x-scss" href="{% static "css/main.scss" %}"/>
     {% endcompress %}
@@ -33,18 +41,28 @@
     {% endblock %}
 </head>
 
-<body class="{% block body_class %}{% endblock %}">
+<body class="{% block body_class %}{% endblock %} fixed-bg-boxed">
+
 {% wagtailuserbar %}
-<div class="theme-layout">
-    <section class="block">
-        <div class="container">
-            {% block content %}{% endblock %}
-        </div>
-    </section>
+
+<div class="theme-layout boxed" style="padding-top: 184px">
+    {% block menu %}
+        {% get_site_root as site_root %}
+        {% top_menu parent=site_root calling_page=self %}
+    {% endblock %}
+
+    {% block content %}{% endblock %}
+
+    {% block footer %}
+        {% get_site_root as site_root %}
+        {% footer parent=site_root calling_page=self %}
+    {% endblock %}
 </div>
 
 {# Global javascript #}
 <script type="text/javascript" src="{% static 'js/_3caassurance.js' %}"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/superagent/2.2.0/superagent.min.js"
+        async></script>
 
 {% block extra_js %}
     {# Override this in templates to add extra javascript #}

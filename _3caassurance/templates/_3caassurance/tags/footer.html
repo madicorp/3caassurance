@@ -1,0 +1,25 @@
+{% load _3cassurance_tags wagtailcore_tags %}
+
+<footer>
+    <section class="block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 column">
+                    <div class="about_widget widget">
+                        {% block logo %}
+                            {% get_site_root as site_root %}
+                            {% logo parent=site_root calling_page=self %}
+                        {% endblock %}
+                        <ul class="social-btns">
+                            <li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                        <span><i class="fa fa-envelope-o"></i>{{ email }}</span>
+                        <span><i class="fa fa-mobile"></i>{{ phone }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>

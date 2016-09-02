@@ -32,3 +32,8 @@ Admin page accessible at `http://127.0.0.1:8000/admin/`
 `vagrant ssh`
 In the VM
 `./manage.py runserver 0.0.0.0:8000`
+
+== I18N
+Add I18N key and translations to `locale/fr/LC_MESSAGES/django.po`
+Once done, `python manage.py compilemessages -l fr`
+This is automatically done when using the Vagrant configuration

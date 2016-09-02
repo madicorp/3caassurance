@@ -1,11 +1,65 @@
 {% extends "_3caassurance/base.html" %}
 
+{% load wagtailcore_tags wagtailimages_tags i18n static _3cassurance_tags %}
+
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-    <h1>Welcome to your new Wagtail site!</h1>
-
-    <p>You can access the admin interface <a href="{% url 'wagtailadmin_home' %}">here</a> (make sure you have run "./manage.py createsuperuser" in the console first).
-
-    <p>If you haven't already given the documentation a read, head over to <a href="http://docs.wagtail.io/">http://docs.wagtail.io</a> to start building on Wagtail</p>
+    {% if self.products %}
+        <section class="block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading4">
+                            <h2>{% trans "OUR PRODUCTS" %}</h2>
+                        </div>
+                        <div class="square-services-sec">
+                            <div class="row">
+                                {% for product in self.products %}
+                                    <div class="col-md-4">
+                                        <div class="square-services">
+                                            {% image product.value.image width-500 as theimage %}
+                                            <img src="{{ theimage.url }}" width="{{ theimage.width }}"
+                                                 height="{{ theimage.height }}"
+                                                 alt="{{ theimage.alt }}"/>
+                                            <div class="square-infos">
+                                                <h3>
+                                                    {% dynamic_trans product.value 'caption' %}
+                                                </h3>
+                                                <p>
+                                                    {% dynamic_trans product.value 'description' %}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ceo-message-sec">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <img src="{% static "images/team.jpg" %}" alt="Team">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="ceo-message">
+                                        <span>{% trans "Our team" %}</span>
+                                        <h3>{% trans "Insurance broker and advisor" %}</h3>
+                                        <p>{% trans "Our job: ensure you are fully confident about your goods protection." %}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endif %}
 {% endblock %}

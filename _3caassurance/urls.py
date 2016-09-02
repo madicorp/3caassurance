@@ -2,24 +2,26 @@ from __future__ import absolute_import, unicode_literals
 
 from django.conf import settings
 from django.conf.urls import include, url
+from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
-
-from _3caassurance import views as search_views
 from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtailcore import urls as wagtail_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
 
+from _3caassurance import views as search_views
+from _3caassurance import views
+
 urlpatterns = [
-    url(r'^django-admin/', include(admin.site.urls)),
-
-    url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^documents/', include(wagtaildocs_urls)),
-
-    url(r'^search/$', search_views.search, name='search'),
-
-    url(r'', include(wagtail_urls)),
+    url(r'^api/messages', views.post_message),
 ]
 
+urlpatterns += i18n_patterns(
+    url(r'^django-admin/', include(admin.site.urls)),
+    url(r'^admin/', include(wagtailadmin_urls)),
+    url(r'^search/$', search_views.search, name='search'),
+    url(r'^(?!api)', include(wagtail_urls))
+)
 
 if settings.DEBUG:
     from django.conf.urls.static import static
