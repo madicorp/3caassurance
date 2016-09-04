@@ -1,0 +1,110 @@
+[
+  {
+    "model": "wagtailimages.image",
+    "pk": 4,
+    "fields": {
+      "collection": 1,
+      "title": "Maison",
+      "file": "original_images/house.jpeg",
+      "width": 1920,
+      "height": 1279,
+      "created_at": "2016-08-30T22:26:30.778Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 574068
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 5,
+    "fields": {
+      "collection": 1,
+      "title": "Int\u00e9rieur de voiture",
+      "file": "original_images/car_interior.jpeg",
+      "width": 1920,
+      "height": 1080,
+      "created_at": "2016-08-30T22:26:30.905Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 305275
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 6,
+    "fields": {
+      "collection": 1,
+      "title": "Bureau noir et blanc",
+      "file": "original_images/black_and_white_office.jpg",
+      "width": 1920,
+      "height": 1280,
+      "created_at": "2016-08-30T22:26:31.020Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 540666
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 7,
+    "fields": {
+      "collection": 1,
+      "title": "Voiture",
+      "file": "original_images/car.jpg",
+      "width": 1280,
+      "height": 1280,
+      "created_at": "2016-08-30T22:42:01.175Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 8,
+    "fields": {
+      "collection": 1,
+      "title": "Jauge voiture",
+      "file": "original_images/car_gauge.jpg",
+      "width": 1920,
+      "height": 1275,
+      "created_at": "2016-08-30T22:48:22.469Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 9,
+    "fields": {
+      "collection": 1,
+      "title": "Maison blanc et noir",
+      "file": "original_images/black_and_white_house.jpeg",
+      "width": 1920,
+      "height": 1280,
+      "created_at": "2016-08-30T23:12:37.909Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
+  }
+]
