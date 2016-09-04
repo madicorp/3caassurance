@@ -3,17 +3,16 @@
 PROJECT_NAME="_3caassurance"
 
 PROJECT_DIR=$OPENSHIFT_REPO_DIR
-VIRTUALENV_DIR=$VIRTUAL_ENV
 
-PYTHON="$VIRTUAL_ENV"bin/python
+PYTHON=$VIRTUAL_ENV/bin/python
 
 # Create database
 sqlite3 $PROJECT_NAME
 
-echo $PROJECT_DIR > "$VIRTUALENV_DIR".project
+echo $PROJECT_DIR > $VIRTUALENV/.project
 
 # Run migrate/update_index/load_initial_data
-$PYTHON "$PROJECT_DIR"manage.py migrate --noinput && \
-$PYTHON "$PROJECT_DIR"manage.py loaddata images _3caassurance && \
-$PYTHON "$PROJECT_DIR"manage.py update_index && \
-$PYTHON "$PROJECT_DIR"manage.py compilemessages -l fr
+$PYTHON "$OPENSHIFT_REPO_DIR"manage.py migrate --noinput && \
+$PYTHON "$OPENSHIFT_REPO_DIR"manage.py loaddata images _3caassurance && \
+$PYTHON "$OPENSHIFT_REPO_DIR"manage.py update_index && \
+$PYTHON "$OPENSHIFT_REPO_DIR"manage.py compilemessages -l fr
