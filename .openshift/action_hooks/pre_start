@@ -10,9 +10,12 @@ PIP=$OPENSHIFT_PYTHON_DIR/bin/pip
 
 
 # Create database
-createdb $PROJECT_NAME
+sqlite3 $PROJECT_NAME
 
 echo $PROJECT_DIR > $VIRTUALENV_DIR/.project
 
 # Run migrate/update_index/load_initial_data
-$PYTHON $PROJECT_DIR/manage.py migrate --noinput && $PYTHON $PROJECT_DIR/manage.py loaddata images _3caassurance &&  $PYTHON $PROJECT_DIR/manage.py update_index && $PYTHON $PROJECT_DIR/manage.py compilemessages -l fr"
+$PYTHON $PROJECT_DIR/manage.py migrate --noinput && \
+$PYTHON $PROJECT_DIR/manage.py loaddata images _3caassurance && \
+$PYTHON $PROJECT_DIR/manage.py update_index && \
+$PYTHON $PROJECT_DIR/manage.py compilemessages -l fr
