@@ -4,6 +4,8 @@ from .base import *
 
 DEBUG = False
 
+SECRET_KEY = os.environ['OPENSHIFT_SECRET_TOKEN']
+
 try:
     from .local import *
 except ImportError:

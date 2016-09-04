@@ -103,6 +103,13 @@ DATABASES = {
     }
 }
 
+WAGTAILSEARCH_BACKENDS = {
+    'default': {
+        'BACKEND': 'wagtail.wagtailsearch.backends.db',
+        'AUTO_UPDATE': True,
+    }
+}
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 

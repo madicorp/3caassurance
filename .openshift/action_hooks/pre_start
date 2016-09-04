@@ -1,0 +1,50 @@
+#!/bin/bash
+
+PROJECT_NAME="_3caassurance"
+
+PROJECT_DIR=$OPENSHIFT_REPO_DIR
+VIRTUALENV_DIR=$VIRTUAL_ENV
+
+PYTHON=$OPENSHIFT_PYTHON_DIR/bin/python
+PIP=$OPENSHIFT_PYTHON_DIR/bin/pip
+
+
+# Create database
+su - $USER -c "createdb $PROJECT_NAME"
+
+
+# Virtualenv setup for project
+# su - $USER -c "pyvenv $VIRTUALENV_DIR"
+# Replace previous line with this if you are using Python 2
+su - $USER -c "/usr/local/bin/virtualenv $VIRTUALENV_DIR"
+
+su - $USER -c "echo $PROJECT_DIR > $VIRTUALENV_DIR/.project"
+
+
+# Install PIP requirements
+su - $USER -c "$PIP install --upgrade pip"
+su - $USER -c "$PIP install -r $PROJECT_DIR/requirements.txt -f /home/vagrant/wheelhouse"
+
+
+# Set execute permissions on manage.py as they get lost if we build from a zip file
+chmod a+x $PROJECT_DIR/manage.py
+
+
+# Run migrate/update_index/load_initial_data
+ su - $USER -c "$PYTHON $PROJECT_DIR/manage.py migrate --noinput && \
+                 $PYTHON $PROJECT_DIR/manage.py loaddata images _3caassurance && \
+                 $PYTHON $PROJECT_DIR/manage.py update_index && \
+                 $PYTHON $PROJECT_DIR/manage.py compilemessages -l fr"
+
+
+# Add a couple of aliases to manage.py into .bashrc
+cat << EOF >> $OPENSHIFT_HOMEDIR/.bashrc
+export PYTHONPATH=$PROJECT_DIR
+export DJANGO_SETTINGS_MODULE=$PROJECT_NAME.settings.prod
+
+alias dj="django-admin"
+alias djrun="dj runserver 0.0.0.0:$OPENSHIFT_PYTHON_PORT"
+
+source $VIRTUALENV_DIR/bin/activate
+cd $PROJECT_DIR
+EOF
