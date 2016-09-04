@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PYTHON=$VIRTUAL_ENV/bin/python
+PYTHON="$OPENSHIFT_PYTHON_DIR"/bin/python
 
 # Create database
 sqlite3 "_3caassurance"
