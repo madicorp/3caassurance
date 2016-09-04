@@ -21,12 +21,12 @@ sudo -H $PIP install -r $PROJECT_DIR/requirements.txt -f $OPENSHIFT_HOMEDIR/whee
 
 
 # Set execute permissions on manage.py as they get lost if we build from a zip file
-chmod a+x $PROJECT_DIR/manage.py
+sudo -H chmod a+x $PROJECT_DIR/manage.py
 
 
 # Run migrate/update_index/load_initial_data
-$PYTHON $PROJECT_DIR/manage.py migrate --noinput && $PYTHON $PROJECT_DIR/manage.py loaddata images _3caassurance &&  $PYTHON $PROJECT_DIR/manage.py update_index && $PYTHON $PROJECT_DIR/manage.py compilemessages -l fr"
+sudo -H $PYTHON $PROJECT_DIR/manage.py migrate --noinput && $PYTHON $PROJECT_DIR/manage.py loaddata images _3caassurance &&  $PYTHON $PROJECT_DIR/manage.py update_index && $PYTHON $PROJECT_DIR/manage.py compilemessages -l fr"
 
 
 # Add a couple of aliases to manage.py into .bashrc
-cat $OPENSHIFT_REPO_DIR/.openshift/openshift_env_setup >> $OPENSHIFT_HOMEDIR/.bashrc
+sudo -H cat $OPENSHIFT_REPO_DIR/.openshift/openshift_env_setup >> $OPENSHIFT_HOMEDIR/.bashrc
