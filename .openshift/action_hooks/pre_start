@@ -22,8 +22,8 @@ echo $PROJECT_DIR > $VIRTUALENV_DIR/.project
 
 
 # Install PIP requirements
-$PIP install --upgrade pip
-$PIP install -r $PROJECT_DIR/requirements.txt -f /home/vagrant/wheelhouse
+sudo -H $PIP install --upgrade pip
+sudo -H $PIP install -r $PROJECT_DIR/requirements.txt -f $OPENSHIFT_HOMEDIR/wheelhouse
 
 
 # Set execute permissions on manage.py as they get lost if we build from a zip file
