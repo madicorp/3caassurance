@@ -1,15 +1,11 @@
 #!/bin/bash
 
-PROJECT_NAME="_3caassurance"
-
-PROJECT_DIR=$OPENSHIFT_REPO_DIR
-
 PYTHON=$VIRTUAL_ENV/bin/python
 
 # Create database
-sqlite3 $PROJECT_NAME
+sqlite3 "_3caassurance"
 
-echo $PROJECT_DIR > $VIRTUALENV/.project
+echo $OPENSHIFT_REPO_DIR > $VIRTUAL_ENV/.project
 
 # Run migrate/update_index/load_initial_data
 $PYTHON "$OPENSHIFT_REPO_DIR"manage.py migrate --noinput && \
