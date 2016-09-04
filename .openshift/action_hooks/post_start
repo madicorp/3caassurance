@@ -1,1 +1,2 @@
+source $VIRTUAL_ENV/bin/activate
 ./manage.py runserver $OPENSHIFT_PYTHON_IP:$OPENSHIFT_PYTHON_PORT
