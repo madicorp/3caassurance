@@ -12,12 +12,6 @@ PIP=$OPENSHIFT_PYTHON_DIR/bin/pip
 # Create database
 createdb $PROJECT_NAME
 
-
-# Virtualenv setup for project
-# pyvenv $VIRTUALENV_DIR
-# Replace previous line with this if you are using Python 2
-/usr/local/bin/virtualenv $VIRTUALENV_DIR
-
 echo $PROJECT_DIR > $VIRTUALENV_DIR/.project
 
 
