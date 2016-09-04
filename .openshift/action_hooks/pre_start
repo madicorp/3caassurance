@@ -14,19 +14,5 @@ createdb $PROJECT_NAME
 
 echo $PROJECT_DIR > $VIRTUALENV_DIR/.project
 
-
-# Install PIP requirements
-sudo -H $PIP install --upgrade pip
-sudo -H $PIP install -r $PROJECT_DIR/requirements.txt -f $OPENSHIFT_HOMEDIR/wheelhouse
-
-
-# Set execute permissions on manage.py as they get lost if we build from a zip file
-sudo -H chmod a+x $PROJECT_DIR/manage.py
-
-
 # Run migrate/update_index/load_initial_data
-sudo -H $PYTHON $PROJECT_DIR/manage.py migrate --noinput && $PYTHON $PROJECT_DIR/manage.py loaddata images _3caassurance &&  $PYTHON $PROJECT_DIR/manage.py update_index && $PYTHON $PROJECT_DIR/manage.py compilemessages -l fr"
-
-
-# Add a couple of aliases to manage.py into .bashrc
-sudo -H cat $OPENSHIFT_REPO_DIR/.openshift/openshift_env_setup >> $OPENSHIFT_HOMEDIR/.bashrc
+$PYTHON $PROJECT_DIR/manage.py migrate --noinput && $PYTHON $PROJECT_DIR/manage.py loaddata images _3caassurance &&  $PYTHON $PROJECT_DIR/manage.py update_index && $PYTHON $PROJECT_DIR/manage.py compilemessages -l fr"
