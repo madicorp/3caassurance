@@ -29,13 +29,4 @@ $PYTHON $PROJECT_DIR/manage.py migrate --noinput && $PYTHON $PROJECT_DIR/manage.
 
 
 # Add a couple of aliases to manage.py into .bashrc
-cat << EOF >> $OPENSHIFT_HOMEDIR/.bashrc
-export PYTHONPATH=$PROJECT_DIR
-export DJANGO_SETTINGS_MODULE=$PROJECT_NAME.settings.prod
-
-alias dj="django-admin"
-alias djrun="dj runserver 0.0.0.0:$OPENSHIFT_PYTHON_PORT"
-
-source $VIRTUALENV_DIR/bin/activate
-cd $PROJECT_DIR
-EOF
+cat $OPENSHIFT_REPO_DIR/.openshift/openshift_env_setup >> $OPENSHIFT_HOMEDIR/.bashrc
