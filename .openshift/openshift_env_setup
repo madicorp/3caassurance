@@ -1,8 +1,0 @@
-export PYTHONPATH=$PROJECT_DIR
-export DJANGO_SETTINGS_MODULE=$PROJECT_NAME.settings.prod
-
-alias dj="django-admin"
-alias djrun="dj runserver $OPENSHIFT_PYTHON_IP:$OPENSHIFT_PYTHON_PORT"
-
-source $VIRTUALENV_DIR/bin/activate
-cd $PROJECT_DIR

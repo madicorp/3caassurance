@@ -1,0 +1,27 @@
+#!/bin/bash
+# GETTING-STARTED: change 'db.sqlite3' to your sqlite3 database:
+if [ ! -f $OPENSHIFT_DATA_DIR/db.sqlite3 ]
+then
+	echo "Copying $OPENSHIFT_REPO_DIR/db.sqlite3 to $OPENSHIFT_DATA_DIR"
+	cp "$OPENSHIFT_REPO_DIR"db.sqlite3 $OPENSHIFT_DATA_DIR
+else
+	echo "Executing 'python $OPENSHIFT_REPO_DIR/manage.py migrate --noinput'"
+	python "$OPENSHIFT_REPO_DIR"manage.py migrate --noinput
+fi
+
+echo "Executing 'python $OPENSHIFT_REPO_DIR/ loaddata images _3caassurance'"
+python "$OPENSHIFT_REPO_DIR"manage.py loaddata images _3caassurance
+
+echo "Executing 'python $OPENSHIFT_REPO_DIR/manage.py update_index'"
+python "$OPENSHIFT_REPO_DIR"manage.py update_index
+
+echo "Executing 'python $OPENSHIFT_REPO_DIR/manage.py compilemessages -l fr'"
+python "$OPENSHIFT_REPO_DIR"manage.py compilemessages -l fr
+
+# Create media folder
+if [ ! -d $OPENSHIFT_DATA_DIR/media ]; then
+mkdir $OPENSHIFT_DATA_DIR/media
+fi
+
+# Create symlink to media folder
+ln -sf $OPENSHIFT_DATA_DIR/media $OPENSHIFT_REPO_DIR/media
