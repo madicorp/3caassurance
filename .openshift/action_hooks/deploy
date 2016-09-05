@@ -1,13 +1,14 @@
 #!/bin/bash
 # GETTING-STARTED: change 'db.sqlite3' to your sqlite3 database:
+
 if [ ! -f $OPENSHIFT_DATA_DIR/db.sqlite3 ]
 then
 	echo "Copying $OPENSHIFT_REPO_DIR/db.sqlite3 to $OPENSHIFT_DATA_DIR"
 	cp "$OPENSHIFT_REPO_DIR"db.sqlite3 $OPENSHIFT_DATA_DIR
-else
-	echo "Executing 'python $OPENSHIFT_REPO_DIR/manage.py migrate --noinput'"
-	python "$OPENSHIFT_REPO_DIR"manage.py migrate --noinput
 fi
+
+echo "Executing 'python $OPENSHIFT_REPO_DIR/manage.py migrate --noinput'"
+python "$OPENSHIFT_REPO_DIR"manage.py migrate --noinput
 
 echo "Executing 'python $OPENSHIFT_REPO_DIR/ loaddata images _3caassurance'"
 python "$OPENSHIFT_REPO_DIR"manage.py loaddata images _3caassurance
