@@ -159,10 +159,6 @@ LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
 
-COMPRESS_PRECOMPILERS = (
-    ('text/x-scss', 'django_libsass.SassCompiler'),
-)
-
 CONTACT_EMAIL = 'contact@3caassurance.com'
 CONTACT_PHONE = '+221 33 822 55 00'
 
