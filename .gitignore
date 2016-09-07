@@ -99,3 +99,6 @@ db.sqlite3*
 
 # Wagtail
 static/CACHE
+
+# MacOS
+.DS_STORE
