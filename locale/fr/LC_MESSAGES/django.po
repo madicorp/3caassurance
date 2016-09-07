@@ -18,12 +18,63 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: _3caassurance/templates/_3caassurance/tags/logo.html:9
+#########################################################
+#: _3caassurance/templates/_3caassurance/tags/logo.html
+#########################################################
 msgid "INSURANCE<br>BROKER AND<br>ADVISOR"
 msgstr "COURTAGE ET<br>CONSEILS EN<br>ASSURANCE"
 
+#########################################################
+#: _3caassurance/templates/_3caassurance/home_page.html
+#########################################################
+
 msgid "3CA: INSURANCE BROKER AND ADVISOR"
 msgstr "3CA : COURTAGE ET CONSEILS EN ASSURANCE"
+
+msgid "Insurance broker and advisor"
+msgstr "Courtier et conseiller en assurance"
+
+msgid "WE INSURE"
+msgstr "NOUS ASSURONS"
+
+msgid "Through our staff experience and our partnership with DIOT, 5<sup>th</sup> french insurance broker, we \
+find the best guarantees, in the best companies, for the best prices."
+msgstr "Grâce à l'expérience de notre personnel et notre partenariat avec DIOT, 5<sup>e</sup> courtier français, nous \
+vous offrons les meilleures garanties, dans les meilleures compagnies, aux meilleurs prix."
+
+msgid "The sense of partnership and the ability to anticipate"
+msgstr "L'esprit partenaire et le sens de l'anticipation"
+
+msgid "OUR PARTNERS"
+msgstr "NOS PARTENAIRES"
+
+msgid "OUR CLIENTS"
+msgstr "NOS CLIENTS"
+
+msgid "Partnership with DIOT"
+msgstr "Notre partenariat avec DIOT"
+
+msgid "3CA is DIOT's, 5<sup>th</sup> french insurance broker, partner and brings a technical assistance to evaluate risks in large companies."
+msgstr "3CA est correspondant de DIOT, 5<sup>e</sup> courtier français, qui lui apporte une assistance technique pour évaluer les risques des grandes entreprises."
+
+msgid "Constructions and constructions' sites are DIOT's historical speciality in France and abroad."
+msgstr "Les constructions et les chantiers sont une spécialité historique de DIOT en France comme à l'étranger."
+
+msgid "prev"
+msgstr "prec"
+
+msgid "next"
+msgstr "suiv"
+
+
+#########################################################
+#: _3caassurance/templates/_3caassurance/contact_page.html
+#########################################################
+msgid "Your message has been successfully sent."
+msgstr "Votre message a bien été envoyé."
+
+msgid "Your message could not be sent."
+msgstr "Votre message n'a pas pu être envoyé."
 
 msgid "CONTACT US"
 msgstr "CONTACTEZ NOUS"
@@ -37,20 +88,8 @@ msgstr "ENVOYEZ"
 msgid "Address"
 msgstr "Adresse"
 
-msgid "OUR PRODUCTS"
-msgstr "NOS PRODUITS"
+
+
 
 msgid "Our team"
 msgstr "Notre équipe"
-
-msgid "Insurance broker and advisor"
-msgstr "Courtier et conseiller en assurance"
-
-msgid "Our job: ensure you are fully confident about your goods protection."
-msgstr "Notre métier : s'assurer que vous avez pleinement confiance dans la protection de vos biens."
-
-msgid "Your message has been successfully sent."
-msgstr "Votre message a bien été envoyé."
-
-msgid "Your message could not be sent."
-msgstr "Votre message n'a pas pu être envoyé."
