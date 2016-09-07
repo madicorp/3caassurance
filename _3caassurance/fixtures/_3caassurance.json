@@ -315,6 +315,291 @@
     }
   },
   {
+    "model": "wagtailimages.rendition",
+    "pk": 43,
+    "fields": {
+      "filter": 6,
+      "file": "images/black_and_white_house.original_ruIOmEv.jpg",
+      "width": 1920,
+      "height": 1280,
+      "focal_point_key": "",
+      "image": 9
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 44,
+    "fields": {
+      "filter": 7,
+      "file": "images/black_and_white_house.max-800x600_8chobBX.jpg",
+      "width": 800,
+      "height": 533,
+      "focal_point_key": "",
+      "image": 9
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 45,
+    "fields": {
+      "filter": 6,
+      "file": "images/black_and_white_office.original.jpg",
+      "width": 1920,
+      "height": 1280,
+      "focal_point_key": "",
+      "image": 6
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 46,
+    "fields": {
+      "filter": 7,
+      "file": "images/black_and_white_office.max-800x600.jpg",
+      "width": 800,
+      "height": 533,
+      "focal_point_key": "",
+      "image": 6
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 47,
+    "fields": {
+      "filter": 6,
+      "file": "images/car_gauge.original.jpg",
+      "width": 1920,
+      "height": 1275,
+      "focal_point_key": "",
+      "image": 8
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 48,
+    "fields": {
+      "filter": 7,
+      "file": "images/car_gauge.max-800x600.jpg",
+      "width": 800,
+      "height": 531,
+      "focal_point_key": "",
+      "image": 8
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 49,
+    "fields": {
+      "filter": 6,
+      "file": "images/car_interior.original.jpg",
+      "width": 1920,
+      "height": 1080,
+      "focal_point_key": "",
+      "image": 5
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 50,
+    "fields": {
+      "filter": 7,
+      "file": "images/car_interior.max-800x600.jpg",
+      "width": 800,
+      "height": 450,
+      "focal_point_key": "",
+      "image": 5
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 51,
+    "fields": {
+      "filter": 6,
+      "file": "images/car.original.jpg",
+      "width": 1280,
+      "height": 1280,
+      "focal_point_key": "",
+      "image": 7
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 52,
+    "fields": {
+      "filter": 7,
+      "file": "images/car.max-800x600.jpg",
+      "width": 600,
+      "height": 600,
+      "focal_point_key": "",
+      "image": 7
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 53,
+    "fields": {
+      "filter": 1,
+      "file": "images/computer.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 10
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 54,
+    "fields": {
+      "filter": 1,
+      "file": "images/money.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 11
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 57,
+    "fields": {
+      "filter": 1,
+      "file": "images/city-people-walking-blur.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 14
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 58,
+    "fields": {
+      "filter": 1,
+      "file": "images/apothecary-pharmacy-chemist-mortar-and-pestl.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 15
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 59,
+    "fields": {
+      "filter": 4,
+      "file": "images/computer.width-500.jpg",
+      "width": 500,
+      "height": 333,
+      "focal_point_key": "",
+      "image": 10
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 60,
+    "fields": {
+      "filter": 4,
+      "file": "images/money.width-500.jpg",
+      "width": 500,
+      "height": 333,
+      "focal_point_key": "",
+      "image": 11
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 63,
+    "fields": {
+      "filter": 4,
+      "file": "images/city-people-walking-blur.width-500.jpg",
+      "width": 500,
+      "height": 334,
+      "focal_point_key": "",
+      "image": 14
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 64,
+    "fields": {
+      "filter": 4,
+      "file": "images/apothecary-pharmacy-chemist-mortar-and-pestle-.width-500.jpg",
+      "width": 500,
+      "height": 333,
+      "focal_point_key": "",
+      "image": 15
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 75,
+    "fields": {
+      "filter": 1,
+      "file": "images/hands.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 13
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 76,
+    "fields": {
+      "filter": 4,
+      "file": "images/hands.width-500.jpg",
+      "width": 500,
+      "height": 333,
+      "focal_point_key": "",
+      "image": 13
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 79,
+    "fields": {
+      "filter": 1,
+      "file": "images/plane.max-165x165.jpg",
+      "width": 165,
+      "height": 110,
+      "focal_point_key": "",
+      "image": 12
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 80,
+    "fields": {
+      "filter": 4,
+      "file": "images/plane.width-500.jpg",
+      "width": 500,
+      "height": 333,
+      "focal_point_key": "",
+      "image": 12
+    }
+  },
+  {
+    "model": "wagtailcore.site",
+    "pk": 2,
+    "fields": {
+      "hostname": "localhost",
+      "port": 80,
+      "site_name": null,
+      "root_page": 3,
+      "is_default_site": true
+    }
+  },
+  {
+    "model": "wagtailcore.collection",
+    "pk": 1,
+    "fields": {
+      "path": "0001",
+      "depth": 1,
+      "numchild": 0,
+      "name": "Root"
+    }
+  },
+  {
     "model": "taggit.tag",
     "pk": 1,
     "fields": {
@@ -597,7 +882,7 @@
     "model": "_3caassurance.homepage",
     "pk": 3,
     "fields": {
-      "products": "[{\"value\": {\"caption_en\": \"Office insurance\", \"caption_fr\": \"Assurance local professionnel\", \"image\": 6, \"description_en\": \"Protect your office buildings with us\", \"description_fr\": \"Prot\\u00e9gez vos locaux professionnels chez nous\"}, \"type\": \"product\"}, {\"value\": {\"caption_en\": \"Vehicle insurance\", \"caption_fr\": \"Assurance automobile\", \"image\": 8, \"description_en\": \"Protect your vehicle with the best available insurance\", \"description_fr\": \"Prot\\u00e9gez votre v\\u00e9hicule avec la meilleure assurance disponible\"}, \"type\": \"product\"}, {\"value\": {\"caption_en\": \"Property insurance\", \"caption_fr\": \"Assurance habitation\", \"image\": 9, \"description_en\": \"Provide the best available protection to your most precious goods\", \"description_fr\": \"Fournissez la meilleure protection disponible \\u00e0 votre bien le plus pr\\u00e9cieux\"}, \"type\": \"product\"}]"
+      "products": "[{\"value\": {\"description_fr\": \"Incendie, vol, d\\u00e9g\\u00e2t des eaux, bris de glace....\", \"caption_fr\": \"Dommages aux biens\", \"description_en\": \"Fire, theft, water damage, broken glass...\", \"caption_en\": \"Damage to goods\", \"image\": 6}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Bris de machine, risques informatiques\", \"caption_fr\": \"Risques techniques\", \"description_en\": \"Machinery breakdown, IT risks\", \"caption_en\": \"Technical risks\", \"image\": 10}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Perte d'exploitation apr\\u00e8s bris de machine\", \"caption_fr\": \"Pertes financi\\u00e8res\", \"description_en\": \"Operating losses after fire and machinery breakdown\", \"caption_en\": \"Financial losses\", \"image\": 11}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Toutes cat\\u00e9gories\", \"caption_fr\": \"Automobile\", \"description_en\": \"All categories\", \"caption_en\": \"Vehicle\", \"image\": 8}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Maritime et a\\u00e9rien\", \"caption_fr\": \"Transport\", \"description_en\": \"Naval and aerial\", \"caption_en\": \"Transport\", \"image\": 12}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"D\\u00e9c\\u00e8s et retraite\", \"caption_fr\": \"Assurance vie\", \"description_en\": \"Death and retirement benefits\", \"caption_en\": \"Life insurance\", \"image\": 13}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Responsabilit\\u00e9s civiles\", \"caption_fr\": \"Responsabilit\\u00e9s civiles\", \"description_en\": \"Public liability\", \"caption_en\": \"Public liability\", \"image\": 14}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Maladie et accident individuel\", \"caption_fr\": \"Dommages corporels\", \"description_en\": \"Health insurance and individual accident\", \"caption_en\": \"Physical damage\", \"image\": 15}, \"type\": \"product\"}]"
     }
   },
   {
@@ -1080,6 +1365,30 @@
     }
   },
   {
+    "model": "wagtailcore.pagerevision",
+    "pk": 30,
+    "fields": {
+      "page": 3,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-07T22:19:27.859Z",
+      "user": 1,
+      "content_json": "{\"expired\": false, \"title\": \"3CA: INSURANCE BROKER AND ADVISOR\", \"content_type\": 2, \"go_live_at\": null, \"url_path\": \"/home/\", \"pk\": 3, \"locked\": false, \"owner\": null, \"show_in_menus\": false, \"numchild\": 1, \"latest_revision_created_at\": \"2016-08-31T00:24:51.819Z\", \"first_published_at\": \"2016-08-28T20:11:29.901Z\", \"slug\": \"home\", \"live\": true, \"path\": \"00010001\", \"search_description\": \"\", \"products\": \"[{\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Fire, theft, water damage, broken glass...\\\", \\\"image\\\": 6, \\\"caption_fr\\\": \\\"Dommages aux biens\\\", \\\"description_fr\\\": \\\"Incendie, vol, d\\\\u00e9g\\\\u00e2t des eaux, bris de glace....\\\", \\\"caption_en\\\": \\\"Damage to goods\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Machinery breakdown, IT risks\\\", \\\"image\\\": 10, \\\"caption_fr\\\": \\\"Risques techniques\\\", \\\"description_fr\\\": \\\"Bris de machine, risques informatiques\\\", \\\"caption_en\\\": \\\"Technical risks\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Operating losses after fire and machinery breakdown\\\", \\\"image\\\": 11, \\\"caption_fr\\\": \\\"Pertes financi\\\\u00e8res\\\", \\\"description_fr\\\": \\\"Perte d'exploitation apr\\\\u00e8s bris de machine\\\", \\\"caption_en\\\": \\\"Financial losses\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"All categories\\\", \\\"image\\\": 8, \\\"caption_fr\\\": \\\"Automobile\\\", \\\"description_fr\\\": \\\"Toutes cat\\\\u00e9gories\\\", \\\"caption_en\\\": \\\"Vehicle\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Naval and aerial\\\", \\\"image\\\": 12, \\\"caption_fr\\\": \\\"Transport\\\", \\\"description_fr\\\": \\\"Maritime et a\\\\u00e9rien\\\", \\\"caption_en\\\": \\\"Transport\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Death and retirement benefits\\\", \\\"image\\\": 13, \\\"caption_fr\\\": \\\"Assurance vie\\\", \\\"description_fr\\\": \\\"D\\\\u00e9c\\\\u00e8s et retraite\\\", \\\"caption_en\\\": \\\"Life insurance\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Public liability\\\", \\\"image\\\": 14, \\\"caption_fr\\\": \\\"Responsabilit\\\\u00e9s civiles\\\", \\\"description_fr\\\": \\\"Responsabilit\\\\u00e9s civiles\\\", \\\"caption_en\\\": \\\"Public liability\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Health insurance and individual accident\\\", \\\"image\\\": 15, \\\"caption_fr\\\": \\\"Dommages corporels\\\", \\\"description_fr\\\": \\\"Maladie et accident individuel\\\", \\\"caption_en\\\": \\\"Physical damage\\\"}}]\", \"has_unpublished_changes\": false, \"depth\": 2, \"seo_title\": \"\", \"expire_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.pagerevision",
+    "pk": 31,
+    "fields": {
+      "page": 3,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-07T22:19:33.325Z",
+      "user": 1,
+      "content_json": "{\"expired\": false, \"title\": \"3CA: INSURANCE BROKER AND ADVISOR\", \"content_type\": 2, \"go_live_at\": null, \"url_path\": \"/home/\", \"pk\": 3, \"locked\": false, \"owner\": null, \"show_in_menus\": false, \"numchild\": 1, \"latest_revision_created_at\": \"2016-09-07T22:19:27.859Z\", \"first_published_at\": \"2016-08-28T20:11:29.901Z\", \"slug\": \"home\", \"live\": true, \"path\": \"00010001\", \"search_description\": \"\", \"products\": \"[{\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Fire, theft, water damage, broken glass...\\\", \\\"image\\\": 6, \\\"caption_fr\\\": \\\"Dommages aux biens\\\", \\\"description_fr\\\": \\\"Incendie, vol, d\\\\u00e9g\\\\u00e2t des eaux, bris de glace....\\\", \\\"caption_en\\\": \\\"Damage to goods\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Machinery breakdown, IT risks\\\", \\\"image\\\": 10, \\\"caption_fr\\\": \\\"Risques techniques\\\", \\\"description_fr\\\": \\\"Bris de machine, risques informatiques\\\", \\\"caption_en\\\": \\\"Technical risks\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Operating losses after fire and machinery breakdown\\\", \\\"image\\\": 11, \\\"caption_fr\\\": \\\"Pertes financi\\\\u00e8res\\\", \\\"description_fr\\\": \\\"Perte d'exploitation apr\\\\u00e8s bris de machine\\\", \\\"caption_en\\\": \\\"Financial losses\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"All categories\\\", \\\"image\\\": 8, \\\"caption_fr\\\": \\\"Automobile\\\", \\\"description_fr\\\": \\\"Toutes cat\\\\u00e9gories\\\", \\\"caption_en\\\": \\\"Vehicle\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Naval and aerial\\\", \\\"image\\\": 12, \\\"caption_fr\\\": \\\"Transport\\\", \\\"description_fr\\\": \\\"Maritime et a\\\\u00e9rien\\\", \\\"caption_en\\\": \\\"Transport\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Death and retirement benefits\\\", \\\"image\\\": 13, \\\"caption_fr\\\": \\\"Assurance vie\\\", \\\"description_fr\\\": \\\"D\\\\u00e9c\\\\u00e8s et retraite\\\", \\\"caption_en\\\": \\\"Life insurance\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Public liability\\\", \\\"image\\\": 14, \\\"caption_fr\\\": \\\"Responsabilit\\\\u00e9s civiles\\\", \\\"description_fr\\\": \\\"Responsabilit\\\\u00e9s civiles\\\", \\\"caption_en\\\": \\\"Public liability\\\"}}, {\\\"type\\\": \\\"product\\\", \\\"value\\\": {\\\"description_en\\\": \\\"Health insurance and individual accident\\\", \\\"image\\\": 15, \\\"caption_fr\\\": \\\"Dommages corporels\\\", \\\"description_fr\\\": \\\"Maladie et accident individuel\\\", \\\"caption_en\\\": \\\"Physical damage\\\"}}]\", \"has_unpublished_changes\": true, \"depth\": 2, \"seo_title\": \"\", \"expire_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
     "model": "wagtailcore.page",
     "pk": 1,
     "fields": {
@@ -1126,7 +1435,7 @@
       "expired": false,
       "locked": false,
       "first_published_at": "2016-08-28T20:11:29.901Z",
-      "latest_revision_created_at": "2016-08-31T00:24:51.819Z"
+      "latest_revision_created_at": "2016-09-07T22:19:33.325Z"
     }
   },
   {
