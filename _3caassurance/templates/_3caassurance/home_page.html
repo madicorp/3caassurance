@@ -5,6 +5,31 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
+    {% if self.offers %}
+        <section class="block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="heading4">
+                            <h2>{% trans "OUR PROMOTIONAL OFFERS" %}</h2>
+                         </div>
+                        <div class="about-carousal-sec">
+                            <ul class="carousel">
+                                {% for offer in self.offers %}
+                                    <li>
+                                        <img src="{{ theimage.url }}" alt="{{ theimage.alt }}" />
+                                        <h3>{% dynamic_trans offer.value 'caption' %}</h3>
+                                        <p>{% dynamic_trans offer.value 'description' %}</p>
+                                        <a href="#" title="" class="flat-btn">BUY IN $230</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endif %}
     {% if self.products %}
         <section class="block">
             <div class="container">
