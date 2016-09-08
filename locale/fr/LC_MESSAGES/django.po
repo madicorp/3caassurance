@@ -89,6 +89,24 @@ msgid "Address"
 msgstr "Adresse"
 
 
+#########################################################
+#: _3caassurance/templates/_3caassurance/about_us_page.html
+#########################################################
+msgid "About us"
+msgstr "A propos de nous"
+
+msgid "Managing Director"
+msgstr "Directeur Général"
+
+msgid "He graduated from the 'Institut de Gestion des Risques' at CNPP, the 'Ecole Supérieur de Gestion de Paris' and the 'Institut de droit appliqué de Paris'."
+msgstr "Il est diplômé de l'Institut de Gestion des Risques au CNPP, l'Ecole Supérieur de Gestion de Paris et l'Institut de droit appliqué de Paris"
+
+msgid "He created 3CA in 2000 after 12 years in Axa Assurance Senegal."
+msgstr "Il a créé 3CA en 2000 après 12 ans chez Axa Assurance Sénégal."
+
+msgid "Head of department fire and miscellaneous risks"
+msgstr "Responsable département risques et risques divers"
+
 
 
 msgid "Our team"

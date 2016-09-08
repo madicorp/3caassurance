@@ -59,3 +59,7 @@ footer .block {
 .theme-layout > .block:last-of-type {
   padding-bottom: 8em;
 }
+
+.team-info > p {
+  min-height: 150px;
+}

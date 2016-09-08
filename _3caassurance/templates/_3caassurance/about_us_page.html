@@ -1,0 +1,53 @@
+{% extends "_3caassurance/base.html" %}
+
+{% load wagtailcore_tags i18n static _3cassurance_tags %}
+
+{% block content %}
+    <div class="inner-head overlap">
+        <div class="container">
+            <div class="inner-content">
+                <span><i class="fa fa-asterisk"></i></span>
+                <h2>{% trans "ABOUT US" %}</h2>
+                <ul>
+                    <li><a href="{% home_url %}" title="">HOME</a></li>
+                    <li><a href="{% home_url %}/about-us" title="">{% trans "ABOUT US" %}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="block">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="team-sec">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="team-box">
+                                <img alt="CHEIKH AHMED TIDIANE SY" src="{% static "images/cheikh_at_sy.jpg" %}">
+                                <div class="team-info">
+                                    <h3>CHEIKH AHMED TIDIANE <i>SY</i></h3>
+                                    <i>{% trans "Managing Director" %}</i>
+                                    <p>
+                                        {% trans "He graduated from the 'Institut de Gestion des Risques' at CNPP, the 'Ecole Supérieur de Gestion de Paris' and the 'Institut de droit appliqué de Paris'." %}
+                                        {% trans "He created 3CA in 2000 after 12 years in Axa Assurance Senegal." %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-box">
+                                <img alt="ALBERT SAGNA" src="{% static "images/albert_sagna.jpg" %}">
+                                <div class="team-info">
+                                    <h3>ALBERT <i>SAGNA</i></h3>
+                                    <i>{% trans "Head of department fire and miscellaneous risks" %}</i>
+                                    <p>
+                                        {% trans "He is in charge of." %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

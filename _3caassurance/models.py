@@ -42,3 +42,7 @@ HomePage.promote_panels = Page.promote_panels
 
 class ContactPage(Page):
     pass
+
+
+class AboutUsPage(Page):
+    pass
