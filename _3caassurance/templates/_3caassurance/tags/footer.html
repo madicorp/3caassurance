@@ -4,22 +4,37 @@
     <section class="block">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 column">
+                <div class="col-md-4 column">
                     <div class="about_widget widget">
                         {% block logo %}
-                            {% get_site_root as site_root %}
-                            {% logo parent=site_root calling_page=self %}
+                        {% get_site_root as site_root %}
+                        {% logo parent=site_root calling_page=self %}
                         {% endblock %}
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 column">
+                    <div class="about_widget widget">
+
+                    </div>
+                </div>
+                <div class="col-md-3 column">
+                    <div class="about_widget widget">
                         <ul class="social-btns">
                             <li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
                             <li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
                         </ul>
                         <span><i class="fa fa-envelope-o"></i>{{ email }}</span>
-                        <span><i class="fa fa-mobile"></i>{{ phone }}</span>
+                        <span><i class="fa fa-phone"></i>{{ phone }}</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <div class="bottom-line">
+        <div class="container">
+            <span>Copyright All Right Reserved 2016 - Powered by <a href="http://madi-corp.net/" target="_blank" title="">MADICORP</a></span>
+        </div>
+    </div>
 </footer>
