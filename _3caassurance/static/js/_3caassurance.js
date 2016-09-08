@@ -1,3 +1,15 @@
+$(".carousel").owlCarousel({
+	autoplay:true,
+	autoplayTimeout:3000,
+	smartSpeed:2000,
+	loop:false,
+	dots:false,
+	nav:true,
+	margin:0,
+	items:1,
+	singleItem:true
+	});
+
 jQuery(document).ready(function(){
     "use strict";
 
