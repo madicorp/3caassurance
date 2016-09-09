@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('wagtailcore', '0029_unicode_slugfield_dj19'),
-        ('_3caassurance', '0005_description_and_translation'),
+        ('_3caassurance', '0006_homepage_offers'),
     ]
 
     operations = [
