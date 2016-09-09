@@ -18,6 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+
+
+msgid "HOME"
+msgstr "ACCUEIL"
+
 #########################################################
 #: _3caassurance/templates/_3caassurance/tags/logo.html
 #########################################################
@@ -88,6 +93,48 @@ msgstr "ENVOYEZ"
 msgid "Address"
 msgstr "Adresse"
 
+
+#########################################################
+#: _3caassurance/templates/_3caassurance/about_us_page.html
+#########################################################
+msgid "About us"
+msgstr "A propos de nous"
+
+msgid "ABOUT US"
+msgstr "A PROPOS DE NOUS"
+
+msgid "Managing Director"
+msgstr "Directeur Général"
+
+msgid "Graduated from the 'Institut de Gestion des Risques' at CNPP, he created 3CA in 2000 after 12 years in Axa Assurance Senegal."
+msgstr "Diplômé de l'Institut de Gestion des Risques au CNPP, il a créé 3CA en 2000 après 12 ans chez Axa Assurance Sénégal."
+
+msgid "Head of fire department and miscellaneous risks"
+msgstr "Responsable service incendie et risques divers"
+
+msgid "He is in charge of public liability and transport damage insurances."
+msgstr "Il est en charge des Assurances Dommages RC et Transport."
+
+msgid "Finance and administrative manager"
+msgstr "Responsable administratif et financier"
+
+msgid "He is in charge of accounts management and health insurance."
+msgstr "Il est en charge de la gestion financière et comptable et de l'assurance maladie."
+
+msgid "Management assistant"
+msgstr "Assistante de direction"
+
+msgid "The managing director deputy. She supervises vehicle insurance and damage and construction all risk insurance."
+msgstr "Assistante du directeur général chargée de la supervision de l’assurance et des sinistres automobiles et TRC."
+
+msgid "Health insurance and damage manager"
+msgstr "Responsable de la production & des sinistres en assurance sante"
+
+msgid "Damage department manager"
+msgstr "Responsable service sinistre"
+
+msgid "Vehicle insurance manager"
+msgstr "Responsable de la production automobile"
 
 
 

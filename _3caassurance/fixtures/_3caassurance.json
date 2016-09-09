@@ -579,6 +579,30 @@
     }
   },
   {
+    "model": "wagtailimages.rendition",
+    "pk": 81,
+    "fields": {
+      "filter": 6,
+      "file": "images/apothecary-pharmacy-chemist-mortar-and-pestle-3.original.jpg",
+      "width": 1920,
+      "height": 1280,
+      "focal_point_key": "",
+      "image": 15
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 82,
+    "fields": {
+      "filter": 7,
+      "file": "images/apothecary-pharmacy-chemist-mortar-and-pestl.max-800x600.jpg",
+      "width": 800,
+      "height": 533,
+      "focal_point_key": "",
+      "image": 15
+    }
+  },
+  {
     "model": "wagtailcore.site",
     "pk": 2,
     "fields": {
@@ -882,12 +906,17 @@
     "model": "_3caassurance.homepage",
     "pk": 3,
     "fields": {
-      "products": "[{\"value\": {\"description_fr\": \"Incendie, vol, d\\u00e9g\\u00e2t des eaux, bris de glace....\", \"caption_fr\": \"Dommages aux biens\", \"description_en\": \"Fire, theft, water damage, broken glass...\", \"caption_en\": \"Damage to goods\", \"image\": 6}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Bris de machine, risques informatiques\", \"caption_fr\": \"Risques techniques\", \"description_en\": \"Machinery breakdown, IT risks\", \"caption_en\": \"Technical risks\", \"image\": 10}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Perte d'exploitation apr\\u00e8s bris de machine\", \"caption_fr\": \"Pertes financi\\u00e8res\", \"description_en\": \"Operating losses after fire and machinery breakdown\", \"caption_en\": \"Financial losses\", \"image\": 11}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Toutes cat\\u00e9gories\", \"caption_fr\": \"Automobile\", \"description_en\": \"All categories\", \"caption_en\": \"Vehicle\", \"image\": 8}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Maritime et a\\u00e9rien\", \"caption_fr\": \"Transport\", \"description_en\": \"Naval and aerial\", \"caption_en\": \"Transport\", \"image\": 12}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"D\\u00e9c\\u00e8s et retraite\", \"caption_fr\": \"Assurance vie\", \"description_en\": \"Death and retirement benefits\", \"caption_en\": \"Life insurance\", \"image\": 13}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Responsabilit\\u00e9s civiles\", \"caption_fr\": \"Responsabilit\\u00e9s civiles\", \"description_en\": \"Public liability\", \"caption_en\": \"Public liability\", \"image\": 14}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Maladie et accident individuel\", \"caption_fr\": \"Dommages corporels\", \"description_en\": \"Health insurance and individual accident\", \"caption_en\": \"Physical damage\", \"image\": 15}, \"type\": \"product\"}]"
+      "products": "[{\"value\": {\"description_fr\": \"Incendie, vol, d\\u00e9g\\u00e2t des eaux, bris de glace....\", \"caption_fr\": \"Dommages aux biens\", \"image\": 6, \"caption_en\": \"Damage to goods\", \"description_en\": \"Fire, theft, water damage, broken glass...\"}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Bris de machine, risques informatiques\", \"caption_fr\": \"Risques techniques\", \"image\": 10, \"caption_en\": \"Technical risks\", \"description_en\": \"Machinery breakdown, IT risks\"}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Perte d'exploitation apr\\u00e8s bris de machine\", \"caption_fr\": \"Pertes financi\\u00e8res\", \"image\": 11, \"caption_en\": \"Financial losses\", \"description_en\": \"Operating losses after fire and machinery breakdown\"}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Toutes cat\\u00e9gories\", \"caption_fr\": \"Automobile\", \"image\": 8, \"caption_en\": \"Vehicle\", \"description_en\": \"All categories\"}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Maritime et a\\u00e9rien\", \"caption_fr\": \"Transport\", \"image\": 12, \"caption_en\": \"Transport\", \"description_en\": \"Naval and aerial\"}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"D\\u00e9c\\u00e8s et retraite\", \"caption_fr\": \"Assurance vie\", \"image\": 13, \"caption_en\": \"Life insurance\", \"description_en\": \"Death and retirement benefits\"}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Responsabilit\\u00e9s civiles\", \"caption_fr\": \"Responsabilit\\u00e9s civiles\", \"image\": 14, \"caption_en\": \"Public liability\", \"description_en\": \"Public liability\"}, \"type\": \"product\"}, {\"value\": {\"description_fr\": \"Maladie et accident individuel\", \"caption_fr\": \"Dommages corporels\", \"image\": 15, \"caption_en\": \"Physical damage\", \"description_en\": \"Health insurance and individual accident\"}, \"type\": \"product\"}]"
     }
   },
   {
     "model": "_3caassurance.contactpage",
     "pk": 4,
+    "fields": {}
+  },
+  {
+    "model": "_3caassurance.aboutuspage",
+    "pk": 5,
     "fields": {}
   },
   {
@@ -1389,6 +1418,42 @@
     }
   },
   {
+    "model": "wagtailcore.pagerevision",
+    "pk": 32,
+    "fields": {
+      "page": 5,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-07T23:35:11.102Z",
+      "user": 1,
+      "content_json": "{\"path\": \"000100010002\", \"show_in_menus\": false, \"pk\": 5, \"content_type\": 29, \"depth\": 3, \"seo_title\": \"\", \"expired\": false, \"numchild\": 0, \"has_unpublished_changes\": false, \"live\": false, \"expire_at\": null, \"title\": \"About us\", \"locked\": false, \"latest_revision_created_at\": null, \"url_path\": \"/home/about-us/\", \"owner\": 1, \"search_description\": \"\", \"first_published_at\": null, \"slug\": \"about-us\", \"go_live_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.pagerevision",
+    "pk": 33,
+    "fields": {
+      "page": 5,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-07T23:37:05.600Z",
+      "user": 1,
+      "content_json": "{\"path\": \"000100010002\", \"show_in_menus\": true, \"pk\": 5, \"content_type\": 29, \"depth\": 3, \"seo_title\": \"\", \"expired\": false, \"numchild\": 0, \"has_unpublished_changes\": true, \"live\": false, \"expire_at\": null, \"title\": \"About us\", \"locked\": false, \"latest_revision_created_at\": \"2016-09-07T23:35:11.102Z\", \"url_path\": \"/home/about-us/\", \"owner\": 1, \"search_description\": \"\", \"first_published_at\": null, \"slug\": \"about-us\", \"go_live_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.pagerevision",
+    "pk": 34,
+    "fields": {
+      "page": 5,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-08T00:41:13.569Z",
+      "user": 1,
+      "content_json": "{\"search_description\": \"\", \"go_live_at\": null, \"url_path\": \"/home/about-us/\", \"depth\": 3, \"slug\": \"about-us\", \"locked\": false, \"title\": \"About us\", \"show_in_menus\": true, \"content_type\": 29, \"expire_at\": null, \"has_unpublished_changes\": true, \"path\": \"000100010002\", \"expired\": false, \"first_published_at\": null, \"numchild\": 0, \"latest_revision_created_at\": \"2016-09-07T23:37:05.600Z\", \"pk\": 5, \"seo_title\": \"\", \"owner\": 1, \"live\": false}",
+      "approved_go_live_at": null
+    }
+  },
+  {
     "model": "wagtailcore.page",
     "pk": 1,
     "fields": {
@@ -1442,7 +1507,7 @@
     "model": "wagtailcore.page",
     "pk": 4,
     "fields": {
-      "path": "000100010001",
+      "path": "000100010002",
       "depth": 3,
       "numchild": 0,
       "title": "Contact",
@@ -1461,6 +1526,31 @@
       "locked": false,
       "first_published_at": "2016-08-29T21:05:45.249Z",
       "latest_revision_created_at": "2016-08-29T21:45:14.877Z"
+    }
+  },
+  {
+    "model": "wagtailcore.page",
+    "pk": 5,
+    "fields": {
+      "path": "000100010001",
+      "depth": 3,
+      "numchild": 0,
+      "title": "About us",
+      "slug": "about-us",
+      "content_type": 29,
+      "live": true,
+      "has_unpublished_changes": false,
+      "url_path": "/home/about-us/",
+      "owner": 1,
+      "seo_title": "",
+      "show_in_menus": true,
+      "search_description": "",
+      "go_live_at": null,
+      "expire_at": null,
+      "expired": false,
+      "locked": false,
+      "first_published_at": "2016-09-07T21:05:45.249Z",
+      "latest_revision_created_at": "2016-09-07T00:30:42.654Z"
     }
   }
 ]
