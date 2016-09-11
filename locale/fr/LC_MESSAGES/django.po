@@ -42,7 +42,7 @@ msgstr "Courtier et conseiller en assurance"
 msgid "WE INSURE"
 msgstr "NOUS ASSURONS"
 
-msgid "Through our staff experience and our partnership with DIOT, 5<sup>th</sup> french insurance broker, we \
+msgid "Through our staff experience and our partnership with DIOT, 5<sup>th</sup> best french insurance broker, we \
 find the best guarantees, in the best companies, for the best prices."
 msgstr "Grâce à l'expérience de notre personnel et notre partenariat avec DIOT, 5<sup>e</sup> courtier français, nous \
 vous offrons les meilleures garanties, dans les meilleures compagnies, aux meilleurs prix."
@@ -59,7 +59,7 @@ msgstr "NOS CLIENTS"
 msgid "Partnership with DIOT"
 msgstr "Notre partenariat avec DIOT"
 
-msgid "3CA is DIOT's, 5<sup>th</sup> french insurance broker, partner and brings a technical assistance to evaluate risks in large companies."
+msgid "3CA is DIOT's, 5<sup>th</sup> best french insurance broker, partner and brings a technical assistance to evaluate risks in large companies."
 msgstr "3CA est correspondant de DIOT, 5<sup>e</sup> courtier français, qui lui apporte une assistance technique pour évaluer les risques des grandes entreprises."
 
 msgid "Constructions and constructions' sites are DIOT's historical speciality in France and abroad."
@@ -135,6 +135,31 @@ msgstr "Responsable service sinistre"
 
 msgid "Vehicle insurance manager"
 msgstr "Responsable de la production automobile"
+
+msgid "OUR TEAM"
+msgstr "NOTRE ÉQUIPE"
+
+msgid "OUR JOB"
+msgstr "NOTRE MÉTIER"
+
+msgid "3CA is an insurance brokerage office."
+msgstr "3CA est un cabinet de courtage en assurance."
+
+msgid "Our expertise relies on our employees' experience and our partnership with DIOT, 5<sup>th</sup> best french \
+insurance broker."
+msgstr "Notre expertise se repose sur l'expérience de nos employés et notre partenariat avec DIOT, 5<sup>e</sup> \
+courtier en assurance français."
+
+msgid "Our aim is to provide our clients the best insurances, in the best companies, at the best price."
+msgstr "Notre objectif est de fournir à nos clients les meilleurs garanties, dans les meilleures compagnies, au meilleur prix."
+
+msgid "We provide guidance to our professional customers to quantify, evaluate and insure risks related to \
+their activities through our risk management program."
+msgstr "Nous assistons nos clients professionels pour quantifier, évaluer et assurer les risques de leurs activités à \
+travers notre programme de gestion des risques."
+
+msgid "We help you organizing calls for bids and elaborating the technical requirements."
+msgstr "Nous vous aidons à organiser les appels d'offres et à élaborer le cahier de charges technique."
 
 
 
