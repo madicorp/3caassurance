@@ -36,3 +36,30 @@ form div.ephemeral-message-success {
 form div.ephemeral-message-error {
   color: darkred;
 }
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading2, .heading4 {
+  margin-bottom: 2em;
+}
+
+.block {
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
+
+footer .block {
+  padding-top: 2em;
+}
+
+.theme-layout > .block:last-of-type {
+  padding-bottom: 8em;
+}
+
+.team-info > p {
+  min-height: 150px;
+}

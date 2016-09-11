@@ -1,4 +1,4 @@
-{% load _3cassurance_tags wagtailcore_tags %}
+{% load _3cassurance_tags wagtailcore_tags i18n %}
 
 
 <header class="simple-header for-sticky white">
@@ -6,7 +6,7 @@
         <div class="container">
             <ul class="contact-item">
                 <li><i class="fa fa-envelope-o"></i>{{ email }}</li>
-                <li><i class="fa fa-mobile"></i>{{ phone }}</li>
+                <li><i class="fa fa-phone"></i>{{ phone }}</li>
             </ul>
             <div class="choose-language">
                 <a href="{% translate_url fr %}">FR</a>
@@ -25,11 +25,11 @@
                     {% for menuitem in menuitems %}
                         {% if menuitem.show_dropdown %}
                             <li>
-                                <a class="menu-item-has-children" href="#">{{ menuitem.title }}</a>
+                                <a class="menu-item-has-children" href="#">{% trans menuitem.title %}</a>
                                 {% top_menu_children parent=menuitem %}
                             </li>
                         {% else %}
-                            <li><a href="{% pageurl menuitem %}">{{ menuitem.title }}</a></li>
+                            <li><a href="{% pageurl menuitem %}">{% trans menuitem.title %}</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>

@@ -22,10 +22,21 @@ class HomePageProductBlock(StreamBlock):
     product = ProductBlock(label="Product", icon="pilcrow")
 
 
+class OfferBlock(ProductBlock):
+    def __init__(self, *args, **kwargs):
+        super(OfferBlock, self).__init__(*args, **kwargs)
+
+
+class HomePageOfferBlock(StreamBlock):
+    offer = OfferBlock(label="Offer", icon="pilcrow")
+
+
 class HomePage(Page):
     products = StreamField(HomePageProductBlock())
+    offers = StreamField(HomePageOfferBlock())
     search_fields = Page.search_fields + [
         index.SearchField('products'),
+        index.SearchField('offers'),
     ]
 
     class Meta:
@@ -34,11 +45,16 @@ class HomePage(Page):
 
 HomePage.content_panels = [
     FieldPanel('title', classname="full title"),
-    StreamFieldPanel('products')
+    StreamFieldPanel('products'),
+    StreamFieldPanel('offers')
 ]
 
 HomePage.promote_panels = Page.promote_panels
 
 
 class ContactPage(Page):
+    pass
+
+
+class AboutUsPage(Page):
     pass

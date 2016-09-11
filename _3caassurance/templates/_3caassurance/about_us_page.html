@@ -1,0 +1,125 @@
+{% extends "_3caassurance/base.html" %}
+
+{% load wagtailcore_tags i18n static _3cassurance_tags %}
+
+{% block content %}
+    <div class="inner-head overlap">
+        <div class="container">
+            <div class="inner-content">
+                <span><i class="fa fa-asterisk"></i></span>
+                <h2>{% trans "ABOUT US" %}</h2>
+                <ul>
+                    <li><a href="{% home_url %}" title="">{% trans "HOME" %}</a></li>
+                    <li><a href="{% home_url %}/about-us" title="">{% trans "ABOUT US" %}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="block">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="heading4">
+                    <h2>{% trans "OUR JOB" %}</h2>
+                </div>
+                <div class="who-we-are-sec">
+                    <p>
+                        {% trans "3CA is an insurance brokerage office." %}<br>
+                        {% trans "Our expertise relies on our employees' experience and our partnership with DIOT, 5<sup>th</sup> best french insurance broker." %}<br>
+                        {% trans "Our aim is to provide our clients the best insurances, in the best companies, at the best price." %}<br>
+                        {% trans "We provide guidance to our professional customers to quantify, evaluate and insure risks related to their activities through our risk management program." %}<br>
+                        {% trans "We help you organizing calls for bids and elaborating the technical requirements." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="heading4">
+                    <h2>{% trans "OUR TEAM" %}</h2>
+                </div>
+                <div class="team-sec">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="team-box">
+                                <img alt="CHEIKH AHMED TIDIANE SY" src="{% static "images/cheikh_at_sy.jpg" %}">
+                                <div class="team-info">
+                                    <h3>CHEIKH AHMED TIDIANE <i>SY</i></h3>
+                                    <i>{% trans "Managing Director" %}</i>
+                                    <p>
+                                        {% trans "Graduated from the 'Institut de Gestion des Risques' at CNPP, he created 3CA in 2000 after 12 years in Axa Assurance Senegal." %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-box">
+                                <img alt="ALBERT SAGNA" src="{% static "images/albert_sagna.jpg" %}">
+                                <div class="team-info">
+                                    <h3>ALBERT <i>SAGNA</i></h3>
+                                    <i>{% trans "Head of fire department and miscellaneous risks" %}</i>
+                                    <p>{% trans "He is in charge of public liability insurance and transport damage." %}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-box">
+                                <img alt="LAMINE NDONG" src="{% static "images/lamine_ndong.jpg" %}">
+                                <div class="team-info">
+                                    <h3>LAMINE <i>NDONG</i></h3>
+                                    <i>{% trans "Finance and administrative manager" %}</i>
+                                    <p>{% trans "He is in charge of accounts management and health insurance." %}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="team-box">
+                                <img alt="PAULINE FALL" src="{% static "images/pauline_fall.jpg" %}">
+                                <div class="team-info">
+                                    <h3>PAULINE <i>FALL</i></h3>
+                                    <i>{% trans "Management assistant" %}</i>
+                                    <p>{% trans "The managing director deputy. She supervises vehicle insurance and damage and construction all risk insurance." %}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-box">
+                                <img alt="MAGUETTE SARR" src="{% static "images/maguette_sarr.jpg" %}">
+                                <div class="team-info">
+                                    <h3>MAGUETTE <i>SARR</i></h3>
+                                    <i>{% trans "Health insurance and damage manager" %}</i>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-box">
+                                <img alt="AWA DIOUF" src="{% static "images/awa_diouf.jpg" %}">
+                                <div class="team-info">
+                                    <h3>AWA <i>DIOUF</i></h3>
+                                    <i>{% trans "Damage department manager" %}</i>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="team-box">
+                                <img alt="BLONDIN GUEYE" src="{% static "images/blondin_gueye.jpg" %}">
+                                <div class="team-info">
+                                    <h3>BLONDIN <i>GUEYE</i></h3>
+                                    <i>{% trans "Vehicle insurance manager" %}</i>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

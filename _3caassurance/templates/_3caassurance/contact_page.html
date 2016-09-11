@@ -1,6 +1,6 @@
 {% extends "_3caassurance/base.html" %}
 
-{% load wagtailcore_tags i18n %}
+{% load wagtailcore_tags i18n _3cassurance_tags %}
 
 {% block content %}
     <div class="inner-head overlap">
@@ -9,8 +9,8 @@
                 <span><i class="fa fa-asterisk"></i></span>
                 <h2>{% trans "CONTACT US" %}</h2>
                 <ul>
-                    <li><a href="/" title="">HOME</a></li>
-                    <li><a href="/contact" title="">{% trans "CONTACT US" %}</a></li>
+                    <li><a href="{% home_url %}" title="">{% trans "HOME" %}</a></li>
+                    <li><a href="{% home_url %}/contact" title="">{% trans "CONTACT US" %}</a></li>
                 </ul>
             </div>
         </div>
@@ -85,7 +85,7 @@
                                         <ul>
                                             <li>
                                                 <span><i class="fa fa-home"></i> {% trans "Address" %}</span>
-                                                <p>765 Shuttle Swift Area <br>at New Born Road </p>
+                                                <p>VDN Sicap Keur Gorgui<br>Immeuble Elysées 2 6e étage</p>
                                             </li>
                                             <li>
                                                 <span><i class="fa fa-envelope"></i> Email</span>

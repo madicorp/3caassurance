@@ -5,13 +5,38 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
+    {% if self.offers %}
+        <section class="block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="heading4">
+                            <h2>{% trans "OUR PROMOTIONAL OFFERS" %}</h2>
+                         </div>
+                        <div class="about-carousal-sec">
+                            <ul class="carousel">
+                                {% for offer in self.offers %}
+                                    <li>
+                                        <img src="{{ theimage.url }}" alt="{{ theimage.alt }}" />
+                                        <h3>{% dynamic_trans offer.value 'caption' %}</h3>
+                                        <p>{% dynamic_trans offer.value 'description' %}</p>
+                                        <a href="#" title="" class="flat-btn">BUY IN $230</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endif %}
     {% if self.products %}
         <section class="block">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="heading4">
-                            <h2>{% trans "OUR PRODUCTS" %}</h2>
+                            <h2>{% trans "WE INSURE" %}</h2>
                         </div>
                         <div class="square-services-sec">
                             <div class="row">
@@ -39,27 +64,181 @@
                 </div>
             </div>
         </section>
-        <section class="block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="ceo-message-sec">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <img src="{% static "images/team.jpg" %}" alt="Team">
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="ceo-message">
-                                        <span>{% trans "Our team" %}</span>
-                                        <h3>{% trans "Insurance broker and advisor" %}</h3>
-                                        <p>{% trans "Our job: ensure you are fully confident about your goods protection." %}</p>
-                                    </div>
+    {% endif %}
+    <section class="block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading4">
+                        <h2>{% trans "OUR CLIENTS" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="our-clients-sec">
+                        <ul class="carousel-client">
+                            <li>
+                                <a target="_blank" href="http://www.senelec.sn/" title="Senelec">
+                                    <img src="{% static "images/senelec_logo.png" %}" alt="Senelec">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.sonatel.sn/" title="Sonatel">
+                                    <img src="{% static "images/sonatel_logo.png" %}" alt="Sonatel">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.accorhotels-group.com/fr/groupe.html" title="Accor">
+                                    <img src="{% static "images/accor_logo.png" %}" alt="Accor">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.afd.fr/home/pays/afrique/geo-afr/senegal" title="AFD">
+                                    <img src="{% static "images/afd_logo.png" %}" alt="AFD">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://investinsenegal.com/" title="APIX">
+                                    <img src="{% static "images/apix_logo.png" %}" alt="APIX">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.secusociale.sn/" title="CSS">
+                                    <img src="{% static "images/caisse_secu_sociale_logo.png" %}" alt="CSS Senegal">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://css.sn/" title="Compagnie Sucrière Sénégal">
+                                    <img src="{% static "images/compagnie_sucriere_senegal_logo.png" %}" alt="CSS">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www2.deloitte.com/sn/fr.html" title="Deloitte">
+                                    <img src="{% static "images/deloitte_logo.png" %}" alt="Deloitte">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.mazars.sn/" title="Mazars">
+                                    <img src="{% static "images/mazars_logo.png" %}" alt="Mazars">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.orabank.net/fr/filiale/senegal" title="">
+                                    <img src="{% static "images/orabank_group_logo.png" %}" alt="Orabank Group">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://plan-international.org/senegal" title="Plan international">
+                                    <img src="{% static "images/plan_international_logo.png" %}" alt="Plan International">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.senegalairlines.aero/" title="Senegal Airlines">
+                                    <img src="{% static "images/senegal_airlines_logo.png" %}" alt="Senegal Airlines">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading4">
+                        <h2>{% trans "The sense of partnership and the ability to anticipate" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="ceo-message-sec">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <img src="{% static "images/team_670_546.jpg" %}" alt="Team">
+                            </div>
+                            <div class="col-md-5">
+                                <div class="ceo-message">
+                                    <span>{% trans "Our team" %}</span>
+                                    <h3>{% trans "Insurance broker and advisor" %}</h3>
+                                    <p>{% trans "Through our staff experience and our partnership with DIOT, 5<sup>th</sup> french insurance broker, we find the best guarantees, in the best companies, for the best prices." %}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    {% endif %}
+        </div>
+    </section>
+    <section class="block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading4">
+                        <h2>{% trans "OUR PARTNERS" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 5em;">
+                <div class="related">
+                    <div class="row">
+                        <div class="col-md-3">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="post-style2">
+                                <div class="post2-thumb">
+                                    <img src="{% static "images/logo_diot_sa.png" %}" alt="Team">
+                                </div>
+                                <h3>{% trans "Partnership with DIOT" %}</h3>
+                                <p>{% trans "3CA is DIOT's, 5<sup>th</sup> best french insurance broker, partner and brings a technical assistance to evaluate risks in large companies." %}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="our-clients-sec">
+                        <ul class="carousel-client">
+                            <li>
+                                <a target="_blank" href="http://www.allianz-africa.com/filiales/senegal/" title="Allianz">
+                                    <img src="{% static "images/allianz_logo.png" %}" alt="Allianz">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.amsaassurances.com/" title="Amsa">
+                                    <img src="{% static "images/amsa_logo.png" %}" alt="Amsa">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.axa.sn/" title="Axa">
+                                    <img src="{% static "images/axa_logo.png" %}" alt="Axa">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.askiaassurances.net/" title="Askia">
+                                    <img src="{% static "images/askia_logo.png" %}" alt="Askia">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.groupensia.com/" title="NSIA">
+                                    <img src="{% static "images/nsia_logo.png" %}" alt="NSIA">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="#" title="Wafa assurances">
+                                    <img src="{% static "images/wafa_logo.png" %}" alt="Wafa assurances">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}

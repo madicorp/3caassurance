@@ -25,16 +25,14 @@
 
     {# Global stylesheets #}
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     {% compress css %}
         {# Custom stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/_3caassurance.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/_3caassurance.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/colors/colors.css' %}">
-        {# SCSS compilation relies on django compressor #}
-        <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"/>
     {% endcompress %}
     {% block extra_css %}
         {# Override this in templates to add extra stylesheets #}
@@ -60,9 +58,17 @@
 </div>
 
 {# Global javascript #}
-<script type="text/javascript" src="{% static 'js/_3caassurance.js' %}"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script><!-- Owl Carousal -->
+<script type="text/javascript" src="{% static 'js/html5lightbox.js' %}"></script><!-- HTML -->
+<script type="text/javascript" src="{% static 'js/scrolltopcontrol.js' %}"></script><!-- ScrolltoTop -->
+<script type="text/javascript" src="{% static 'js/scrolly.js' %}"></script><!-- Parallax -->
+<script type="text/javascript" src="{% static 'js/jquery.poptrox.min.js' %}"></script><!-- Popup -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/superagent/2.2.0/superagent.min.js"
         async></script>
+
+<script type="text/javascript" src="{% static 'js/init-carousel.js' %}"></script><!-- Modernizer -->
 
 {% block extra_js %}
     {# Override this in templates to add extra javascript #}

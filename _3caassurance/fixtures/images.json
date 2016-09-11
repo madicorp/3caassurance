@@ -106,5 +106,113 @@
       "focal_point_height": null,
       "file_size": null
     }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 10,
+    "fields": {
+      "collection": 1,
+      "title": "Ordinateur",
+      "file": "original_images/computer.jpeg",
+      "width": 1920,
+      "height": 1281,
+      "created_at": "2016-09-07T22:09:33.939Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 11,
+    "fields": {
+      "collection": 1,
+      "title": "Argent",
+      "file": "original_images/money.jpg",
+      "width": 1920,
+      "height": 1280,
+      "created_at": "2016-09-07T22:12:26.113Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 12,
+    "fields": {
+      "collection": 1,
+      "title": "Avion",
+      "file": "original_images/plane.jpeg",
+      "width": 1920,
+      "height": 1281,
+      "created_at": "2016-09-07T22:14:39.002Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 220626
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 13,
+    "fields": {
+      "collection": 1,
+      "title": "Mains",
+      "file": "original_images/hands.jpg",
+      "width": 1920,
+      "height": 1280,
+      "created_at": "2016-09-07T22:15:35.457Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 531573
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 14,
+    "fields": {
+      "collection": 1,
+      "title": "Foule",
+      "file": "original_images/city-people-walking-blur.jpg",
+      "width": 1920,
+      "height": 1285,
+      "created_at": "2016-09-07T22:18:29.400Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 15,
+    "fields": {
+      "collection": 1,
+      "title": "M\u00e9dicaments",
+      "file": "original_images/apothecary-pharmacy-chemist-mortar-and-pestle-39522.jpeg",
+      "width": 1920,
+      "height": 1280,
+      "created_at": "2016-09-07T22:19:17.923Z",
+      "uploaded_by_user": 1,
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
   }
 ]
