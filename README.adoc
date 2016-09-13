@@ -37,3 +37,8 @@ In the VM
 Add I18N key and translations to `locale/fr/LC_MESSAGES/django.po`
 Once done, `python manage.py compilemessages -l fr`
 This is automatically done when using the Vagrant configuration
+
+== Updating the migration files
+`./manage.py dumpdata auth.user --natural-foreign --indent 2 > _3caassurance/fixtures/user.json`
+`./manage.py dumpdata wagtailimages.image --natural-foreign --indent 2 > _3caassurance/fixtures/images.json`
+`./manage.py dumpdata -e auth.permission -e contenttypes.contenttype -e wagtailimages.image -e sessions.session --natural-foreign --indent 2 > _3caassurance/fixtures/_3caassurance.json`

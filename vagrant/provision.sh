@@ -32,7 +32,7 @@ chmod a+x $PROJECT_DIR/manage.py
 
 # Run migrate/update_index/load_initial_data
  su - vagrant -c "$PYTHON $PROJECT_DIR/manage.py migrate --noinput && \
-                 $PYTHON $PROJECT_DIR/manage.py loaddata images _3caassurance && \
+                 $PYTHON $PROJECT_DIR/manage.py loaddata user images _3caassurance && \
                  $PYTHON $PROJECT_DIR/manage.py update_index && \
                  $PYTHON $PROJECT_DIR/manage.py compilemessages -l fr"
 
