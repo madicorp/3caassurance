@@ -11,7 +11,7 @@ echo "Executing 'python $OPENSHIFT_REPO_DIR/manage.py migrate --noinput'"
 python "$OPENSHIFT_REPO_DIR"manage.py migrate --noinput
 
 echo "Executing 'python $OPENSHIFT_REPO_DIR/ loaddata images _3caassurance'"
-python "$OPENSHIFT_REPO_DIR"manage.py loaddata images _3caassurance
+python "$OPENSHIFT_REPO_DIR"manage.py loaddata user images _3caassurance
 
 echo "Executing 'python $OPENSHIFT_REPO_DIR/manage.py update_index'"
 python "$OPENSHIFT_REPO_DIR"manage.py update_index
