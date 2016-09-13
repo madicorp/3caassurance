@@ -1,65 +1,75 @@
 .row {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
-.contact-lists-sec>ul>li {
-  width: 50%;
+.contact-lists-sec > ul > li {
+    width: 50%;
 }
 
 div.top-bar, div.inner-head.overlap {
-  background-color: #133913;
+    background-color: #133913;
 }
 
 footer > section.block {
-  background-color: #133913;
+    background-color: #133913;
 }
 
 section.block {
-  background-color: rgba(255, 255, 255, 0.98);
+    background-color: rgba(255, 255, 255, 0.98);
 }
 
 .ceo-message-sec .ceo-message {
-  margin-left: -15%;
+    margin-left: -15%;
 }
 
 form div.ephemeral-message-success, form div.ephemeral-message-error {
-  visibility: hidden;
-  font-size: 1em;
-  font-family: Montserrat, serif;
-  font-weight: bold;
+    visibility: hidden;
+    font-size: 1em;
+    font-family: Montserrat, serif;
+    font-weight: bold;
 }
 
 form div.ephemeral-message-success {
-  color: forestgreen;
+    color: forestgreen;
 }
 
 form div.ephemeral-message-error {
-  color: darkred;
+    color: darkred;
 }
 
 .aligner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .heading2, .heading4 {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .block {
-  padding-top: 5em;
-  padding-bottom: 2em;
+    padding-top: 5em;
+    padding-bottom: 2em;
 }
 
 footer .block {
-  padding-top: 2em;
+    padding-top: 2em;
 }
 
 .theme-layout > .block:last-of-type {
-  padding-bottom: 8em;
+    padding-bottom: 8em;
 }
 
 .team-info > p {
-  min-height: 150px;
+    min-height: 150px;
+}
+
+i._3ca-logo {
+    margin-right: 3em;
+    display: inline-block;
+    margin-left: -50px;
+}
+
+i._3ca-logo img {
+    width: 100px;
 }
