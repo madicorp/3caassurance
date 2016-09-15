@@ -64,12 +64,18 @@ footer .block {
     min-height: 150px;
 }
 
-i._3ca-logo {
-    margin-right: 3em;
-    display: inline-block;
-    margin-left: -50px;
+.logo a {
+    padding-left: 1.5em;
 }
 
-i._3ca-logo img {
+.logo img {
     width: 100px;
+}
+
+.logo strong {
+    margin-top: 1em;
+}
+
+.menu .row, .menu .container {
+    margin: 0;
 }

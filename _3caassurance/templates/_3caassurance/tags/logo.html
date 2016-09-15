@@ -2,11 +2,17 @@
 
 <div class="logo">
     <a href="{% home_url %}">
-        <!-- TODO Integrate 3CA logo here -->
-        <i class="_3ca-logo"><img src="{% static "images/3ca_logo.jpg" %}" alt="3CA"></i>
-        <span>3CA</span>
-        <strong>
-            {% trans "INSURANCE<br>BROKER AND<br>ADVISOR"%}
-        </strong>
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{% static "images/3ca_logo.png" %}" alt="3CA">
+            </div>
+            <div class="col-md-7">
+                <span>3CA</span>
+                <br>
+                <strong>
+                    {% trans "ALL<br>BRANCHES<br>INSURANCES" %}
+                </strong>
+            </div>
+        </div>
     </a>
 </div>
