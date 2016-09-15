@@ -1,0 +1,30 @@
+.flat-btn {
+    border: 1px solid transparent;
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 36px;
+    background-color: #43b1b0;
+}
+
+.flat-btn:hover{
+    background: none;
+}
+
+form input.flat-btn {
+    display: inline-block;
+    float: none;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 15px 30px;
+}
+
+.flat-btn > i {
+    margin-right: 13px;
+}
+
+form.dropzone {
+    border: 2px dashed rgba(67,177,176,0.7);
+    border-radius: 5px;
+}

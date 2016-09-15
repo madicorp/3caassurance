@@ -6,6 +6,7 @@ from wagtail.wagtailcore.blocks import StructBlock
 from wagtail.wagtailcore.blocks import TextBlock
 from wagtail.wagtailcore.fields import StreamField
 from wagtail.wagtailcore.models import Page
+from wagtail.wagtaildocs.blocks import DocumentChooserBlock
 from wagtail.wagtailimages.blocks import ImageChooserBlock
 from wagtail.wagtailsearch import index
 
@@ -50,6 +51,10 @@ HomePage.content_panels = [
 ]
 
 HomePage.promote_panels = Page.promote_panels
+
+
+class DeadlinePage(Page):
+    deadline_file = DocumentChooserBlock()
 
 
 class ContactPage(Page):

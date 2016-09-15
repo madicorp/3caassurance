@@ -1,68 +1,74 @@
-$(".carousel").owlCarousel({
-	autoplay:true,
-	autoplayTimeout:3000,
-	smartSpeed:2000,
-	loop:false,
-	dots:false,
-	nav:true,
-	margin:0,
-	items:1,
-	singleItem:true
-	});
+(function () {
+    var carousel = $(".carousel");
+    if (carousel && carousel.owlCarousel) {
+        carousel.owlCarousel({
+                                 autoplay: true,
+                                 autoplayTimeout: 3000,
+                                 smartSpeed: 2000,
+                                 loop: false,
+                                 dots: false,
+                                 nav: true,
+                                 margin: 0,
+                                 items: 1,
+                                 singleItem: true
+                             });
+    }
 
-jQuery(document).ready(function(){
-    "use strict";
+    jQuery(document).ready(function () {
+                               $(".popup-client > span").on("click", function () {
+                                   $(".account-popup-sec").addClass("active");
+                                   $("html").addClass("no-scroll");
+                               });
 
-    $(".popup-client > span").on("click", function(){
-        $(".account-popup-sec").addClass("active");
-        $("html").addClass("no-scroll");
-    });
+                               $(".close-popup").on("click", function () {
+                                   $(".account-popup-sec").removeClass("active");
+                                   $("html").removeClass("no-scroll");
+                               });
 
-    $(".close-popup").on("click", function(){
-        $(".account-popup-sec").removeClass("active");
-        $("html").removeClass("no-scroll");
-    });
+                               $('.menu-toggle').on("click", function () {
+                                   $(".menu nav").slideToggle();
+                               });
 
-    $('.menu-toggle').on("click", function(){
-        $(".menu nav").slideToggle();
-    });
-
-    // Get Header Height //
-    var stick = $(".simple-header.for-sticky").height();
-    $(".simple-header.for-sticky").parent().css({
-                                                    "padding-top": stick
-                                                });
-
-
-    $("header").on("click",function(e){
-        e.stopPropagation();
-    });
-    $(".menu-item-has-children > a").on("click",function(){
-        $(this).parent().siblings().children("ul").slideUp();
-        $(this).parent().siblings().removeClass("active");
-        $(this).parent().children("ul").slideToggle();
-        $(this).parent().toggleClass("active");
-        return false;
-    });
+                               // Get Header Height //
+                               var stick = $(".simple-header.for-sticky").height();
+                               $(".simple-header.for-sticky").parent().css({
+                                                                               "padding-top": stick
+                                                                           });
 
 
-    /*** FIXED Menu APPEARS ON SCROLL DOWN ***/
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 50) {
-            $(".for-sticky").addClass("sticky");
-        }
-        else{
-            $(".for-sticky").removeClass("sticky");
-            $("for-sticky").addClass("");
-        }
-    });
+                               $("header").on("click", function (e) {
+                                   e.stopPropagation();
+                               });
+                               $(".menu-item-has-children > a").on("click", function () {
+                                   $(this).parent().siblings().children("ul").slideUp();
+                                   $(this).parent().siblings().removeClass("active");
+                                   $(this).parent().children("ul").slideToggle();
+                                   $(this).parent().toggleClass("active");
+                                   return false;
+                               });
 
 
-    /*=================== Parallax ===================*/
-    $('.parallax').scrolly({bgParallax: true});
+                               /*** FIXED Menu APPEARS ON SCROLL DOWN ***/
+                               $(window).scroll(function () {
+                                   var scroll = $(window).scrollTop();
+                                   if (scroll >= 50) {
+                                       $(".for-sticky").addClass("sticky");
+                                   }
+                                   else {
+                                       $(".for-sticky").removeClass("sticky");
+                                       $("for-sticky").addClass("");
+                                   }
+                               });
 
-});
+
+                               /*=================== Parallax ===================*/
+                               var parallax = $('.parallax');
+                               if (parallax && parallax.scrolly) {
+                                   $('.parallax').scrolly({bgParallax: true});
+                               }
+                           }
+    );
+})();
 
 function submitForm(form, onEnd) {
     var url = form.action;
@@ -104,7 +110,7 @@ function fadeHiddenElement(element) {
     var op = 1;  // initial opacity
     element.style.visibility = 'visible';
     var timer = setInterval(function () {
-        if (op <= 0.05){
+        if (op <= 0.05) {
             clearInterval(timer);
             element.style.visibility = 'hidden';
         }

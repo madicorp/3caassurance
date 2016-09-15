@@ -1,0 +1,64 @@
+{% extends "wagtailadmin/home.html" %}
+{% load compress gravatar staticfiles i18n %}
+{% block titletag %}{% trans "Deadline" %}{% endblock %}
+{% block bodyclass %}homepage{% endblock %}
+
+{% block extra_css %}
+    {{ block.super }}
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/basic.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.css">
+    {% compress css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main_admin.css' %}">
+    {% endcompress %}
+{% endblock %}
+
+{% block content %}
+    <header class="merged nice-padding">
+        <div class="row row-flush">
+            {% if user.email %}
+                <div class="col1">
+                    <div class="avatar icon icon-user"><img src="{% gravatar_url user.email %}"/></div>
+                </div>
+            {% endif %}
+            <div class="col9">
+                <h1>{% trans "Deadline" %}</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <form id="deadlineDropzone" method="post" action="/api/deadlines" class="dropzone">
+                        {% csrf_token %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+{% block extra_js %}
+    {{ block.super }}
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js"></script>
+    <script type="text/javascript">
+        Dropzone.options.deadlineDropzone = {
+            paramName: "deadline_file",
+            uploadMultiple: false,
+            acceptedFiles: "application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            dictDefaultMessage:"{% trans "Drop deadline file (or click to choose it) to upload" %}"
+        };
+    </script>
+{% endblock %}
