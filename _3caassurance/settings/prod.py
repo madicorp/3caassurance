@@ -19,3 +19,22 @@ MEDIA_ROOT = os.path.join(OPENSHIFT_DATA_DIR, 'media')
 STATICFILES_DIRS = [
     os.path.join(OPENSHIFT_DATA_DIR, 'static'),
 ]
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(OPENSHIFT_DATA_DIR, 'media', 'debug.log'),
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
