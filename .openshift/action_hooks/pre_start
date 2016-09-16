@@ -1,0 +1,10 @@
+#!/bin/bash
+
+PYTHON=$VIRTUAL_ENV/bin/python
+PIP=$VIRTUAL_ENV/bin/pip2.7
+
+# Run migrate/update_index/load_initial_data
+source $VIRTUAL_ENV/bin/activate
+$PIP install --upgrade pip && \
+$PIP install -r $PROJECT_DIR/requirements.txt
+deactivate
