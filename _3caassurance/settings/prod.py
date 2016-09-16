@@ -7,6 +7,11 @@ ALLOWED_HOSTS = ['3caassurance-tiays.rhcloud.com', ]
 
 SECRET_KEY = os.environ['OPENSHIFT_SECRET_TOKEN']
 
+try:
+    from .local import *
+except ImportError:
+    pass
+
 PROJECT_DIR = os.path.dirname(os.path.realpath(__file__))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
@@ -19,26 +24,3 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
-
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            os.path.join(PROJECT_DIR, 'templates'),
-        ],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-                'django_settings_export.settings_export',
-            ],
-        },
-    },
-]
-
-try:
-    from .local import *
-except ImportError:
-    pass
