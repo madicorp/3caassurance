@@ -16,5 +16,5 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(os.environ['OPENSHIFT_REPO_DIR'], 'static')
 MEDIA_ROOT = os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'media')
-STATICFILES_DIRS = (os.path.join(BASE_DIR, '_3caassurance', 'static'),)
-TEMPLATE_DIRS = (os.path.join(BASE_DIR, '_3caassurance', 'templates'),)
+STATICFILES_DIRS = (os.path.join(os.environ['OPENSHIFT_REPO_DIR'], '_3caassurance', 'static'),)
+TEMPLATE_DIRS = (os.path.join(os.environ['OPENSHIFT_REPO_DIR'], '_3caassurance', 'templates'),)
