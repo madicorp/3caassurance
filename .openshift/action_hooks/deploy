@@ -31,8 +31,8 @@ ln -sf $OPENSHIFT_DATA_DIR/media $OPENSHIFT_REPO_DIR/media
 STATIC_DIR=$OPENSHIFT_DATA_DIR/static
 # Create static folder and change permission
 chmod -R o+rw $OPENSHIFT_REPO_DIR/_3caassurance/static
-if [ ! -d STATIC_DIR ]; then
-mkdir STATIC_DIR
+if [ ! -d $STATIC_DIR ]; then
+mkdir $STATIC_DIR
 fi
 # Create symlink to static folder
 ln -sf $OPENSHIFT_DATA_DIR/static $OPENSHIFT_REPO_DIR/static
