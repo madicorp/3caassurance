@@ -23,6 +23,13 @@ msgstr ""
 msgid "HOME"
 msgstr "ACCUEIL"
 
+
+#########################################################
+#: _3caassurance/templates/_3caassurance/tags/logo.html
+#########################################################
+msgid "Home"
+msgstr "Accueil"
+
 #########################################################
 #: _3caassurance/templates/_3caassurance/tags/logo.html
 #########################################################

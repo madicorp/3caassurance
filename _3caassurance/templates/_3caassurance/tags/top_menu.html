@@ -26,6 +26,11 @@
                 <div class="col-md-8">
                     <nav>
                         <ul>
+                            <li>
+                                <a href="{% home_url %}">
+                                    {% trans "Home" %}
+                                </a>
+                            </li>
                             {% for menuitem in menuitems %}
                                 {% if menuitem.show_dropdown %}
                                     <li>
