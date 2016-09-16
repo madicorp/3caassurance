@@ -2,15 +2,16 @@
 
 PYTHON=$VIRTUAL_ENV/bin/python
 PIP=$VIRTUAL_ENV/bin/pip2.7
+PIP_CACHE_DIR=$OPENSHIFT_DATA_DIR/.cache
 
 
-# Create pip cache dir
-if [ ! -d $OPENSHIFT_HOMEDIR/.cache ]; then
-mkdir $OPENSHIFT_HOMEDIR/.cache
+# Create static folder and change permission
+if [ ! -d $PIP_CACHE_DIR ]; then
+mkdir $PIP_CACHE_DIR
+chmod -R o+rw $OPENSHIFT_REPO_DIR/.cache
 fi
 
 # Run migrate/update_index/load_initial_data
 source $VIRTUAL_ENV/bin/activate
-$PIP install --upgrade pip && \
-$PIP install -r $PROJECT_DIR/requirements.txt
+$PIP install --upgrade pip && $PIP install -r $PROJECT_DIR/requirements.txt
 deactivate
