@@ -36,3 +36,16 @@ mkdir $STATIC_DIR
 fi
 # Create symlink to static folder
 ln -sf $OPENSHIFT_DATA_DIR/static $OPENSHIFT_REPO_DIR/static
+
+STATIC_FILES_DIR=$OPENSHIFT_DATA_DIR/staticfiles
+REPO_STATIC_FILES_DIR=$OPENSHIFT_REPO_DIR/static
+# Create static folder and change permission
+if [ ! -d $REPO_STATIC_FILES_DIR ]; then
+mkdir $REPO_STATIC_FILES_DIR
+chmod -R o+rw $REPO_STATIC_FILES_DIR
+fi
+if [ ! -d $STATIC_FILES_DIR ]; then
+mkdir $STATIC_FILES_DIR
+fi
+# Create symlink to static folder
+ln -sf $STATIC_FILES_DIR $REPO_STATIC_FILES_DIR

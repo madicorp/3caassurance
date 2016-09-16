@@ -17,7 +17,7 @@ OPENSHIFT_DATA_DIR = os.environ['OPENSHIFT_DATA_DIR']
 STATIC_ROOT = os.path.join(OPENSHIFT_DATA_DIR, 'static')
 MEDIA_ROOT = os.path.join(OPENSHIFT_DATA_DIR, 'media')
 STATICFILES_DIRS = [
-    os.path.join(OPENSHIFT_DATA_DIR, 'static'),
+    os.path.join(OPENSHIFT_DATA_DIR, 'staticfiles'),
 ]
 
 LOGGING = {
