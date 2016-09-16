@@ -7,15 +7,18 @@ ALLOWED_HOSTS = ['3caassurance-tiays.rhcloud.com']
 
 SECRET_KEY = os.environ['OPENSHIFT_SECRET_TOKEN']
 
-BASE_DIR = os.environ['OPENSHIFT_REPO_DIR']
-PROJECT_DIR = os.path.join(BASE_DIR, '_3caassurance')
+PROJECT_DIR = os.path.dirname(os.path.realpath(__file__))
+BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'media')
 STATICFILES_DIRS = [os.path.join(PROJECT_DIR, 'static')]
-
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
 
 TEMPLATES = [
     {
@@ -34,6 +37,31 @@ TEMPLATES = [
         },
     },
 ]
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    # TODO before delivery
+    # 'handlers': {
+    #     'mail_admins': {
+    #         'level': 'ERROR',
+    #         'class': 'django.utils.log.AdminEmailHandler'
+    #     }
+    # },
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler'
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    }
+}
 
 try:
     from .local import *
