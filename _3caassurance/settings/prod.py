@@ -3,7 +3,7 @@ from __future__ import absolute_import, unicode_literals
 from .base import *
 
 DEBUG = False
-ALLOWED_HOSTS = ['3caassurance-tiays.rhcloud.com']
+ALLOWED_HOSTS = ['3caassurance-tiays.rhcloud.com', ]
 
 SECRET_KEY = os.environ['OPENSHIFT_SECRET_TOKEN']
 
@@ -37,31 +37,6 @@ TEMPLATES = [
         },
     },
 ]
-
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    # TODO before delivery
-    # 'handlers': {
-    #     'mail_admins': {
-    #         'level': 'ERROR',
-    #         'class': 'django.utils.log.AdminEmailHandler'
-    #     }
-    # },
-    'handlers': {
-        'mail_admins': {
-            'level': 'ERROR',
-            'class': 'django.utils.log.AdminEmailHandler'
-        }
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['mail_admins'],
-            'level': 'ERROR',
-            'propagate': True,
-        },
-    }
-}
 
 try:
     from .local import *
