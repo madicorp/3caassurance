@@ -12,15 +12,4 @@ try:
 except ImportError:
     pass
 
-PROJECT_DIR = os.path.dirname(os.path.realpath(__file__))
-BASE_DIR = os.path.dirname(PROJECT_DIR)
-
-STATIC_URL = '/static/'
-MEDIA_URL = '/media/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'media')
-STATICFILES_DIRS = [os.path.join(PROJECT_DIR, 'static')]
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-)
