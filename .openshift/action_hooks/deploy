@@ -20,15 +20,19 @@ echo "Executing 'python $OPENSHIFT_REPO_DIR/manage.py compilemessages -l fr'"
 python "$OPENSHIFT_REPO_DIR"manage.py compilemessages -l fr
 
 # Create media folder and change permission
-if [ ! -d $OPENSHIFT_DATA_DIR/media ]; then
-mkdir $OPENSHIFT_DATA_DIR/media
+MEDIA_DIR=$OPENSHIFT_DATA_DIR/media
+chmod -R o+rw $OPENSHIFT_REPO_DIR/media
+if [ ! -d $MEDIA_DIR ]; then
+mkdir $MEDIA_DIR
 fi
 # Create symlink to media folder
 ln -sf $OPENSHIFT_DATA_DIR/media $OPENSHIFT_REPO_DIR/media
 
+STATIC_DIR=$OPENSHIFT_DATA_DIR/static
 # Create static folder and change permission
-if [ ! -d $OPENSHIFT_DATA_DIR/static ]; then
-mkdir $OPENSHIFT_DATA_DIR/static
+chmod -R o+rw $OPENSHIFT_REPO_DIR/_3caassurance/static
+if [ ! -d STATIC_DIR ]; then
+mkdir STATIC_DIR
 fi
 # Create symlink to static folder
 ln -sf $OPENSHIFT_DATA_DIR/static $OPENSHIFT_REPO_DIR/static

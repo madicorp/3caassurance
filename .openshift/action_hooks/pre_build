@@ -11,7 +11,7 @@ mkdir $PIP_CACHE_DIR
 chmod -R o+rw $OPENSHIFT_REPO_DIR/.cache
 fi
 
-# Run migrate/update_index/load_initial_data
+# Update pip and install dependencies
 source $VIRTUAL_ENV/bin/activate
 $PIP install --upgrade pip && $PIP install -r $PROJECT_DIR/requirements.txt
 deactivate
