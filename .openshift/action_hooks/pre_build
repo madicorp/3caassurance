@@ -13,5 +13,5 @@ fi
 
 # Update pip and install dependencies
 source $VIRTUAL_ENV/bin/activate
-$PIP install --upgrade pip && $PIP install -r $PROJECT_DIR/requirements.txt
+$PIP install --upgrade pip && $PIP install -r $OPENSHIFT_REPO_DIR/requirements.txt
 deactivate
