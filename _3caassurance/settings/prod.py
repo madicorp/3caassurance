@@ -13,11 +13,12 @@ except ImportError:
     pass
 
 OPENSHIFT_DATA_DIR = os.environ['OPENSHIFT_DATA_DIR']
+OPENSHIFT_REPO_DIR = os.environ['OPENSHIFT_REPO_DIR']
 
-STATIC_ROOT = os.path.join(OPENSHIFT_DATA_DIR, 'static')
-MEDIA_ROOT = os.path.join(OPENSHIFT_DATA_DIR, 'media')
+STATIC_ROOT = os.path.join(OPENSHIFT_REPO_DIR, '_3caassurance', 'static')
+MEDIA_ROOT = os.path.join(OPENSHIFT_REPO_DIR, 'media')
 STATICFILES_DIRS = [
-    os.path.join(OPENSHIFT_DATA_DIR, 'staticfiles'),
+    os.path.join(OPENSHIFT_REPO_DIR, 'static'),
 ]
 
 LOGGING = {
