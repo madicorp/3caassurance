@@ -37,5 +37,10 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': True,
         },
+        '_3caassurance': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
     },
 }

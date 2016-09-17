@@ -18,6 +18,6 @@ if os.getenv("OPENSHIFT_REPO_DIR") is not None:
 else:
     env_settings = "_3caassurance.settings.dev"
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "_3caassurance.settings.prod")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", env_settings)
 
 application = get_wsgi_application()
