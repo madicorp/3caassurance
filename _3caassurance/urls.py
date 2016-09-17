@@ -5,7 +5,6 @@ import logging
 from django.conf import settings
 from django.conf.urls import include, url
 from django.conf.urls.i18n import i18n_patterns
-from django.conf.urls.static import static
 from django.contrib import admin
 from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtailcore import urls as wagtail_urls
@@ -21,11 +20,6 @@ urlpatterns = [
     url(r'^documents/', include(wagtaildocs_urls)),
     url(r'^api/messages', views.post_message),
 ]
-
-if not settings.DEBUG:
-    logger.error('DEBUG %s', settings.DEBUG)
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += i18n_patterns(
     url(r'^django-admin/', include(admin.site.urls)),
