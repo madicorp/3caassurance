@@ -13,6 +13,11 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+if os.getenv("OPENSHIFT_REPO_DIR") is not None:
+    env_settings = "_3caassurance.settings.prod"
+else:
+    env_settings = "_3caassurance.settings.dev"
+
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "_3caassurance.settings.prod")
 
 application = get_wsgi_application()
