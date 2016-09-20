@@ -96,14 +96,21 @@ db.sqlite3*
 
 #Vagrant
 .vagrant
+Vagrantfile
+vagrant
 
 # Wagtail
-static
+static/CACHE
 
 # MacOS
-.DS_STORE
+.DS_Store
 
-pip_cache
-
-# It is generated
 Dockerfile
+
+# git
+.git
+.gitignore
+
+# Documentation
+README.adoc
+doc

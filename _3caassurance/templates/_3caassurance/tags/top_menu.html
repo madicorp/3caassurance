@@ -1,5 +1,6 @@
 {% load _3cassurance_tags wagtailcore_tags i18n %}
 
+{% get_current_language as LANGUAGE_CODE %}
 
 <header class="simple-header for-sticky white">
     <div class="top-bar">
@@ -9,8 +10,12 @@
                 <li><i class="fa fa-phone"></i>{{ phone }}</li>
             </ul>
             <div class="choose-language">
-                <a href="{% translate_url fr %}">FR</a>
-                <a href="{% translate_url en %}">EN</a>
+                {% get_available_languages as languages %}
+                {% for lang_code, lang_name in languages %}
+                    {% language lang_code %}
+                        <a href="/{{ lang_code }}">{{ lang_code }}</a>
+                    {% endlanguage %}
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -27,7 +32,7 @@
                     <nav>
                         <ul>
                             <li>
-                                <a href="{% home_url %}">
+                                <a href="{{ LANGUAGE_CODE }}">
                                     {% trans "Home" %}
                                 </a>
                             </li>

@@ -1,7 +1,9 @@
 {% load _3cassurance_tags wagtailcore_tags i18n static %}
 
+{% get_current_language as LANGUAGE_CODE %}
+
 <div class="logo">
-    <a href="{% home_url %}">
+    <a href="/{{ LANGUAGE_CODE }}/">
         <div class="row">
             <div class="col-md-5">
                 <img src="{% static "images/3ca_logo.png" %}" alt="3CA">
