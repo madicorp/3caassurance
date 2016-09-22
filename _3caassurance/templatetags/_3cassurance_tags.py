@@ -72,6 +72,21 @@ def footer(context, parent, calling_page=None):
 
 
 @register.simple_tag(name='dynamic_trans', takes_context=True)
-def dynamic_trans(context, obj, field_name):
-    field_name_language = field_name + '_' + get_language()
-    return obj[field_name_language]
+def dynamic_trans(context, obj, field_name, get_lang_fn=get_language):
+    field_name_language = field_name + '_' + get_lang_fn()
+    try:
+        # For django models
+        return getattr(obj, field_name_language)
+    except AttributeError:
+        # For wagtail StructValue
+        return obj[field_name_language]
+
+
+@register.simple_tag(name='first_name', takes_context=True)
+def first_name(context, complete_name):
+    return ' '.join(complete_name.split()[:-1])
+
+
+@register.simple_tag(name='surname', takes_context=True)
+def surname(context, complete_name):
+    return complete_name.split()[-1]

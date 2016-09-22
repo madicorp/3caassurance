@@ -79,3 +79,7 @@ footer .block {
 .menu .row, .menu .container {
     margin: 0;
 }
+
+.team-box > .team-info > h3 {
+    text-transform: uppercase;
+}
