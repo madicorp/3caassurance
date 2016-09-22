@@ -72,7 +72,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = '_3caassurance.urls'
 
-
 WSGI_APPLICATION = '_3caassurance.wsgi.application'
 TEMPLATES = [
     {
@@ -107,13 +106,6 @@ DATABASES = {
     }
 }
 
-WAGTAILSEARCH_BACKENDS = {
-    'default': {
-        'BACKEND': 'wagtail.wagtailsearch.backends.db',
-        'AUTO_UPDATE': True,
-    }
-}
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
@@ -126,6 +118,15 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+LANGUAGES = (
+    ('en', _('English')),
+    ('fr', _('Français')),
+)
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
@@ -154,15 +155,14 @@ WAGTAIL_SITE_NAME = "_3caassurance"
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'http://example.com'
 
-LANGUAGES = (
-    ('en', _('English')),
-    ('fr', _('Français')),
-)
+WAGTAILSEARCH_BACKENDS = {
+    'default': {
+        'BACKEND': 'wagtail.wagtailsearch.backends.db',
+        'AUTO_UPDATE': True,
+    }
+}
 
-LOCALE_PATHS = (
-    os.path.join(BASE_DIR, 'locale'),
-)
-
+# Custom settings
 CONTACT_EMAIL = 'contact@3caassurance.com'
 CONTACT_PHONE = '+221 33 822 55 00'
 
@@ -170,33 +170,4 @@ SETTINGS_EXPORT = [
     'CONTACT_EMAIL',
     'CONTACT_PHONE',
 ]
-
-# TODO ERASE
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'level': 'DEBUG',
-            'class': 'logging.StreamHandler',
-        },
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': os.path.join(BASE_DIR, 'debug.log'),
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console', 'file'],
-            'level': 'INFO',
-            'propagate': True,
-        },
-        '_3caassurance': {
-            'handlers': ['console', 'file'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
-}
 

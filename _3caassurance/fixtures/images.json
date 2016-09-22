@@ -238,5 +238,145 @@
       "focal_point_height": null,
       "file_size": null
     }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 16,
+    "fields": {
+      "collection": 1,
+      "title": "Cheikh Ahmed Tidiane Sy",
+      "file": "original_images/cheikh_at_sy.jpg",
+      "width": 165,
+      "height": 165,
+      "created_at": "2016-09-22T22:19:17.923Z",
+      "uploaded_by_user": [
+        "admin"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 17,
+    "fields": {
+      "collection": 1,
+      "title": "Albert Sagna",
+      "file": "original_images/albert_sagna.jpg",
+      "width": 165,
+      "height": 165,
+      "created_at": "2016-09-22T22:19:17.923Z",
+      "uploaded_by_user": [
+        "admin"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 18,
+    "fields": {
+      "collection": 1,
+      "title": "Lamine Ndong",
+      "file": "original_images/lamine_ndong.jpg",
+      "width": 360,
+      "height": 370,
+      "created_at": "2016-09-22T21:31:53.922Z",
+      "uploaded_by_user": [
+        "admin"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 19,
+    "fields": {
+      "collection": 1,
+      "title": "Pauline Fall",
+      "file": "original_images/pauline_fall.jpg",
+      "width": 360,
+      "height": 370,
+      "created_at": "2016-09-22T21:33:35.312Z",
+      "uploaded_by_user": [
+        "admin"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 20,
+    "fields": {
+      "collection": 1,
+      "title": "Maguette Sarr",
+      "file": "original_images/maguette_sarr.jpg",
+      "width": 360,
+      "height": 370,
+      "created_at": "2016-09-22T21:35:11.810Z",
+      "uploaded_by_user": [
+        "admin"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 21,
+    "fields": {
+      "collection": 1,
+      "title": "Awa Diouf",
+      "file": "original_images/awa_diouf.jpg",
+      "width": 360,
+      "height": 370,
+      "created_at": "2016-09-22T21:36:37.925Z",
+      "uploaded_by_user": [
+        "admin"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 22,
+    "fields": {
+      "collection": 1,
+      "title": "Blondin Gueye",
+      "file": "original_images/blondin_gueye.jpg",
+      "width": 360,
+      "height": 370,
+      "created_at": "2016-09-22T21:37:55.815Z",
+      "uploaded_by_user": [
+        "admin"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": null
+    }
   }
 ]
