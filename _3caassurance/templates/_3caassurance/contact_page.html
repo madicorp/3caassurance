@@ -2,6 +2,8 @@
 
 {% load wagtailcore_tags i18n _3cassurance_tags %}
 
+{% get_current_language as LANGUAGE_CODE %}
+
 {% block content %}
     <div class="inner-head overlap">
         <div class="container">
@@ -9,8 +11,8 @@
                 <span><i class="fa fa-asterisk"></i></span>
                 <h2>{% trans "CONTACT US" %}</h2>
                 <ul>
-                    <li><a href="{% home_url %}" title="">{% trans "HOME" %}</a></li>
-                    <li><a href="{% home_url %}/contact" title="">{% trans "CONTACT US" %}</a></li>
+                    <li><a href="/{{ LANGUAGE_CODE }}/" title="">{% trans "HOME" %}</a></li>
+                    <li><a href="/{{ LANGUAGE_CODE }}/contact" title="">{% trans "CONTACT US" %}</a></li>
                 </ul>
             </div>
         </div>

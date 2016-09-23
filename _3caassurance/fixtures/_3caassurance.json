@@ -63,6 +63,20 @@
     }
   },
   {
+    "model": "wagtailimages.filter",
+    "pk": 10,
+    "fields": {
+      "spec": ""
+    }
+  },
+  {
+    "model": "wagtailimages.filter",
+    "pk": 11,
+    "fields": {
+      "spec": "width-165"
+    }
+  },
+  {
     "model": "wagtailimages.rendition",
     "pk": 22,
     "fields": {
@@ -603,6 +617,258 @@
     }
   },
   {
+    "model": "wagtailimages.rendition",
+    "pk": 83,
+    "fields": {
+      "filter": 1,
+      "file": "images/cheikh_at_sy.max-165x165.jpg",
+      "width": 160,
+      "height": 165,
+      "focal_point_key": "",
+      "image": 16
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 84,
+    "fields": {
+      "filter": 1,
+      "file": "images/albert_sagna.max-165x165.jpg",
+      "width": 160,
+      "height": 165,
+      "focal_point_key": "",
+      "image": 17
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 85,
+    "fields": {
+      "filter": 1,
+      "file": "images/lamine_ndong.max-165x165.jpg",
+      "width": 160,
+      "height": 165,
+      "focal_point_key": "",
+      "image": 18
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 86,
+    "fields": {
+      "filter": 1,
+      "file": "images/pauline_fall.max-165x165.jpg",
+      "width": 160,
+      "height": 165,
+      "focal_point_key": "",
+      "image": 19
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 87,
+    "fields": {
+      "filter": 1,
+      "file": "images/maguette_sarr.max-165x165.jpg",
+      "width": 160,
+      "height": 165,
+      "focal_point_key": "",
+      "image": 20
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 88,
+    "fields": {
+      "filter": 1,
+      "file": "images/awa_diouf.max-165x165.jpg",
+      "width": 160,
+      "height": 165,
+      "focal_point_key": "",
+      "image": 21
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 89,
+    "fields": {
+      "filter": 1,
+      "file": "images/blondin_gueye.max-165x165.jpg",
+      "width": 160,
+      "height": 165,
+      "focal_point_key": "",
+      "image": 22
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 90,
+    "fields": {
+      "filter": 11,
+      "file": "images/cheikh_at_sy.width-165.jpg",
+      "width": 165,
+      "height": 169,
+      "focal_point_key": "",
+      "image": 16
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 91,
+    "fields": {
+      "filter": 11,
+      "file": "images/albert_sagna.width-165.jpg",
+      "width": 165,
+      "height": 169,
+      "focal_point_key": "",
+      "image": 17
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 92,
+    "fields": {
+      "filter": 11,
+      "file": "images/lamine_ndong.width-165.jpg",
+      "width": 165,
+      "height": 169,
+      "focal_point_key": "",
+      "image": 18
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 93,
+    "fields": {
+      "filter": 11,
+      "file": "images/pauline_fall.width-165.jpg",
+      "width": 165,
+      "height": 169,
+      "focal_point_key": "",
+      "image": 19
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 94,
+    "fields": {
+      "filter": 11,
+      "file": "images/maguette_sarr.width-165.jpg",
+      "width": 165,
+      "height": 169,
+      "focal_point_key": "",
+      "image": 20
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 95,
+    "fields": {
+      "filter": 11,
+      "file": "images/awa_diouf.width-165.jpg",
+      "width": 165,
+      "height": 169,
+      "focal_point_key": "",
+      "image": 21
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 96,
+    "fields": {
+      "filter": 11,
+      "file": "images/blondin_gueye.width-165.jpg",
+      "width": 165,
+      "height": 169,
+      "focal_point_key": "",
+      "image": 22
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 97,
+    "fields": {
+      "filter": 6,
+      "file": "images/cheikh_at_sy.original.jpg",
+      "width": 370,
+      "height": 380,
+      "focal_point_key": "",
+      "image": 16
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 98,
+    "fields": {
+      "filter": 6,
+      "file": "images/albert_sagna.original.jpg",
+      "width": 370,
+      "height": 380,
+      "focal_point_key": "",
+      "image": 17
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 99,
+    "fields": {
+      "filter": 6,
+      "file": "images/lamine_ndong.original.jpg",
+      "width": 360,
+      "height": 370,
+      "focal_point_key": "",
+      "image": 18
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 100,
+    "fields": {
+      "filter": 6,
+      "file": "images/pauline_fall.original.jpg",
+      "width": 360,
+      "height": 370,
+      "focal_point_key": "",
+      "image": 19
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 101,
+    "fields": {
+      "filter": 6,
+      "file": "images/maguette_sarr.original.jpg",
+      "width": 360,
+      "height": 370,
+      "focal_point_key": "",
+      "image": 20
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 102,
+    "fields": {
+      "filter": 6,
+      "file": "images/awa_diouf.original.jpg",
+      "width": 360,
+      "height": 370,
+      "focal_point_key": "",
+      "image": 21
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 103,
+    "fields": {
+      "filter": 6,
+      "file": "images/blondin_gueye.original.jpg",
+      "width": 360,
+      "height": 370,
+      "focal_point_key": "",
+      "image": 22
+    }
+  },
+  {
     "model": "wagtailcore.site",
     "pk": 2,
     "fields": {
@@ -733,6 +999,14 @@
     "fields": {
       "name": "jauge",
       "slug": "jauge"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 15,
+    "fields": {
+      "name": "employee",
+      "slug": "employee"
     }
   },
   {
@@ -892,295 +1166,87 @@
     }
   },
   {
-    "model": "auth.group",
-    "pk": 1,
+    "model": "taggit.taggeditem",
+    "pk": 22,
     "fields": {
-      "name": "Moderators",
-      "permissions": [
-        [
-          "access_admin",
-          "wagtailadmin",
-          "admin"
-        ],
-        [
-          "add_document",
-          "wagtaildocs",
-          "document"
-        ],
-        [
-          "change_document",
-          "wagtaildocs",
-          "document"
-        ],
-        [
-          "delete_document",
-          "wagtaildocs",
-          "document"
-        ],
-        [
-          "add_image",
-          "wagtailimages",
-          "image"
-        ],
-        [
-          "change_image",
-          "wagtailimages",
-          "image"
-        ],
-        [
-          "delete_image",
-          "wagtailimages",
-          "image"
-        ]
-      ]
-    }
-  },
-  {
-    "model": "auth.group",
-    "pk": 2,
-    "fields": {
-      "name": "Editors",
-      "permissions": [
-        [
-          "access_admin",
-          "wagtailadmin",
-          "admin"
-        ],
-        [
-          "add_document",
-          "wagtaildocs",
-          "document"
-        ],
-        [
-          "change_document",
-          "wagtaildocs",
-          "document"
-        ],
-        [
-          "delete_document",
-          "wagtaildocs",
-          "document"
-        ],
-        [
-          "add_image",
-          "wagtailimages",
-          "image"
-        ],
-        [
-          "change_image",
-          "wagtailimages",
-          "image"
-        ],
-        [
-          "delete_image",
-          "wagtailimages",
-          "image"
-        ]
-      ]
-    }
-  },
-  {
-    "model": "_3caassurance.homepage",
-    "pk": 3,
-    "fields": {
-      "products": "[{\"type\": \"product\", \"value\": {\"caption_fr\": \"Dommages aux biens\", \"caption_en\": \"Damage to goods\", \"description_fr\": \"Incendie, vol, d\\u00e9g\\u00e2t des eaux, bris de glace....\", \"image\": 6, \"description_en\": \"Fire, theft, water damage, broken glass...\"}}, {\"type\": \"product\", \"value\": {\"caption_fr\": \"Risques techniques\", \"caption_en\": \"Technical risks\", \"description_fr\": \"Bris de machine, risques informatiques\", \"image\": 10, \"description_en\": \"Machinery breakdown, IT risks\"}}, {\"type\": \"product\", \"value\": {\"caption_fr\": \"Pertes financi\\u00e8res\", \"caption_en\": \"Financial losses\", \"description_fr\": \"Perte d'exploitation apr\\u00e8s bris de machine\", \"image\": 11, \"description_en\": \"Operating losses after fire and machinery breakdown\"}}, {\"type\": \"product\", \"value\": {\"caption_fr\": \"Automobile\", \"caption_en\": \"Vehicle\", \"description_fr\": \"Toutes cat\\u00e9gories\", \"image\": 8, \"description_en\": \"All categories\"}}, {\"type\": \"product\", \"value\": {\"caption_fr\": \"Transport\", \"caption_en\": \"Transport\", \"description_fr\": \"Maritime et a\\u00e9rien\", \"image\": 12, \"description_en\": \"Naval and aerial\"}}, {\"type\": \"product\", \"value\": {\"caption_fr\": \"Assurance vie\", \"caption_en\": \"Life insurance\", \"description_fr\": \"D\\u00e9c\\u00e8s et retraite\", \"image\": 13, \"description_en\": \"Death and retirement benefits\"}}, {\"type\": \"product\", \"value\": {\"caption_fr\": \"Responsabilit\\u00e9s civiles\", \"caption_en\": \"Public liability\", \"description_fr\": \"Responsabilit\\u00e9s civiles\", \"image\": 14, \"description_en\": \"Public liability\"}}, {\"type\": \"product\", \"value\": {\"caption_fr\": \"Dommages corporels\", \"caption_en\": \"Physical damage\", \"description_fr\": \"Maladie et accident individuel\", \"image\": 15, \"description_en\": \"Health insurance and individual accident\"}}]",
-      "offers": "[]"
-    }
-  },
-  {
-    "model": "_3caassurance.contactpage",
-    "pk": 5,
-    "fields": {}
-  },
-  {
-    "model": "_3caassurance.aboutuspage",
-    "pk": 4,
-    "fields": {}
-  },
-  {
-    "model": "wagtailcore.groupcollectionpermission",
-    "pk": 1,
-    "fields": {
-      "group": [
-        "Editors"
-      ],
-      "collection": 1,
-      "permission": [
-        "add_document",
-        "wagtaildocs",
-        "document"
-      ]
-    }
-  },
-  {
-    "model": "wagtailcore.groupcollectionpermission",
-    "pk": 2,
-    "fields": {
-      "group": [
-        "Moderators"
-      ],
-      "collection": 1,
-      "permission": [
-        "add_document",
-        "wagtaildocs",
-        "document"
-      ]
-    }
-  },
-  {
-    "model": "wagtailcore.groupcollectionpermission",
-    "pk": 3,
-    "fields": {
-      "group": [
-        "Editors"
-      ],
-      "collection": 1,
-      "permission": [
-        "change_document",
-        "wagtaildocs",
-        "document"
-      ]
-    }
-  },
-  {
-    "model": "wagtailcore.groupcollectionpermission",
-    "pk": 4,
-    "fields": {
-      "group": [
-        "Moderators"
-      ],
-      "collection": 1,
-      "permission": [
-        "change_document",
-        "wagtaildocs",
-        "document"
-      ]
-    }
-  },
-  {
-    "model": "wagtailcore.groupcollectionpermission",
-    "pk": 5,
-    "fields": {
-      "group": [
-        "Editors"
-      ],
-      "collection": 1,
-      "permission": [
-        "add_image",
+      "tag": 15,
+      "content_type": [
         "wagtailimages",
         "image"
-      ]
+      ],
+      "object_id": 16
     }
   },
   {
-    "model": "wagtailcore.groupcollectionpermission",
-    "pk": 6,
+    "model": "taggit.taggeditem",
+    "pk": 23,
     "fields": {
-      "group": [
-        "Moderators"
-      ],
-      "collection": 1,
-      "permission": [
-        "add_image",
+      "tag": 15,
+      "content_type": [
         "wagtailimages",
         "image"
-      ]
+      ],
+      "object_id": 17
     }
   },
   {
-    "model": "wagtailcore.groupcollectionpermission",
-    "pk": 7,
+    "model": "taggit.taggeditem",
+    "pk": 24,
     "fields": {
-      "group": [
-        "Editors"
-      ],
-      "collection": 1,
-      "permission": [
-        "change_image",
+      "tag": 15,
+      "content_type": [
         "wagtailimages",
         "image"
-      ]
+      ],
+      "object_id": 18
     }
   },
   {
-    "model": "wagtailcore.groupcollectionpermission",
-    "pk": 8,
+    "model": "taggit.taggeditem",
+    "pk": 25,
     "fields": {
-      "group": [
-        "Moderators"
-      ],
-      "collection": 1,
-      "permission": [
-        "change_image",
+      "tag": 15,
+      "content_type": [
         "wagtailimages",
         "image"
-      ]
+      ],
+      "object_id": 19
     }
   },
   {
-    "model": "wagtailcore.grouppagepermission",
-    "pk": 1,
+    "model": "taggit.taggeditem",
+    "pk": 26,
     "fields": {
-      "group": [
-        "Moderators"
+      "tag": 15,
+      "content_type": [
+        "wagtailimages",
+        "image"
       ],
-      "page": 1,
-      "permission_type": "add"
+      "object_id": 20
     }
   },
   {
-    "model": "wagtailcore.grouppagepermission",
-    "pk": 2,
+    "model": "taggit.taggeditem",
+    "pk": 27,
     "fields": {
-      "group": [
-        "Moderators"
+      "tag": 15,
+      "content_type": [
+        "wagtailimages",
+        "image"
       ],
-      "page": 1,
-      "permission_type": "edit"
+      "object_id": 21
     }
   },
   {
-    "model": "wagtailcore.grouppagepermission",
-    "pk": 3,
+    "model": "taggit.taggeditem",
+    "pk": 28,
     "fields": {
-      "group": [
-        "Moderators"
+      "tag": 15,
+      "content_type": [
+        "wagtailimages",
+        "image"
       ],
-      "page": 1,
-      "permission_type": "publish"
-    }
-  },
-  {
-    "model": "wagtailcore.grouppagepermission",
-    "pk": 4,
-    "fields": {
-      "group": [
-        "Editors"
-      ],
-      "page": 1,
-      "permission_type": "add"
-    }
-  },
-  {
-    "model": "wagtailcore.grouppagepermission",
-    "pk": 5,
-    "fields": {
-      "group": [
-        "Editors"
-      ],
-      "page": 1,
-      "permission_type": "edit"
-    }
-  },
-  {
-    "model": "wagtailcore.grouppagepermission",
-    "pk": 6,
-    "fields": {
-      "group": [
-        "Moderators"
-      ],
-      "page": 1,
-      "permission_type": "lock"
+      "object_id": 22
     }
   },
   {
@@ -1674,6 +1740,132 @@
     }
   },
   {
+    "model": "wagtailcore.pagerevision",
+    "pk": 40,
+    "fields": {
+      "page": 4,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-22T20:53:36.588Z",
+      "user": [
+        "admin"
+      ],
+      "content_json": "{\"search_description\": \"\", \"owner\": 1, \"latest_revision_created_at\": \"2016-09-11T22:01:02.808Z\", \"go_live_at\": null, \"company_desc_fr\": \"<p>3CA est un cabinet de courtage en assurance.</p><p>Notre expertise se repose sur l'exp\\u00e9rience de nos employ\\u00e9s et notre partenariat avec DIOT, cinqui\\u00e8me\\u00a0courtier en assurance fran\\u00e7ais.</p><p>Notre objectif est de fournir \\u00e0 nos clients les meilleurs garanties, dans les meilleures compagnies, au meilleur prix.</p><p>Nous assistons nos clients professionnels pour quantifier, \\u00e9valuer et assurer les risques de leurs activit\\u00e9s \\u00e0 travers notre programme de gestion des risques.</p>\", \"title\": \"About us\", \"seo_title\": \"\", \"slug\": \"about-us\", \"live\": true, \"has_unpublished_changes\": false, \"company_desc_en\": \"<p>3CA is an insurance brokerage office.</p><p>Our expertise relies on our employees' experience and our partnership with DIOT, fifth best french insurance broker.</p><p>Our aim is to provide our clients the best insurances, in the best companies, at the best price.</p><p>We provide guidance to our professional customers to quantify, evaluate and insure risks related to their activities through our risk management program.</p>\", \"numchild\": 0, \"content_type\": 7, \"show_in_menus\": true, \"path\": \"000100010001\", \"url_path\": \"/home/about-us/\", \"expired\": false, \"pk\": 4, \"locked\": false, \"employees\": \"[{\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Managing Director\\\", \\\"image\\\": 16, \\\"employee_name\\\": \\\"Cheikh Ahmed Tidiane Sy\\\", \\\"position_description_fr\\\": \\\"Dipl\\\\u00f4m\\\\u00e9 de l'Institut de Gestion des Risques au CNPP, il a cr\\\\u00e9\\\\u00e9 3CA en 2000 apr\\\\u00e8s 12 ans chez Axa Assurance S\\\\u00e9n\\\\u00e9gal.\\\", \\\"position_description_en\\\": \\\"Graduated from the 'Institut de Gestion des Risques' at CNPP, he created 3CA in 2000 after 12 years in Axa Assurance Senegal.\\\", \\\"position_fr\\\": \\\"Directeur G\\\\u00e9n\\\\u00e9ral\\\"}}]\", \"depth\": 3, \"first_published_at\": \"2016-09-11T21:59:53.987Z\", \"expire_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.pagerevision",
+    "pk": 41,
+    "fields": {
+      "page": 4,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-22T21:22:36.815Z",
+      "user": [
+        "admin"
+      ],
+      "content_json": "{\"search_description\": \"\", \"owner\": 1, \"latest_revision_created_at\": \"2016-09-22T20:53:36.588Z\", \"go_live_at\": null, \"company_desc_fr\": \"<p>3CA est un cabinet de courtage en assurance.</p><p>Notre expertise se repose sur l'exp\\u00e9rience de nos employ\\u00e9s et notre partenariat avec DIOT, cinqui\\u00e8me\\u00a0courtier en assurance fran\\u00e7ais.</p><p>Notre objectif est de fournir \\u00e0 nos clients les meilleurs garanties, dans les meilleures compagnies, au meilleur prix.</p><p>Nous assistons nos clients professionnels pour quantifier, \\u00e9valuer et assurer les risques de leurs activit\\u00e9s \\u00e0 travers notre programme de gestion des risques.</p>\", \"title\": \"About us\", \"seo_title\": \"\", \"slug\": \"about-us\", \"live\": true, \"has_unpublished_changes\": true, \"company_desc_en\": \"<p>3CA is an insurance brokerage office.</p><p>Our expertise relies on our employees' experience and our partnership with DIOT, fifth best french insurance broker.</p><p>Our aim is to provide our clients the best insurances, in the best companies, at the best price.</p><p>We provide guidance to our professional customers to quantify, evaluate and insure risks related to their activities through our risk management program.</p>\", \"numchild\": 0, \"content_type\": 7, \"show_in_menus\": true, \"path\": \"000100010001\", \"url_path\": \"/home/about-us/\", \"expired\": false, \"pk\": 4, \"locked\": false, \"employees\": \"[{\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Managing Director\\\", \\\"image\\\": 16, \\\"employee_name\\\": \\\"Cheikh Ahmed Tidiane Sy\\\", \\\"position_description_fr\\\": \\\"Dipl\\\\u00f4m\\\\u00e9 de l'Institut de Gestion des Risques au CNPP, il a cr\\\\u00e9\\\\u00e9 3CA en 2000 apr\\\\u00e8s 12 ans chez Axa Assurance S\\\\u00e9n\\\\u00e9gal.\\\", \\\"position_description_en\\\": \\\"Graduated from the 'Institut de Gestion des Risques' at CNPP, he created 3CA in 2000 after 12 years in Axa Assurance Senegal.\\\", \\\"position_fr\\\": \\\"Directeur G\\\\u00e9n\\\\u00e9ral\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Head of fire department and miscellaneous risks\\\", \\\"image\\\": 17, \\\"employee_name\\\": \\\"Albert Sagna\\\", \\\"position_description_fr\\\": \\\"He is in charge of public liability and transport damage insurances.\\\", \\\"position_description_en\\\": \\\"Il est en charge des Assurances Dommages RC et Transport.\\\", \\\"position_fr\\\": \\\"Responsable service incendie et risques divers\\\"}}]\", \"depth\": 3, \"first_published_at\": \"2016-09-11T21:59:53.987Z\", \"expire_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.pagerevision",
+    "pk": 42,
+    "fields": {
+      "page": 4,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-22T21:33:01.951Z",
+      "user": [
+        "admin"
+      ],
+      "content_json": "{\"search_description\": \"\", \"owner\": 1, \"latest_revision_created_at\": \"2016-09-22T21:22:36.815Z\", \"go_live_at\": null, \"company_desc_fr\": \"<p>3CA est un cabinet de courtage en assurance.</p><p>Notre expertise se repose sur l'exp\\u00e9rience de nos employ\\u00e9s et notre partenariat avec DIOT, cinqui\\u00e8me\\u00a0courtier en assurance fran\\u00e7ais.</p><p>Notre objectif est de fournir \\u00e0 nos clients les meilleurs garanties, dans les meilleures compagnies, au meilleur prix.</p><p>Nous assistons nos clients professionnels pour quantifier, \\u00e9valuer et assurer les risques de leurs activit\\u00e9s \\u00e0 travers notre programme de gestion des risques.</p>\", \"title\": \"About us\", \"seo_title\": \"\", \"slug\": \"about-us\", \"live\": true, \"has_unpublished_changes\": true, \"company_desc_en\": \"<p>3CA is an insurance brokerage office.</p><p>Our expertise relies on our employees' experience and our partnership with DIOT, fifth best french insurance broker.</p><p>Our aim is to provide our clients the best insurances, in the best companies, at the best price.</p><p>We provide guidance to our professional customers to quantify, evaluate and insure risks related to their activities through our risk management program.</p>\", \"numchild\": 0, \"content_type\": 7, \"show_in_menus\": true, \"path\": \"000100010001\", \"url_path\": \"/home/about-us/\", \"expired\": false, \"pk\": 4, \"locked\": false, \"employees\": \"[{\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Managing Director\\\", \\\"image\\\": 16, \\\"employee_name\\\": \\\"Cheikh Ahmed Tidiane Sy\\\", \\\"position_description_fr\\\": \\\"Dipl\\\\u00f4m\\\\u00e9 de l'Institut de Gestion des Risques au CNPP, il a cr\\\\u00e9\\\\u00e9 3CA en 2000 apr\\\\u00e8s 12 ans chez Axa Assurance S\\\\u00e9n\\\\u00e9gal.\\\", \\\"position_description_en\\\": \\\"Graduated from the 'Institut de Gestion des Risques' at CNPP, he created 3CA in 2000 after 12 years in Axa Assurance Senegal.\\\", \\\"position_fr\\\": \\\"Directeur G\\\\u00e9n\\\\u00e9ral\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Head of fire department and miscellaneous risks\\\", \\\"image\\\": 17, \\\"employee_name\\\": \\\"Albert Sagna\\\", \\\"position_description_fr\\\": \\\"He is in charge of public liability and transport damage insurances.\\\", \\\"position_description_en\\\": \\\"Il est en charge des Assurances Dommages RC et Transport.\\\", \\\"position_fr\\\": \\\"Responsable service incendie et risques divers\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Finance and administrative manager\\\", \\\"image\\\": 18, \\\"employee_name\\\": \\\"Lamine Ndong\\\", \\\"position_description_fr\\\": \\\"He is in charge of accounts management and health insurance.\\\", \\\"position_description_en\\\": \\\"Il est en charge de la gestion financi\\\\u00e8re et comptable et de l'assurance maladie.\\\", \\\"position_fr\\\": \\\"Responsable administratif et financier\\\"}}]\", \"depth\": 3, \"first_published_at\": \"2016-09-11T21:59:53.987Z\", \"expire_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.pagerevision",
+    "pk": 43,
+    "fields": {
+      "page": 4,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-22T21:34:18.361Z",
+      "user": [
+        "admin"
+      ],
+      "content_json": "{\"search_description\": \"\", \"owner\": 1, \"latest_revision_created_at\": \"2016-09-22T21:33:01.951Z\", \"go_live_at\": null, \"company_desc_fr\": \"<p>3CA est un cabinet de courtage en assurance.</p><p>Notre expertise se repose sur l'exp\\u00e9rience de nos employ\\u00e9s et notre partenariat avec DIOT, cinqui\\u00e8me\\u00a0courtier en assurance fran\\u00e7ais.</p><p>Notre objectif est de fournir \\u00e0 nos clients les meilleurs garanties, dans les meilleures compagnies, au meilleur prix.</p><p>Nous assistons nos clients professionnels pour quantifier, \\u00e9valuer et assurer les risques de leurs activit\\u00e9s \\u00e0 travers notre programme de gestion des risques.</p>\", \"title\": \"About us\", \"seo_title\": \"\", \"slug\": \"about-us\", \"live\": true, \"has_unpublished_changes\": true, \"company_desc_en\": \"<p>3CA is an insurance brokerage office.</p><p>Our expertise relies on our employees' experience and our partnership with DIOT, fifth best french insurance broker.</p><p>Our aim is to provide our clients the best insurances, in the best companies, at the best price.</p><p>We provide guidance to our professional customers to quantify, evaluate and insure risks related to their activities through our risk management program.</p>\", \"numchild\": 0, \"content_type\": 7, \"show_in_menus\": true, \"path\": \"000100010001\", \"url_path\": \"/home/about-us/\", \"expired\": false, \"pk\": 4, \"locked\": false, \"employees\": \"[{\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Managing Director\\\", \\\"image\\\": 16, \\\"employee_name\\\": \\\"Cheikh Ahmed Tidiane Sy\\\", \\\"position_description_fr\\\": \\\"Dipl\\\\u00f4m\\\\u00e9 de l'Institut de Gestion des Risques au CNPP, il a cr\\\\u00e9\\\\u00e9 3CA en 2000 apr\\\\u00e8s 12 ans chez Axa Assurance S\\\\u00e9n\\\\u00e9gal.\\\", \\\"position_description_en\\\": \\\"Graduated from the 'Institut de Gestion des Risques' at CNPP, he created 3CA in 2000 after 12 years in Axa Assurance Senegal.\\\", \\\"position_fr\\\": \\\"Directeur G\\\\u00e9n\\\\u00e9ral\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Head of fire department and miscellaneous risks\\\", \\\"image\\\": 17, \\\"employee_name\\\": \\\"Albert Sagna\\\", \\\"position_description_fr\\\": \\\"He is in charge of public liability and transport damage insurances.\\\", \\\"position_description_en\\\": \\\"Il est en charge des Assurances Dommages RC et Transport.\\\", \\\"position_fr\\\": \\\"Responsable service incendie et risques divers\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Finance and administrative manager\\\", \\\"image\\\": 18, \\\"employee_name\\\": \\\"Lamine Ndong\\\", \\\"position_description_fr\\\": \\\"He is in charge of accounts management and health insurance.\\\", \\\"position_description_en\\\": \\\"Il est en charge de la gestion financi\\\\u00e8re et comptable et de l'assurance maladie.\\\", \\\"position_fr\\\": \\\"Responsable administratif et financier\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Management assistant\\\", \\\"image\\\": 19, \\\"employee_name\\\": \\\"Pauline Fall\\\", \\\"position_description_fr\\\": \\\"Assistante du directeur g\\\\u00e9n\\\\u00e9ral charg\\\\u00e9e de la supervision de l\\\\u2019assurance et des sinistres automobiles et TRC.\\\", \\\"position_description_en\\\": \\\"The managing director deputy. She supervises vehicle insurance and damage and construction all risk insurance.\\\", \\\"position_fr\\\": \\\"Assistante de direction\\\"}}]\", \"depth\": 3, \"first_published_at\": \"2016-09-11T21:59:53.987Z\", \"expire_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.pagerevision",
+    "pk": 44,
+    "fields": {
+      "page": 4,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-22T21:37:06.951Z",
+      "user": [
+        "admin"
+      ],
+      "content_json": "{\"search_description\": \"\", \"owner\": 1, \"latest_revision_created_at\": \"2016-09-22T21:34:18.361Z\", \"go_live_at\": null, \"company_desc_fr\": \"<p>3CA est un cabinet de courtage en assurance.</p><p>Notre expertise se repose sur l'exp\\u00e9rience de nos employ\\u00e9s et notre partenariat avec DIOT, cinqui\\u00e8me\\u00a0courtier en assurance fran\\u00e7ais.</p><p>Notre objectif est de fournir \\u00e0 nos clients les meilleurs garanties, dans les meilleures compagnies, au meilleur prix.</p><p>Nous assistons nos clients professionnels pour quantifier, \\u00e9valuer et assurer les risques de leurs activit\\u00e9s \\u00e0 travers notre programme de gestion des risques.</p>\", \"title\": \"About us\", \"seo_title\": \"\", \"slug\": \"about-us\", \"live\": true, \"has_unpublished_changes\": true, \"company_desc_en\": \"<p>3CA is an insurance brokerage office.</p><p>Our expertise relies on our employees' experience and our partnership with DIOT, fifth best french insurance broker.</p><p>Our aim is to provide our clients the best insurances, in the best companies, at the best price.</p><p>We provide guidance to our professional customers to quantify, evaluate and insure risks related to their activities through our risk management program.</p>\", \"numchild\": 0, \"content_type\": 7, \"show_in_menus\": true, \"path\": \"000100010001\", \"url_path\": \"/home/about-us/\", \"expired\": false, \"pk\": 4, \"locked\": false, \"employees\": \"[{\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Managing Director\\\", \\\"image\\\": 16, \\\"employee_name\\\": \\\"Cheikh Ahmed Tidiane Sy\\\", \\\"position_description_fr\\\": \\\"Dipl\\\\u00f4m\\\\u00e9 de l'Institut de Gestion des Risques au CNPP, il a cr\\\\u00e9\\\\u00e9 3CA en 2000 apr\\\\u00e8s 12 ans chez Axa Assurance S\\\\u00e9n\\\\u00e9gal.\\\", \\\"position_description_en\\\": \\\"Graduated from the 'Institut de Gestion des Risques' at CNPP, he created 3CA in 2000 after 12 years in Axa Assurance Senegal.\\\", \\\"position_fr\\\": \\\"Directeur G\\\\u00e9n\\\\u00e9ral\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Head of fire department and miscellaneous risks\\\", \\\"image\\\": 17, \\\"employee_name\\\": \\\"Albert Sagna\\\", \\\"position_description_fr\\\": \\\"He is in charge of public liability and transport damage insurances.\\\", \\\"position_description_en\\\": \\\"Il est en charge des Assurances Dommages RC et Transport.\\\", \\\"position_fr\\\": \\\"Responsable service incendie et risques divers\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Finance and administrative manager\\\", \\\"image\\\": 18, \\\"employee_name\\\": \\\"Lamine Ndong\\\", \\\"position_description_fr\\\": \\\"He is in charge of accounts management and health insurance.\\\", \\\"position_description_en\\\": \\\"Il est en charge de la gestion financi\\\\u00e8re et comptable et de l'assurance maladie.\\\", \\\"position_fr\\\": \\\"Responsable administratif et financier\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Management assistant\\\", \\\"image\\\": 19, \\\"employee_name\\\": \\\"Pauline Fall\\\", \\\"position_description_fr\\\": \\\"Assistante du directeur g\\\\u00e9n\\\\u00e9ral charg\\\\u00e9e de la supervision de l\\\\u2019assurance et des sinistres automobiles et TRC.\\\", \\\"position_description_en\\\": \\\"The managing director deputy. She supervises vehicle insurance and damage and construction all risk insurance.\\\", \\\"position_fr\\\": \\\"Assistante de direction\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Health insurance and damage manager\\\", \\\"image\\\": 20, \\\"employee_name\\\": \\\"Maguette Sarr\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable de la production & des sinistres en assurance sante\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Damage department manager\\\", \\\"image\\\": 21, \\\"employee_name\\\": \\\"Awa Diouf\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable service sinistre\\\"}}]\", \"depth\": 3, \"first_published_at\": \"2016-09-11T21:59:53.987Z\", \"expire_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.pagerevision",
+    "pk": 45,
+    "fields": {
+      "page": 4,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-22T21:38:18.348Z",
+      "user": [
+        "admin"
+      ],
+      "content_json": "{\"search_description\": \"\", \"owner\": 1, \"latest_revision_created_at\": \"2016-09-22T21:37:06.951Z\", \"go_live_at\": null, \"company_desc_fr\": \"<p>3CA est un cabinet de courtage en assurance.</p><p>Notre expertise se repose sur l'exp\\u00e9rience de nos employ\\u00e9s et notre partenariat avec DIOT, cinqui\\u00e8me\\u00a0courtier en assurance fran\\u00e7ais.</p><p>Notre objectif est de fournir \\u00e0 nos clients les meilleurs garanties, dans les meilleures compagnies, au meilleur prix.</p><p>Nous assistons nos clients professionnels pour quantifier, \\u00e9valuer et assurer les risques de leurs activit\\u00e9s \\u00e0 travers notre programme de gestion des risques.</p>\", \"title\": \"About us\", \"seo_title\": \"\", \"slug\": \"about-us\", \"live\": true, \"has_unpublished_changes\": true, \"company_desc_en\": \"<p>3CA is an insurance brokerage office.</p><p>Our expertise relies on our employees' experience and our partnership with DIOT, fifth best french insurance broker.</p><p>Our aim is to provide our clients the best insurances, in the best companies, at the best price.</p><p>We provide guidance to our professional customers to quantify, evaluate and insure risks related to their activities through our risk management program.</p>\", \"numchild\": 0, \"content_type\": 7, \"show_in_menus\": true, \"path\": \"000100010001\", \"url_path\": \"/home/about-us/\", \"expired\": false, \"pk\": 4, \"locked\": false, \"employees\": \"[{\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Managing Director\\\", \\\"image\\\": 16, \\\"employee_name\\\": \\\"Cheikh Ahmed Tidiane Sy\\\", \\\"position_description_fr\\\": \\\"Dipl\\\\u00f4m\\\\u00e9 de l'Institut de Gestion des Risques au CNPP, il a cr\\\\u00e9\\\\u00e9 3CA en 2000 apr\\\\u00e8s 12 ans chez Axa Assurance S\\\\u00e9n\\\\u00e9gal.\\\", \\\"position_description_en\\\": \\\"Graduated from the 'Institut de Gestion des Risques' at CNPP, he created 3CA in 2000 after 12 years in Axa Assurance Senegal.\\\", \\\"position_fr\\\": \\\"Directeur G\\\\u00e9n\\\\u00e9ral\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Head of fire department and miscellaneous risks\\\", \\\"image\\\": 17, \\\"employee_name\\\": \\\"Albert Sagna\\\", \\\"position_description_fr\\\": \\\"He is in charge of public liability and transport damage insurances.\\\", \\\"position_description_en\\\": \\\"Il est en charge des Assurances Dommages RC et Transport.\\\", \\\"position_fr\\\": \\\"Responsable service incendie et risques divers\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Finance and administrative manager\\\", \\\"image\\\": 18, \\\"employee_name\\\": \\\"Lamine Ndong\\\", \\\"position_description_fr\\\": \\\"He is in charge of accounts management and health insurance.\\\", \\\"position_description_en\\\": \\\"Il est en charge de la gestion financi\\\\u00e8re et comptable et de l'assurance maladie.\\\", \\\"position_fr\\\": \\\"Responsable administratif et financier\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Management assistant\\\", \\\"image\\\": 19, \\\"employee_name\\\": \\\"Pauline Fall\\\", \\\"position_description_fr\\\": \\\"Assistante du directeur g\\\\u00e9n\\\\u00e9ral charg\\\\u00e9e de la supervision de l\\\\u2019assurance et des sinistres automobiles et TRC.\\\", \\\"position_description_en\\\": \\\"The managing director deputy. She supervises vehicle insurance and damage and construction all risk insurance.\\\", \\\"position_fr\\\": \\\"Assistante de direction\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Health insurance and damage manager\\\", \\\"image\\\": 20, \\\"employee_name\\\": \\\"Maguette Sarr\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable de la production & des sinistres en assurance sante\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Damage department manager\\\", \\\"image\\\": 21, \\\"employee_name\\\": \\\"Awa Diouf\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable service sinistre\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Vehicle insurance manager\\\", \\\"image\\\": 22, \\\"employee_name\\\": \\\"Blondin Gueye\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable de la production automobile\\\"}}]\", \"depth\": 3, \"first_published_at\": \"2016-09-11T21:59:53.987Z\", \"expire_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.pagerevision",
+    "pk": 46,
+    "fields": {
+      "page": 4,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-22T21:38:27.401Z",
+      "user": [
+        "admin"
+      ],
+      "content_json": "{\"search_description\": \"\", \"owner\": 1, \"latest_revision_created_at\": \"2016-09-22T21:38:18.348Z\", \"go_live_at\": null, \"company_desc_fr\": \"<p>3CA est un cabinet de courtage en assurance.</p><p>Notre expertise se repose sur l'exp\\u00e9rience de nos employ\\u00e9s et notre partenariat avec DIOT, cinqui\\u00e8me\\u00a0courtier en assurance fran\\u00e7ais.</p><p>Notre objectif est de fournir \\u00e0 nos clients les meilleurs garanties, dans les meilleures compagnies, au meilleur prix.</p><p>Nous assistons nos clients professionnels pour quantifier, \\u00e9valuer et assurer les risques de leurs activit\\u00e9s \\u00e0 travers notre programme de gestion des risques.</p>\", \"title\": \"About us\", \"seo_title\": \"\", \"slug\": \"about-us\", \"live\": true, \"has_unpublished_changes\": true, \"company_desc_en\": \"<p>3CA is an insurance brokerage office.</p><p>Our expertise relies on our employees' experience and our partnership with DIOT, fifth best french insurance broker.</p><p>Our aim is to provide our clients the best insurances, in the best companies, at the best price.</p><p>We provide guidance to our professional customers to quantify, evaluate and insure risks related to their activities through our risk management program.</p>\", \"numchild\": 0, \"content_type\": 7, \"show_in_menus\": true, \"path\": \"000100010001\", \"url_path\": \"/home/about-us/\", \"expired\": false, \"pk\": 4, \"locked\": false, \"employees\": \"[{\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Managing Director\\\", \\\"image\\\": 16, \\\"employee_name\\\": \\\"Cheikh Ahmed Tidiane Sy\\\", \\\"position_description_fr\\\": \\\"Dipl\\\\u00f4m\\\\u00e9 de l'Institut de Gestion des Risques au CNPP, il a cr\\\\u00e9\\\\u00e9 3CA en 2000 apr\\\\u00e8s 12 ans chez Axa Assurance S\\\\u00e9n\\\\u00e9gal.\\\", \\\"position_description_en\\\": \\\"Graduated from the 'Institut de Gestion des Risques' at CNPP, he created 3CA in 2000 after 12 years in Axa Assurance Senegal.\\\", \\\"position_fr\\\": \\\"Directeur G\\\\u00e9n\\\\u00e9ral\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Head of fire department and miscellaneous risks\\\", \\\"image\\\": 17, \\\"employee_name\\\": \\\"Albert Sagna\\\", \\\"position_description_fr\\\": \\\"He is in charge of public liability and transport damage insurances.\\\", \\\"position_description_en\\\": \\\"Il est en charge des Assurances Dommages RC et Transport.\\\", \\\"position_fr\\\": \\\"Responsable service incendie et risques divers\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Finance and administrative manager\\\", \\\"image\\\": 18, \\\"employee_name\\\": \\\"Lamine Ndong\\\", \\\"position_description_fr\\\": \\\"He is in charge of accounts management and health insurance.\\\", \\\"position_description_en\\\": \\\"Il est en charge de la gestion financi\\\\u00e8re et comptable et de l'assurance maladie.\\\", \\\"position_fr\\\": \\\"Responsable administratif et financier\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Management assistant\\\", \\\"image\\\": 19, \\\"employee_name\\\": \\\"Pauline Fall\\\", \\\"position_description_fr\\\": \\\"Assistante du directeur g\\\\u00e9n\\\\u00e9ral charg\\\\u00e9e de la supervision de l\\\\u2019assurance et des sinistres automobiles et TRC.\\\", \\\"position_description_en\\\": \\\"The managing director deputy. She supervises vehicle insurance and damage and construction all risk insurance.\\\", \\\"position_fr\\\": \\\"Assistante de direction\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Health insurance and damage manager\\\", \\\"image\\\": 20, \\\"employee_name\\\": \\\"Maguette Sarr\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable de la production & des sinistres en assurance sante\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Damage department manager\\\", \\\"image\\\": 21, \\\"employee_name\\\": \\\"Awa Diouf\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable service sinistre\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Vehicle insurance manager\\\", \\\"image\\\": 22, \\\"employee_name\\\": \\\"Blondin Gueye\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable de la production automobile\\\"}}]\", \"depth\": 3, \"first_published_at\": \"2016-09-11T21:59:53.987Z\", \"expire_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.pagerevision",
+    "pk": 47,
+    "fields": {
+      "page": 4,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-22T22:27:19.476Z",
+      "user": [
+        "admin"
+      ],
+      "content_json": "{\"search_description\": \"\", \"owner\": 1, \"latest_revision_created_at\": \"2016-09-22T21:38:27.401Z\", \"go_live_at\": null, \"company_desc_fr\": \"<p>3CA est un cabinet de courtage en assurance.</p><p>Notre expertise se repose sur l'exp\\u00e9rience de nos employ\\u00e9s et notre partenariat avec DIOT, cinqui\\u00e8me\\u00a0courtier en assurance fran\\u00e7ais.</p><p>Notre objectif est de fournir \\u00e0 nos clients les meilleurs garanties, dans les meilleures compagnies, au meilleur prix.</p><p>Nous assistons nos clients professionnels pour quantifier, \\u00e9valuer et assurer les risques de leurs activit\\u00e9s \\u00e0 travers notre programme de gestion des risques.</p>\", \"title\": \"About us\", \"seo_title\": \"\", \"slug\": \"about-us\", \"live\": true, \"has_unpublished_changes\": false, \"company_desc_en\": \"<p>3CA is an insurance brokerage office.</p><p>Our expertise relies on our employees' experience and our partnership with DIOT, fifth best french insurance broker.</p><p>Our aim is to provide our clients the best insurances, in the best companies, at the best price.</p><p>We provide guidance to our professional customers to quantify, evaluate and insure risks related to their activities through our risk management program.</p>\", \"numchild\": 0, \"content_type\": 7, \"show_in_menus\": true, \"path\": \"000100010001\", \"url_path\": \"/home/about-us/\", \"expired\": false, \"pk\": 4, \"locked\": false, \"employees\": \"[{\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Managing Director\\\", \\\"image\\\": 16, \\\"employee_name\\\": \\\"Cheikh Ahmed Tidiane Sy\\\", \\\"position_description_fr\\\": \\\"Dipl\\\\u00f4m\\\\u00e9 de l'Institut de Gestion des Risques au CNPP, il a cr\\\\u00e9\\\\u00e9 3CA en 2000 apr\\\\u00e8s 12 ans chez Axa Assurance S\\\\u00e9n\\\\u00e9gal.\\\", \\\"position_description_en\\\": \\\"Graduated from the 'Institut de Gestion des Risques' at CNPP, he created 3CA in 2000 after 12 years in Axa Assurance Senegal.\\\", \\\"position_fr\\\": \\\"Directeur G\\\\u00e9n\\\\u00e9ral\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Head of fire department and miscellaneous risks\\\", \\\"image\\\": 17, \\\"employee_name\\\": \\\"Albert Sagna\\\", \\\"position_description_fr\\\": \\\"Il est en charge des Assurances Dommages RC et Transport.\\\", \\\"position_description_en\\\": \\\"He is in charge of public liability and transport damage insurances.\\\", \\\"position_fr\\\": \\\"Responsable service incendie et risques divers\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Finance and administrative manager\\\", \\\"image\\\": 18, \\\"employee_name\\\": \\\"Lamine Ndong\\\", \\\"position_description_fr\\\": \\\"Il est en charge de la gestion financi\\\\u00e8re et comptable et de l'assurance maladie.\\\", \\\"position_description_en\\\": \\\"He is in charge of accounts management and health insurance.\\\", \\\"position_fr\\\": \\\"Responsable administratif et financier\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Management assistant\\\", \\\"image\\\": 19, \\\"employee_name\\\": \\\"Pauline Fall\\\", \\\"position_description_fr\\\": \\\"Assistante du directeur g\\\\u00e9n\\\\u00e9ral charg\\\\u00e9e de la supervision de l\\\\u2019assurance et des sinistres automobiles et TRC.\\\", \\\"position_description_en\\\": \\\"The managing director deputy. She supervises vehicle insurance and damage and construction all risk insurance.\\\", \\\"position_fr\\\": \\\"Assistante de direction\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Health insurance and damage manager\\\", \\\"image\\\": 20, \\\"employee_name\\\": \\\"Maguette Sarr\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable de la production & des sinistres en assurance sante\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Damage department manager\\\", \\\"image\\\": 21, \\\"employee_name\\\": \\\"Awa Diouf\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable service sinistre\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Vehicle insurance manager\\\", \\\"image\\\": 22, \\\"employee_name\\\": \\\"Blondin Gueye\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable de la production automobile\\\"}}]\", \"depth\": 3, \"first_published_at\": \"2016-09-11T21:59:53.987Z\", \"expire_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.pagerevision",
+    "pk": 48,
+    "fields": {
+      "page": 4,
+      "submitted_for_moderation": false,
+      "created_at": "2016-09-22T22:28:18.577Z",
+      "user": [
+        "admin"
+      ],
+      "content_json": "{\"search_description\": \"\", \"owner\": 1, \"latest_revision_created_at\": \"2016-09-22T22:27:19.476Z\", \"go_live_at\": null, \"company_desc_fr\": \"<p>3CA est un cabinet de courtage en assurance.</p><p>Notre expertise se repose sur l'exp\\u00e9rience de nos employ\\u00e9s et notre partenariat avec DIOT, cinqui\\u00e8me\\u00a0courtier en assurance fran\\u00e7ais.</p><p>Notre objectif est de fournir \\u00e0 nos clients les meilleurs garanties, dans les meilleures compagnies, au meilleur prix.</p><p>Nous assistons nos clients professionnels pour quantifier, \\u00e9valuer et assurer les risques de leurs activit\\u00e9s \\u00e0 travers notre programme de gestion des risques.</p>\", \"title\": \"About us\", \"seo_title\": \"\", \"slug\": \"about-us\", \"live\": true, \"has_unpublished_changes\": false, \"company_desc_en\": \"<p>3CA is an insurance brokerage office.</p><p>Our expertise relies on our employees' experience and our partnership with DIOT, fifth best french insurance broker.</p><p>Our aim is to provide our clients the best insurances, in the best companies, at the best price.</p><p>We provide guidance to our professional customers to quantify, evaluate and insure risks related to their activities through our risk management program.</p>\", \"numchild\": 0, \"content_type\": 7, \"show_in_menus\": true, \"path\": \"000100010001\", \"url_path\": \"/home/about-us/\", \"expired\": false, \"pk\": 4, \"locked\": false, \"employees\": \"[{\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Managing Director\\\", \\\"image\\\": 16, \\\"employee_name\\\": \\\"Cheikh Ahmed Tidiane Sy\\\", \\\"position_description_fr\\\": \\\"Dipl\\\\u00f4m\\\\u00e9 de l'Institut de Gestion des Risques au CNPP, il a cr\\\\u00e9\\\\u00e9 3CA en 2000 apr\\\\u00e8s 12 ans chez Axa Assurance S\\\\u00e9n\\\\u00e9gal.\\\", \\\"position_description_en\\\": \\\"Graduated from the 'Institut de Gestion des Risques' at CNPP, he created 3CA in 2000 after 12 years in Axa Assurance Senegal.\\\", \\\"position_fr\\\": \\\"Directeur G\\\\u00e9n\\\\u00e9ral\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Head of fire department and miscellaneous risks\\\", \\\"image\\\": 17, \\\"employee_name\\\": \\\"Albert Sagna\\\", \\\"position_description_fr\\\": \\\"En charge des Assurances Dommages RC et Transport.\\\", \\\"position_description_en\\\": \\\"In charge of public liability and transport damage insurances.\\\", \\\"position_fr\\\": \\\"Responsable service incendie et risques divers\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Finance and administrative manager\\\", \\\"image\\\": 18, \\\"employee_name\\\": \\\"Lamine Ndong\\\", \\\"position_description_fr\\\": \\\"En charge de la gestion financi\\\\u00e8re et comptable et de l'assurance maladie.\\\", \\\"position_description_en\\\": \\\"In charge of accounts management and health insurance.\\\", \\\"position_fr\\\": \\\"Responsable administratif et financier\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Management assistant\\\", \\\"image\\\": 19, \\\"employee_name\\\": \\\"Pauline Fall\\\", \\\"position_description_fr\\\": \\\"Assistante du directeur g\\\\u00e9n\\\\u00e9ral. Charg\\\\u00e9e de la supervision de l\\\\u2019assurance et des sinistres automobiles et TRC.\\\", \\\"position_description_en\\\": \\\"The managing director deputy. She supervises vehicle insurance and damage and construction all risk insurance.\\\", \\\"position_fr\\\": \\\"Assistante de direction\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Health insurance and damage manager\\\", \\\"image\\\": 20, \\\"employee_name\\\": \\\"Maguette Sarr\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable de la production & des sinistres en assurance sante\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Damage department manager\\\", \\\"image\\\": 21, \\\"employee_name\\\": \\\"Awa Diouf\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable service sinistre\\\"}}, {\\\"type\\\": \\\"employee\\\", \\\"value\\\": {\\\"position_en\\\": \\\"Vehicle insurance manager\\\", \\\"image\\\": 22, \\\"employee_name\\\": \\\"Blondin Gueye\\\", \\\"position_description_fr\\\": \\\"\\\", \\\"position_description_en\\\": \\\"\\\", \\\"position_fr\\\": \\\"Responsable de la production automobile\\\"}}]\", \"depth\": 3, \"first_published_at\": \"2016-09-11T21:59:53.987Z\", \"expire_at\": null}",
+      "approved_go_live_at": null
+    }
+  },
+  {
     "model": "wagtailcore.page",
     "pk": 1,
     "fields": {
@@ -1756,7 +1948,7 @@
       "expired": false,
       "locked": false,
       "first_published_at": "2016-09-11T21:59:53.987Z",
-      "latest_revision_created_at": "2016-09-11T22:01:02.808Z"
+      "latest_revision_created_at": "2016-09-22T22:28:18.577Z"
     }
   },
   {
@@ -1787,6 +1979,28 @@
       "locked": false,
       "first_published_at": "2016-09-11T22:00:07.090Z",
       "latest_revision_created_at": "2016-09-11T22:01:11.538Z"
+    }
+  },
+  {
+    "model": "_3caassurance.aboutuspage",
+    "pk": 4,
+    "fields": {
+      "company_desc_fr": "<p>3CA est un cabinet de courtage en assurance.</p><p>Notre expertise se repose sur l'exp\u00e9rience de nos employ\u00e9s et notre partenariat avec DIOT, cinqui\u00e8me\u00a0courtier en assurance fran\u00e7ais.</p><p>Notre objectif est de fournir \u00e0 nos clients les meilleurs garanties, dans les meilleures compagnies, au meilleur prix.</p><p>Nous assistons nos clients professionnels pour quantifier, \u00e9valuer et assurer les risques de leurs activit\u00e9s \u00e0 travers notre programme de gestion des risques.</p>",
+      "company_desc_en": "<p>3CA is an insurance brokerage office.</p><p>Our expertise relies on our employees' experience and our partnership with DIOT, fifth best french insurance broker.</p><p>Our aim is to provide our clients the best insurances, in the best companies, at the best price.</p><p>We provide guidance to our professional customers to quantify, evaluate and insure risks related to their activities through our risk management program.</p>",
+      "employees": "[{\"type\": \"employee\", \"value\": {\"position_en\": \"Managing Director\", \"image\": 16, \"employee_name\": \"Cheikh Ahmed Tidiane Sy\", \"position_description_fr\": \"Dipl\\u00f4m\\u00e9 de l'Institut de Gestion des Risques au CNPP, il a cr\\u00e9\\u00e9 3CA en 2000 apr\\u00e8s 12 ans chez Axa Assurance S\\u00e9n\\u00e9gal.\", \"position_description_en\": \"Graduated from the 'Institut de Gestion des Risques' at CNPP, he created 3CA in 2000 after 12 years in Axa Assurance Senegal.\", \"position_fr\": \"Directeur G\\u00e9n\\u00e9ral\"}}, {\"type\": \"employee\", \"value\": {\"position_en\": \"Head of fire department and miscellaneous risks\", \"image\": 17, \"employee_name\": \"Albert Sagna\", \"position_description_fr\": \"En charge des Assurances Dommages RC et Transport.\", \"position_description_en\": \"In charge of public liability and transport damage insurances.\", \"position_fr\": \"Responsable service incendie et risques divers\"}}, {\"type\": \"employee\", \"value\": {\"position_en\": \"Finance and administrative manager\", \"image\": 18, \"employee_name\": \"Lamine Ndong\", \"position_description_fr\": \"En charge de la gestion financi\\u00e8re et comptable et de l'assurance maladie.\", \"position_description_en\": \"In charge of accounts management and health insurance.\", \"position_fr\": \"Responsable administratif et financier\"}}, {\"type\": \"employee\", \"value\": {\"position_en\": \"Management assistant\", \"image\": 19, \"employee_name\": \"Pauline Fall\", \"position_description_fr\": \"Assistante du directeur g\\u00e9n\\u00e9ral. Charg\\u00e9e de la supervision de l\\u2019assurance et des sinistres automobiles et TRC.\", \"position_description_en\": \"The managing director deputy. She supervises vehicle insurance and damage and construction all risk insurance.\", \"position_fr\": \"Assistante de direction\"}}, {\"type\": \"employee\", \"value\": {\"position_en\": \"Health insurance and damage manager\", \"image\": 20, \"employee_name\": \"Maguette Sarr\", \"position_description_fr\": \"\", \"position_description_en\": \"\", \"position_fr\": \"Responsable de la production & des sinistres en assurance sante\"}}, {\"type\": \"employee\", \"value\": {\"position_en\": \"Damage department manager\", \"image\": 21, \"employee_name\": \"Awa Diouf\", \"position_description_fr\": \"\", \"position_description_en\": \"\", \"position_fr\": \"Responsable service sinistre\"}}, {\"type\": \"employee\", \"value\": {\"position_en\": \"Vehicle insurance manager\", \"image\": 22, \"employee_name\": \"Blondin Gueye\", \"position_description_fr\": \"\", \"position_description_en\": \"\", \"position_fr\": \"Responsable de la production automobile\"}}]"
+    }
+  },
+  {
+    "model": "_3caassurance.contactpage",
+    "pk": 5,
+    "fields": {}
+  },
+  {
+    "model": "_3caassurance.homepage",
+    "pk": 3,
+    "fields": {
+      "products": "[{\"type\": \"product\", \"value\": {\"image\": 6, \"caption_fr\": \"Dommages aux biens\", \"caption_en\": \"Damage to goods\", \"description_en\": \"Fire, theft, water damage, broken glass...\", \"description_fr\": \"Incendie, vol, d\\u00e9g\\u00e2t des eaux, bris de glace....\"}}, {\"type\": \"product\", \"value\": {\"image\": 10, \"caption_fr\": \"Risques techniques\", \"caption_en\": \"Technical risks\", \"description_en\": \"Machinery breakdown, IT risks\", \"description_fr\": \"Bris de machine, risques informatiques\"}}, {\"type\": \"product\", \"value\": {\"image\": 11, \"caption_fr\": \"Pertes financi\\u00e8res\", \"caption_en\": \"Financial losses\", \"description_en\": \"Operating losses after fire and machinery breakdown\", \"description_fr\": \"Perte d'exploitation apr\\u00e8s bris de machine\"}}, {\"type\": \"product\", \"value\": {\"image\": 8, \"caption_fr\": \"Automobile\", \"caption_en\": \"Vehicle\", \"description_en\": \"All categories\", \"description_fr\": \"Toutes cat\\u00e9gories\"}}, {\"type\": \"product\", \"value\": {\"image\": 12, \"caption_fr\": \"Transport\", \"caption_en\": \"Transport\", \"description_en\": \"Naval and aerial\", \"description_fr\": \"Maritime et a\\u00e9rien\"}}, {\"type\": \"product\", \"value\": {\"image\": 13, \"caption_fr\": \"Assurance vie\", \"caption_en\": \"Life insurance\", \"description_en\": \"Death and retirement benefits\", \"description_fr\": \"D\\u00e9c\\u00e8s et retraite\"}}, {\"type\": \"product\", \"value\": {\"image\": 14, \"caption_fr\": \"Responsabilit\\u00e9s civiles\", \"caption_en\": \"Public liability\", \"description_en\": \"Public liability\", \"description_fr\": \"Responsabilit\\u00e9s civiles\"}}, {\"type\": \"product\", \"value\": {\"image\": 15, \"caption_fr\": \"Dommages corporels\", \"caption_en\": \"Physical damage\", \"description_en\": \"Health insurance and individual accident\", \"description_fr\": \"Maladie et accident individuel\"}}]",
+      "offers": "[]"
     }
   }
 ]

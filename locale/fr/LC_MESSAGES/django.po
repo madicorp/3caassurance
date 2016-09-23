@@ -23,11 +23,18 @@ msgstr ""
 msgid "HOME"
 msgstr "ACCUEIL"
 
+
 #########################################################
 #: _3caassurance/templates/_3caassurance/tags/logo.html
 #########################################################
-msgid "INSURANCE<br>BROKER AND<br>ADVISOR"
-msgstr "COURTAGE ET<br>CONSEILS EN<br>ASSURANCE"
+msgid "Home"
+msgstr "Accueil"
+
+#########################################################
+#: _3caassurance/templates/_3caassurance/tags/logo.html
+#########################################################
+msgid "ALL<br>BRANCHES<br>INSURANCES"
+msgstr "ASSURANCES<br>TOUTES<br>BRANCHES"
 
 #########################################################
 #: _3caassurance/templates/_3caassurance/home_page.html
