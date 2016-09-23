@@ -44,7 +44,7 @@ This is automatically done when using the Vagrant configuration
 [[build-image]]
 == Build 3ca dev docker image
 Do <<aliases>>
-`build_image dev`
+`build_image dev 1.1` env followed by docker image version
 
 == Launch project
 Do <<build-image>> first
@@ -57,6 +57,11 @@ POSTGRES_USER="admin" POSTGRES_PASSWORD="changeme" DJANGO_SETTINGS_MODULE="_3caa
 `POSTGRES_USER`, `POSTGRES_PASSWORD`, `DJANGO_SETTINGS_MODULE` env vars are mandatory
 
 image::doc/3ca_archi_dev.png[alt="Dev archi", title="Dev architecture"]
+
+== Unset docker machine
+Do <<aliases>>
+`unset-machine`
+
 
 == Launch tests
 `./manage.py test`

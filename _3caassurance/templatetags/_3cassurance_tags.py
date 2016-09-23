@@ -1,5 +1,6 @@
 from django import template
 from django.conf import settings
+from django.utils import translation
 from django.utils.translation import get_language
 
 register = template.Library()
@@ -90,3 +91,15 @@ def first_name(context, complete_name):
 @register.simple_tag(name='surname', takes_context=True)
 def surname(context, complete_name):
     return complete_name.split()[-1]
+
+
+@register.simple_tag(name='translate_current_url', takes_context=True)
+def do_translate_url(context, language_code=get_language(), request_provider=lambda context: context['request']):
+    request = request_provider(context)
+    path = request.path_info
+    language_from_path = translation.get_language_from_path(path)
+    if not language_from_path:
+        return '/' + language_code + '/' + path
+    path_parts = path.split('/')[2:]
+    path_parts.insert(0, language_code)
+    return '/' + '/'.join(path_parts)
