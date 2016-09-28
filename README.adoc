@@ -1,5 +1,6 @@
 = 3caassurance
 :hardbreaks:
+:imagesdir: ./
 
 == Requirements
 Python 2.7
@@ -14,24 +15,17 @@ Create virtualenv
 Install dependencies
 `pip install -r requirements.txt`
 
+[[activate-venv]]
+== Activate venv
+`source venv/bin/activate`
+
 == Launch locally
-Install migration scripts
-`python manage.py migrate`
-
-If admin account is not created
-`python manage.py createsuperuser` (admin, changeme)
-
-Start the server
-`python manage.py runserver`
+Do <<activate-venv>>
+Ensure local_launch.sh has the execution rights
+`./local_launch.sh`
 
 Deployed on `http://127.0.0.1:8000/`
 Admin page accessible at `http://127.0.0.1:8000/admin/`
-
-== Launch with vagrant
-`vagrant up --provision`
-`vagrant ssh`
-In the VM
-`./manage.py runserver 0.0.0.0:8000`
 
 == I18N
 Add I18N key and translations to `locale/fr/LC_MESSAGES/django.po`
@@ -41,4 +35,28 @@ This is automatically done when using the Vagrant configuration
 == Updating the migration files
 `./manage.py dumpdata auth.user --natural-foreign --indent 2 > _3caassurance/fixtures/user.json`
 `./manage.py dumpdata wagtailimages.image --natural-foreign --indent 2 > _3caassurance/fixtures/images.json`
-`./manage.py dumpdata -e auth.permission -e contenttypes.contenttype -e wagtailimages.image -e sessions.session --natural-foreign --indent 2 > _3caassurance/fixtures/_3caassurance.json`
+`./manage.py dumpdata -e wagtailcore.groupcollectionpermission -e auth.permission -e contenttypes.contenttype -e wagtailimages.image -e sessions.session -e auth.group -e auth.user -e wagtailcore.grouppagepermission --natural-foreign --indent 2 > _3caassurance/fixtures/_3caassurance.json`
+
+[[aliases]]
+== Get aliases
+`source aliases.sh`
+
+[[build-image]]
+== Build 3ca dev docker image
+Do <<aliases>>
+`build_image dev`
+
+== Launch project
+Do <<build-image>> first
+```
+docker-compose stop
+docker-compose rm
+docker-compose build
+POSTGRES_USER="admin" POSTGRES_PASSWORD="changeme" DJANGO_SETTINGS_MODULE="_3caassurance.settings.dev" docker-compose up
+```
+`POSTGRES_USER`, `POSTGRES_PASSWORD`, `DJANGO_SETTINGS_MODULE` env vars are mandatory
+
+image::doc/3ca_archi_dev.png[alt="Dev archi", title="Dev architecture"]
+
+== Launch tests
+`./manage.py test`

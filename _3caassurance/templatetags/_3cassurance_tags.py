@@ -1,8 +1,6 @@
 from django import template
 from django.conf import settings
-from django.core.urlresolvers import resolve
-from django.core.urlresolvers import reverse
-from django.utils import translation
+from django.utils.translation import get_language
 
 register = template.Library()
 
@@ -73,38 +71,22 @@ def footer(context, parent, calling_page=None):
     }
 
 
-# Thanks to http://stackoverflow.com/questions/11437454/django-templates-get-current-url-in-another-language
-class TranslatedURL(template.Node):
-    def __init__(self, language):
-        self.language = language
-
-    def render(self, context):
-        view = resolve(context['request'].path)
-        request_language = translation.get_language()
-        translation.activate(self.language)
-        url = reverse(view.url_name, args=view.args, kwargs=view.kwargs)
-        translation.activate(request_language)
-        return url
-
-
-@register.tag(name='translate_url')
-def do_translate_url(parser, token):
-    language = token.split_contents()[1]
-    return TranslatedURL(language)
-
-
-class HomeURL(template.Node):
-    def render(self, context):
-        return '/'.join(context['request'].path.split('/')[:2])
-
-
-@register.tag(name='home_url')
-def get_home_url(parser, token):
-    return HomeURL()
-
-
 @register.simple_tag(name='dynamic_trans', takes_context=True)
-def dynamic_trans(context, obj, field_name):
-    language = context['request'].path.split('/')[1]
-    field_name_language = field_name + '_' + language
-    return obj[field_name_language]
+def dynamic_trans(context, obj, field_name, get_lang_fn=get_language):
+    field_name_language = field_name + '_' + get_lang_fn()
+    try:
+        # For django models
+        return getattr(obj, field_name_language)
+    except AttributeError:
+        # For wagtail StructValue
+        return obj[field_name_language]
+
+
+@register.simple_tag(name='first_name', takes_context=True)
+def first_name(context, complete_name):
+    return ' '.join(complete_name.split()[:-1])
+
+
+@register.simple_tag(name='surname', takes_context=True)
+def surname(context, complete_name):
+    return complete_name.split()[-1]

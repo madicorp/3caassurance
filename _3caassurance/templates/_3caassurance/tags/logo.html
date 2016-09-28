@@ -1,12 +1,18 @@
 {% load _3cassurance_tags wagtailcore_tags i18n static %}
 
+{% get_current_language as LANGUAGE_CODE %}
+
 <div class="logo">
-    <a href="{% home_url %}">
-        <!-- TODO Integrate 3CA logo here -->
-        <i class="_3ca-logo"><img src="{% static "images/3ca_logo.jpg" %}" alt="3CA"></i>
-        <span>3CA</span>
-        <strong>
-            {% trans "INSURANCE<br>BROKER AND<br>ADVISOR"%}
-        </strong>
+    <a href="/{{ LANGUAGE_CODE }}/">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{% static "images/3ca_logo.png" %}" alt="3CA">
+            </div>
+            <div class="col-md-7">
+                <strong>
+                    {% trans "ALL<br>BRANCHES<br>INSURANCES" %}
+                </strong>
+            </div>
+        </div>
     </a>
 </div>

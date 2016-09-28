@@ -1,5 +1,6 @@
 {% load _3cassurance_tags wagtailcore_tags i18n %}
 
+{% get_current_language as LANGUAGE_CODE %}
 
 <header class="simple-header for-sticky white">
     <div class="top-bar">
@@ -9,31 +10,46 @@
                 <li><i class="fa fa-phone"></i>{{ phone }}</li>
             </ul>
             <div class="choose-language">
-                <a href="{% translate_url fr %}">FR</a>
-                <a href="{% translate_url en %}">EN</a>
+                {% get_available_languages as languages %}
+                {% for lang_code, lang_name in languages %}
+                    {% language lang_code %}
+                        <a href="/{{ lang_code }}">{{ lang_code }}</a>
+                    {% endlanguage %}
+                {% endfor %}
             </div>
         </div>
     </div>
     <div class="menu">
         <div class="container">
-            {% block logo %}
-                {% get_site_root as site_root %}
-                {% logo parent=site_root calling_page=self %}
-            {% endblock %}
-            <nav>
-                <ul>
-                    {% for menuitem in menuitems %}
-                        {% if menuitem.show_dropdown %}
+            <div class="row">
+                <div class="col-md-4">
+                    {% block logo %}
+                        {% get_site_root as site_root %}
+                        {% logo parent=site_root calling_page=self %}
+                    {% endblock %}
+                </div>
+                <div class="col-md-8">
+                    <nav>
+                        <ul>
                             <li>
-                                <a class="menu-item-has-children" href="#">{% trans menuitem.title %}</a>
-                                {% top_menu_children parent=menuitem %}
+                                <a href="/{{ LANGUAGE_CODE }}">
+                                    {% trans "Home" %}
+                                </a>
                             </li>
-                        {% else %}
-                            <li><a href="{% pageurl menuitem %}">{% trans menuitem.title %}</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </nav>
+                            {% for menuitem in menuitems %}
+                                {% if menuitem.show_dropdown %}
+                                    <li>
+                                        <a class="menu-item-has-children" href="#">{% trans menuitem.title %}</a>
+                                        {% top_menu_children parent=menuitem %}
+                                    </li>
+                                {% else %}
+                                    <li><a href="{% pageurl menuitem %}">{% trans menuitem.title %}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
 </header>
