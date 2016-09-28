@@ -1,7 +1,8 @@
 from __future__ import absolute_import, unicode_literals
 
 from django.conf import settings
-from django.core.mail import send_mail
+from django.core import mail
+from django.core.mail.message import BadHeaderError, EmailMessage
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.shortcuts import render, render_to_response
 from django.template import RequestContext
@@ -45,10 +46,16 @@ def search(request):
 def post_message(request):
     if 'POST' == request.method:
         data = request.data
-        send_mail(subject='Enquiry from ' + data['contact_name'],
-                  from_email=settings.CONTACT_EMAIL,
-                  message=data['message'],
-                  recipient_list=[settings.CONTACT_EMAIL, data['contact_email']])
+        try:
+            with mail.get_connection() as connection:
+                EmailMessage(subject='Contact de ' + data['contact_name'], from_email=settings.CONTACT_EMAIL,
+                             body=data['message'], to=[settings.CONTACT_EMAIL],
+                             connection=connection,
+                             reply_to=[data['contact_email']], headers={'Sender': data['contact_email']}).send()
+        except BadHeaderError:
+            # Headers injection prevention
+            # https://docs.djangoproject.com/fr/1.10/topics/email/#preventing-header-injection
+            return Response(status=status.HTTP_400_BAD_REQUEST)
         return Response(status=status.HTTP_202_ACCEPTED)
 
 

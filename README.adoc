@@ -52,7 +52,7 @@ Do <<build-image>> first
 docker-compose stop
 docker-compose rm
 docker-compose build
-POSTGRES_USER="admin" POSTGRES_PASSWORD="changeme" DJANGO_SETTINGS_MODULE="_3caassurance.settings.dev" docker-compose up
+POSTGRES_USER="admin" POSTGRES_PASSWORD="changeme" DJANGO_SETTINGS_MODULE="_3caassurance.settings.dev" CONTACT_EMAIL_PASSWORD=$contact_mail_3ca_app_pwd docker-compose up
 ```
 `POSTGRES_USER`, `POSTGRES_PASSWORD`, `DJANGO_SETTINGS_MODULE` env vars are mandatory
 
