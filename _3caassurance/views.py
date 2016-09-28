@@ -1,5 +1,7 @@
 from __future__ import absolute_import, unicode_literals
 
+import uuid
+
 from django.conf import settings
 from django.core import mail
 from django.core.mail.message import BadHeaderError, EmailMessage
@@ -48,10 +50,12 @@ def post_message(request):
         data = request.data
         try:
             with mail.get_connection() as connection:
-                EmailMessage(subject='Contact de ' + data['contact_name'], from_email=settings.CONTACT_EMAIL,
-                             body=data['message'], to=[settings.CONTACT_EMAIL],
-                             connection=connection,
-                             reply_to=[data['contact_email']], headers={'Sender': data['contact_email']}).send()
+                mail_ref = 'REF #%s: Contact de %s' % (uuid.uuid4(), data['contact_name'])
+                user_email = data['contact_email']
+                EmailMessage(subject=mail_ref, from_email=settings.CONTACT_EMAIL, body=data['message'],
+                             to=[settings.CONTACT_EMAIL],
+                             reply_to=[user_email], headers={'Sender': user_email},
+                             connection=connection).send()
         except BadHeaderError:
             # Headers injection prevention
             # https://docs.djangoproject.com/fr/1.10/topics/email/#preventing-header-injection
