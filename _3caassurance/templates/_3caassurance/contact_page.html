@@ -115,9 +115,14 @@
                     fadeHiddenElement(form.querySelector('.ephemeral-message-error'));
                 } else {
                     fadeHiddenElement(form.querySelector('.ephemeral-message-success'));
+                    Array.prototype.forEach.call(form.querySelectorAll('input[name], textarea[name]'), empty, {});
                 }
             });
             return false;
+
+            function empty(element) {
+                element.value = '';
+            }
         }
     </script>
 {% endblock %}
