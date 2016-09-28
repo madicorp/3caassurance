@@ -13,7 +13,7 @@
                 {% get_available_languages as languages %}
                 {% for lang_code, lang_name in languages %}
                     {% language lang_code %}
-                        <a href="/{{ lang_code }}">{{ lang_code }}</a>
+                        <a href="{% translate_current_url lang_code %}">{{ lang_code }}</a>
                     {% endlanguage %}
                 {% endfor %}
             </div>

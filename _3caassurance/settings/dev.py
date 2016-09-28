@@ -24,8 +24,3 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 COMPRESS_ENABLED = True
 COMPRESS_OFFLINE = True
-
-try:
-    from .local import *
-except ImportError:
-    pass

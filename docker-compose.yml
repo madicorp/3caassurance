@@ -1,6 +1,6 @@
 3ca:
   restart: always
-  image: ekougs/3ca:1.0
+  image: ekougs/3ca:1.1
   expose:
     - "8000"
   links:

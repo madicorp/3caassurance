@@ -83,3 +83,7 @@ footer .block {
 .team-box > .team-info > h3 {
     text-transform: uppercase;
 }
+
+.choose-language > a {
+    text-transform: uppercase;
+}
