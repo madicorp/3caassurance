@@ -53,6 +53,7 @@ Do <<build-image>> first
 POSTGRES_USER="admin" POSTGRES_PASSWORD="changeme" CONTACT_EMAIL_PASSWORD=$contact_mail_3ca_app_pwd redeploy dev
 ```
 `POSTGRES_USER`, `POSTGRES_PASSWORD`, `CONTACT_EMAIL_PASSWORD` env vars and the ENV param are mandatory
+`CONTACT_EMAIL_PASSWORD` is the app password set on the contact email account
 
 image::doc/3ca_archi_dev.png[alt="Dev archi", title="Dev architecture"]
 
