@@ -46,20 +46,22 @@
                         <div class="row">
                             <div class="col-md-6 column">
                                 <div class="contact-form">
-                                    <form method="post" action="/{{ LANGUAGE_CODE }}/api/messages" onsubmit="return sendMessage(this)">
+                                    <form method="post" action="/{{ LANGUAGE_CODE }}/api/messages"
+                                          onsubmit="return sendMessage(this)">
                                         {% csrf_token %}
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <i class="fa fa-user"></i>
-                                                <input type="text" name="contact_name" placeholder="{% trans "Name" %}">
+                                                <input required type="text" name="contact_name"
+                                                       placeholder="{% trans "Name" %}">
                                             </div>
                                             <div class="col-md-12">
                                                 <i class="fa fa-at"></i>
-                                                <input type="text" name="contact_email" placeholder="Email">
+                                                <input required type="text" name="contact_email" placeholder="Email">
                                             </div>
                                             <div class="col-md-12">
                                                 <i class="fa fa-pencil"></i>
-                                                <textarea name="message" placeholder="Message"></textarea>
+                                                <textarea required name="message" placeholder="Message"></textarea>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="row">
