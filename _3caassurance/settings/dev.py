@@ -20,12 +20,12 @@ DATABASES = {
     }
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.yandex.com'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = CONTACT_EMAIL
+EMAIL_HOST_PASSWORD = os.getenv('CONTACT_EMAIL_PASSWORD')
 
 COMPRESS_ENABLED = True
 COMPRESS_OFFLINE = True
-
-try:
-    from .local import *
-except ImportError:
-    pass

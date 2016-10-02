@@ -1,6 +1,6 @@
 3ca:
   restart: always
-  image: ekougs/3ca:1.0
+  image: ekougs/3ca:1.2
   expose:
     - "8000"
   links:
@@ -13,6 +13,7 @@
     - DJANGO_SETTINGS_MODULE
     - POSTGRES_USER
     - POSTGRES_PASSWORD
+    - CONTACT_EMAIL_PASSWORD
     - VIRTUAL_HOST
   command: ./docker/3ca/launch.sh
 
