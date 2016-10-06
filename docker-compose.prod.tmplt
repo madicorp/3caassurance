@@ -1,0 +1,52 @@
+3ca:
+  restart: always
+  image: ekougs/3ca:$VERSION
+  expose:
+    - "8000"
+  links:
+    - postgres:postgres
+    - redis:redis
+  volumes:
+    - /usr/src/3ca
+    - /usr/src/3ca/static
+  environment:
+    - DJANGO_SETTINGS_MODULE
+    - POSTGRES_USER
+    - POSTGRES_PASSWORD
+    - CONTACT_EMAIL_PASSWORD
+    - VIRTUAL_HOST
+    - SECRET_TOKEN
+    - SITE_ADMIN_PWD
+  command: ./docker/3ca/launch.prod.sh
+
+nginx:
+  restart: always
+  build: ./docker/nginx/
+  ports:
+    - "80:80"
+  volumes:
+    - /www/static
+    - /var/run/docker.sock:/tmp/docker.sock:ro
+  volumes_from:
+    - 3ca
+  links:
+    - 3ca:web
+
+postgres:
+  restart: always
+  image: postgres:latest
+  ports:
+    - "5432:5432"
+  environment:
+    - POSTGRES_USER
+    - POSTGRES_PASSWORD
+  volumes:
+    - pgdata:/var/lib/postgresql/data/
+
+redis:
+  restart: always
+  image: redis:latest
+  ports:
+    - "6379:6379"
+  volumes:
+    - redisdata:/data
