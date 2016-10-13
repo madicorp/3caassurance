@@ -5,37 +5,39 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-    {% if self.offers|active_offers %}
-        <section class="block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="heading4">
-                            <h2>{% trans "OUR PROMOTIONAL OFFERS" %}</h2>
-                        </div>
-                        <div class="about-carousal-sec">
-                            <div class="carousel">
-                                {% for offer in self.offers|active_offers %}
-                                    {% if offer != None %}
-                                        <div class="col-md-10 col-md-offset-1 content">
-                                            <blockquote>
-                                                <h4>{% dynamic_trans offer.value 'caption' %}</h4>
-                                                <p>
-                                                    {% dynamic_trans offer.value 'description' %}
-                                                </p>
-                                                <span>{% trans "Expires at" %} : <a title=""
-                                                                                    href="#">{{ offer.value.expire_date }}</a></span>
-                                            </blockquote>
-                                        </div>
-                                    {% endif %}
-                                {% endfor %}
+    {% with current_active_offers=self.offers|active_offers %}
+        {% if current_active_offers %}
+            <section class="block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading4">
+                                <h2>{% trans "OUR PROMOTIONAL OFFERS" %}</h2>
+                            </div>
+                            <div class="about-carousal-sec">
+                                <div class="carousel">
+                                    {% for offer in current_active_offers %}
+                                        {% if offer != None %}
+                                            <div class="col-md-10 col-md-offset-1 content">
+                                                <blockquote>
+                                                    <h4>{% dynamic_trans offer.value 'caption' %}</h4>
+                                                    <p>
+                                                        {% dynamic_trans offer.value 'description' %}
+                                                    </p>
+                                                    <span>{% trans "Expires at" %} : <a title=""
+                                                                                        href="#">{{ offer.value.expire_date }}</a></span>
+                                                </blockquote>
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    {% endif %}
+            </section>
+        {% endif %}
+    {% endwith %}
     {% if self.products %}
         <section class="block">
             <div class="container">

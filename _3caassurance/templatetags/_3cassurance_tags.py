@@ -97,10 +97,5 @@ def surname(context, complete_name):
 
 @register.filter(name='active_offers')
 def active_offers(offers):
-    print repr(offers)
     present = datetime.now().date()
-    active_offers = map(lambda
-                            offer: None if offer.value['start_date'] > present or offer.value['expire_date'] < present else offer,
-                        offers)
-    print repr(active_offers)
-    return filter(partial(is_not, None), active_offers)
+    return filter(lambda offer: offer.value['start_date'] <= present <= offer.value['expire_date'], offers)
