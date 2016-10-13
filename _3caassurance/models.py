@@ -2,7 +2,7 @@
 from __future__ import absolute_import, unicode_literals
 
 from wagtail.wagtailadmin.edit_handlers import StreamFieldPanel, FieldPanel
-from wagtail.wagtailcore.blocks import StreamBlock
+from wagtail.wagtailcore.blocks import StreamBlock, DateBlock
 from wagtail.wagtailcore.blocks import StructBlock
 from wagtail.wagtailcore.blocks import TextBlock
 from wagtail.wagtailcore.fields import StreamField, RichTextField
@@ -11,19 +11,25 @@ from wagtail.wagtailimages.blocks import ImageChooserBlock
 from wagtail.wagtailsearch import index
 
 
-class ProductBlock(StructBlock):
-    image = ImageChooserBlock()
+class SampleProductBlock(StructBlock):
     caption_fr = TextBlock(label='Titre FR')
     caption_en = TextBlock(label='Titre EN')
     description_fr = TextBlock(label='Description FR')
     description_en = TextBlock(label='Description EN')
 
 
+class ProductBlock(SampleProductBlock):
+    image = ImageChooserBlock()
+
+
 class HomePageProductBlock(StreamBlock):
     product = ProductBlock(label='Product', icon='pilcrow')
 
 
-class OfferBlock(ProductBlock):
+class OfferBlock(SampleProductBlock):
+    start_date = DateBlock(label='Date de début de validité de l\'offre')
+    expire_date = DateBlock(label='Date d\'expiration de l\'offre')
+
     def __init__(self, *args, **kwargs):
         super(OfferBlock, self).__init__(*args, **kwargs)
 

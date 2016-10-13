@@ -5,25 +5,31 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-    {% if self.offers %}
+    {% if self.offers|active_offers %}
         <section class="block">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                         <div class="heading4">
+                        <div class="heading4">
                             <h2>{% trans "OUR PROMOTIONAL OFFERS" %}</h2>
-                         </div>
+                        </div>
                         <div class="about-carousal-sec">
-                            <ul class="carousel">
-                                {% for offer in self.offers %}
-                                    <li>
-                                        <img src="{{ theimage.url }}" alt="{{ theimage.alt }}" />
-                                        <h3>{% dynamic_trans offer.value 'caption' %}</h3>
-                                        <p>{% dynamic_trans offer.value 'description' %}</p>
-                                        <a href="#" title="" class="flat-btn">BUY IN $230</a>
-                                    </li>
+                            <div class="carousel">
+                                {% for offer in self.offers|active_offers %}
+                                    {% if offer != None %}
+                                        <div class="col-md-10 col-md-offset-1 content">
+                                            <blockquote>
+                                                <h4>{% dynamic_trans offer.value 'caption' %}</h4>
+                                                <p>
+                                                    {% dynamic_trans offer.value 'description' %}
+                                                </p>
+                                                <span>{% trans "Expires at" %} : <a title=""
+                                                                                    href="#">{{ offer.value.expire_date }}</a></span>
+                                            </blockquote>
+                                        </div>
+                                    {% endif %}
                                 {% endfor %}
-                            </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -94,7 +100,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="http://www.afd.fr/home/pays/afrique/geo-afr/senegal" title="AFD">
+                                <a target="_blank" href="http://www.afd.fr/home/pays/afrique/geo-afr/senegal"
+                                   title="AFD">
                                     <img src="{% static "images/afd_logo.png" %}" alt="AFD">
                                 </a>
                             </li>
@@ -129,8 +136,10 @@
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://plan-international.org/senegal" title="Plan international">
-                                    <img src="{% static "images/plan_international_logo.png" %}" alt="Plan International">
+                                <a target="_blank" href="https://plan-international.org/senegal"
+                                   title="Plan international">
+                                    <img src="{% static "images/plan_international_logo.png" %}"
+                                         alt="Plan International">
                                 </a>
                             </li>
                             <li>
@@ -206,7 +215,8 @@
                     <div class="our-clients-sec">
                         <ul class="carousel-client">
                             <li>
-                                <a target="_blank" href="http://www.allianz-africa.com/filiales/senegal/" title="Allianz">
+                                <a target="_blank" href="http://www.allianz-africa.com/filiales/senegal/"
+                                   title="Allianz">
                                     <img src="{% static "images/allianz_logo.png" %}" alt="Allianz">
                                 </a>
                             </li>
