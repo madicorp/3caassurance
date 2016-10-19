@@ -98,3 +98,7 @@ footer .block {
 .about-carousal-sec .owl-nav > div{
     background: #133913 none repeat scroll 0 0;
 }
+
+div.choose-language {
+    text-transform: uppercase;
+}
