@@ -1,6 +1,9 @@
 from django import template
 from django.conf import settings
 from django.utils.translation import get_language
+from datetime import datetime
+from operator import is_not
+from functools import partial
 
 register = template.Library()
 
@@ -90,3 +93,9 @@ def first_name(context, complete_name):
 @register.simple_tag(name='surname', takes_context=True)
 def surname(context, complete_name):
     return complete_name.split()[-1]
+
+
+@register.filter(name='active_offers')
+def active_offers(offers):
+    present = datetime.now().date()
+    return filter(lambda offer: offer.value['start_date'] <= present <= offer.value['expire_date'], offers)
