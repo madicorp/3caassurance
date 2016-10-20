@@ -37,24 +37,23 @@ This is automatically done when using the Vagrant configuration
 `./manage.py dumpdata wagtailimages.image --natural-foreign --indent 2 > _3caassurance/fixtures/images.json`
 `./manage.py dumpdata -e wagtailcore.groupcollectionpermission -e auth.permission -e contenttypes.contenttype -e wagtailimages.image -e sessions.session -e auth.group -e auth.user -e wagtailcore.grouppagepermission --natural-foreign --indent 2 > _3caassurance/fixtures/_3caassurance.json`
 
-[[aliases]]
-== Get aliases
+[[cli-setup]]
+== CLI setup
+
 `source aliases.sh`
 
 [[build-image]]
 == Build 3ca dev docker image
-Do <<aliases>>
+Do <<cli-setup>>
 `build_image dev`
 
 == Launch project
 Do <<build-image>> first
 ```
-docker-compose stop
-docker-compose rm
-docker-compose build
-POSTGRES_USER="admin" POSTGRES_PASSWORD="changeme" DJANGO_SETTINGS_MODULE="_3caassurance.settings.dev" docker-compose up
+POSTGRES_USER="admin" POSTGRES_PASSWORD="changeme" CONTACT_EMAIL_PASSWORD=$contact_mail_3ca_app_pwd redeploy dev
 ```
-`POSTGRES_USER`, `POSTGRES_PASSWORD`, `DJANGO_SETTINGS_MODULE` env vars are mandatory
+`POSTGRES_USER`, `POSTGRES_PASSWORD`, `CONTACT_EMAIL_PASSWORD` env vars and the ENV param are mandatory
+`CONTACT_EMAIL_PASSWORD` is the app password set on the contact email account
 
 image::doc/3ca_archi_dev.png[alt="Dev archi", title="Dev architecture"]
 

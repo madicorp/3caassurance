@@ -169,6 +169,18 @@ msgid "We help you organizing calls for bids and elaborating the technical requi
 msgstr "Nous vous aidons à organiser les appels d'offres et à élaborer le cahier de charges technique."
 
 
+#########################################################
+#: _3caassurance/views.py
+#########################################################
+msgid "#%s : Inquiry reception confirmation"
+msgstr "#%s : Confirmation réception contact"
+
+msgid "Dear %s,\n\nWe received your inquiry #%s and will answer soon.\n"
+msgstr "Cher %s,\n\nNous avons reçu votre demande #%s et vous répondrons bientôt.\n"
+
+msgid "Your inquiry:\n\n%s\n\nSincerely,\n\n3CA Team"
+msgstr "Votre demande :\n\n%s\n\nCordialement,\n\nL'équipe 3CA"
+
 
 msgid "Our team"
 msgstr "Notre équipe"

@@ -14,6 +14,7 @@ from wagtail.wagtailcore import urls as wagtail_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
 
 from _3caassurance import views as search_views
+from _3caassurance import views
 from _3caassurance.deadlines import send_deadlines
 
 
@@ -37,11 +38,11 @@ def handle_deadlines(request):
 
 urlpatterns = [
     url(r'^documents/', include(wagtaildocs_urls)),
-    url(r'^api/messages', handle_messages),
     url(r'^api/deadlines', handle_deadlines),
 ]
 
 urlpatterns += i18n_patterns(
+    url(r'^api/messages', views.post_message),
     url(r'^django-admin/', include(admin.site.urls)),
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^search/$', search_views.search, name='search'),

@@ -1,18 +1,18 @@
 (function () {
-    var carousel = $(".carousel");
-    if (carousel && carousel.owlCarousel) {
-        carousel.owlCarousel({
-                                 autoplay: true,
-                                 autoplayTimeout: 3000,
-                                 smartSpeed: 2000,
-                                 loop: false,
-                                 dots: false,
-                                 nav: true,
-                                 margin: 0,
-                                 items: 1,
-                                 singleItem: true
-                             });
-    }
+var carousel = $(".carousel");
+if (carousel && carousel.owlCarousel) {
+    carousel.owlCarousel({
+                             autoplay: true,
+                             autoplayTimeout: 3000,
+                             smartSpeed: 2000,
+                             loop: false,
+                             dots: true,
+                             nav: false,
+                             margin: 0,
+                             items: 1,
+                             singleItem: true
+                         });
+}
 
     jQuery(document).ready(function () {
                                $(".popup-client > span").on("click", function () {
