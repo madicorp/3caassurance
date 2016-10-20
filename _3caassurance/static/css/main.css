@@ -83,7 +83,22 @@ footer .block {
 .team-box > .team-info > h3 {
     text-transform: uppercase;
 }
+.carousel .content{
+    padding-top: 50px;
+}
 
-.choose-language > a {
+.content blockquote{
+    padding: 100px 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.about-carousal-sec .owl-nav > div{
+    background: #133913 none repeat scroll 0 0;
+}
+
+div.choose-language {
     text-transform: uppercase;
 }

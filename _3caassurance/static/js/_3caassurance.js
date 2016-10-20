@@ -3,8 +3,8 @@ $(".carousel").owlCarousel({
 	autoplayTimeout:3000,
 	smartSpeed:2000,
 	loop:false,
-	dots:false,
-	nav:true,
+	dots:true,
+	nav:false,
 	margin:0,
 	items:1,
 	singleItem:true

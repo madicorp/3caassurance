@@ -14,10 +14,10 @@ from _3caassurance import views
 
 urlpatterns = [
     url(r'^documents/', include(wagtaildocs_urls)),
-    url(r'^api/messages', views.post_message),
 ]
 
 urlpatterns += i18n_patterns(
+    url(r'^api/messages', views.post_message),
     url(r'^django-admin/', include(admin.site.urls)),
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^search/$', search_views.search, name='search'),

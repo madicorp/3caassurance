@@ -46,26 +46,31 @@
                         <div class="row">
                             <div class="col-md-6 column">
                                 <div class="contact-form">
-                                    <form method="post" action="/api/messages" onsubmit="return sendMessage(this)">
+                                    <form method="post" action="/{{ LANGUAGE_CODE }}/api/messages"
+                                          onsubmit="return sendMessage(this)">
                                         {% csrf_token %}
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <i class="fa fa-user"></i>
-                                                <input type="text" name="contact_name" placeholder="{% trans "Name" %}">
+                                                <input required type="text" name="contact_name"
+                                                       placeholder="{% trans "Name" %}">
                                             </div>
                                             <div class="col-md-12">
                                                 <i class="fa fa-at"></i>
-                                                <input type="text" name="contact_email" placeholder="Email">
+                                                <input required type="text" name="contact_email" placeholder="Email">
                                             </div>
                                             <div class="col-md-12">
                                                 <i class="fa fa-pencil"></i>
-                                                <textarea name="message" placeholder="Message"></textarea>
+                                                <textarea required name="message" placeholder="Message"></textarea>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="row">
                                                     <div class="col-md-5">
                                                         <button class="flat-btn"
-                                                                type="submit">{% trans "SEND NOW" %}</button>
+                                                                type="submit">
+                                                            <i class="fa fa-spin fa-circle-o-notch hidden"></i>
+                                                            {% trans "SEND NOW" %}
+                                                        </button>
                                                     </div>
                                                     <div class="col-md-7">
                                                         <div class="ephemeral-message-success">
@@ -110,14 +115,22 @@
 {% block extra_js %}
     <script type="text/javascript">
         function sendMessage(form) {
+            var loadingIcon = form.querySelector("button .fa-circle-o-notch");
+            loadingIcon.className = 'fa fa-spin fa-circle-o-notch';
             submitForm(form, function displayMessage(err, res) {
+                loadingIcon.className = 'fa fa-spin fa-circle-o-notch hidden';
                 if (err) {
                     fadeHiddenElement(form.querySelector('.ephemeral-message-error'));
                 } else {
                     fadeHiddenElement(form.querySelector('.ephemeral-message-success'));
+                    Array.prototype.forEach.call(form.querySelectorAll('input[name], textarea[name]'), empty, {});
                 }
             });
             return false;
+
+            function empty(element) {
+                element.value = '';
+            }
         }
     </script>
 {% endblock %}
