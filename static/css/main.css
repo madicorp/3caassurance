@@ -1,0 +1,104 @@
+.row {
+    margin-top: 20px;
+}
+
+.contact-lists-sec > ul > li {
+    width: 50%;
+}
+
+div.top-bar, div.inner-head.overlap {
+    background-color: #133913;
+}
+
+footer > section.block {
+    background-color: #133913;
+}
+
+section.block {
+    background-color: rgba(255, 255, 255, 0.98);
+}
+
+.ceo-message-sec .ceo-message {
+    margin-left: -15%;
+}
+
+form div.ephemeral-message-success, form div.ephemeral-message-error {
+    visibility: hidden;
+    font-size: 1em;
+    font-family: Montserrat, serif;
+    font-weight: bold;
+}
+
+form div.ephemeral-message-success {
+    color: forestgreen;
+}
+
+form div.ephemeral-message-error {
+    color: darkred;
+}
+
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading2, .heading4 {
+    margin-bottom: 2em;
+}
+
+.block {
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+footer .block {
+    padding-top: 2em;
+}
+
+.theme-layout > .block:last-of-type {
+    padding-bottom: 8em;
+}
+
+.team-info > p {
+    min-height: 150px;
+}
+
+.logo a {
+    padding-left: 1.5em;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo strong {
+    margin-top: 1em;
+}
+
+.menu .row, .menu .container {
+    margin: 0;
+}
+
+.team-box > .team-info > h3 {
+    text-transform: uppercase;
+}
+.carousel .content{
+    padding-top: 50px;
+}
+
+.content blockquote{
+    padding: 100px 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.about-carousal-sec .owl-nav > div{
+    background: #133913 none repeat scroll 0 0;
+}
+
+div.choose-language {
+    text-transform: uppercase;
+}
