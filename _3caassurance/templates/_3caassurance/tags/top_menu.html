@@ -13,7 +13,7 @@
                 {% get_available_languages as languages %}
                 {% for lang_code, lang_name in languages %}
                     {% language lang_code %}
-                        <a href="{% translate_current_url lang_code %}">{{ lang_code }}</a>
+                        <a href="/{{ lang_code }}">{{ lang_code }}</a>
                     {% endlanguage %}
                 {% endfor %}
             </div>
@@ -21,35 +21,31 @@
     </div>
     <div class="menu">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    {% block logo %}
-                        {% get_site_root as site_root %}
-                        {% logo parent=site_root calling_page=self %}
-                    {% endblock %}
-                </div>
-                <div class="col-md-8">
-                    <nav>
-                        <ul>
+            {% block logo %}
+                {% get_site_root as site_root %}
+                {% logo parent=site_root calling_page=self %}
+            {% endblock %}
+            <!-- LOGO -->
+            <span class="menu-toggle"><i class="fa fa-bars"></i></span>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/{{ LANGUAGE_CODE }}">
+                            {% trans "Home" %}
+                        </a>
+                    </li>
+                    {% for menuitem in menuitems %}
+                        {% if menuitem.show_dropdown %}
                             <li>
-                                <a href="/{{ LANGUAGE_CODE }}">
-                                    {% trans "Home" %}
-                                </a>
+                                <a class="menu-item-has-children" href="#">{% trans menuitem.title %}</a>
+                                {% top_menu_children parent=menuitem %}
                             </li>
-                            {% for menuitem in menuitems %}
-                                {% if menuitem.show_dropdown %}
-                                    <li>
-                                        <a class="menu-item-has-children" href="#">{% trans menuitem.title %}</a>
-                                        {% top_menu_children parent=menuitem %}
-                                    </li>
-                                {% else %}
-                                    <li><a href="{% pageurl menuitem %}">{% trans menuitem.title %}</a></li>
-                                {% endif %}
-                            {% endfor %}
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+                        {% else %}
+                            <li><a href="{% pageurl menuitem %}">{% trans menuitem.title %}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </nav>
         </div>
     </div>
 </header>

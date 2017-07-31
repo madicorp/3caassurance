@@ -2,7 +2,7 @@
 from __future__ import absolute_import, unicode_literals
 
 from wagtail.wagtailadmin.edit_handlers import StreamFieldPanel, FieldPanel
-from wagtail.wagtailcore.blocks import StreamBlock, DateBlock
+from wagtail.wagtailcore.blocks import StreamBlock, DateBlock, RichTextBlock
 from wagtail.wagtailcore.blocks import StructBlock
 from wagtail.wagtailcore.blocks import TextBlock
 from wagtail.wagtailcore.fields import StreamField, RichTextField
@@ -14,8 +14,8 @@ from wagtail.wagtailsearch import index
 class SampleProductBlock(StructBlock):
     caption_fr = TextBlock(label='Titre FR')
     caption_en = TextBlock(label='Titre EN')
-    description_fr = TextBlock(label='Description FR')
-    description_en = TextBlock(label='Description EN')
+    description_fr = RichTextBlock(label='Description FR')
+    description_en = RichTextBlock(label='Description EN')
 
 
 class ProductBlock(SampleProductBlock):

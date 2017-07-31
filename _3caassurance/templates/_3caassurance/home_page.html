@@ -5,6 +5,102 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
+    <section class="block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="heading4">
+                        <div class="mini-service-info">
+                            <h3><i>3CA</i> Assurance </h3>
+                        </div><!-- Mini Service info -->
+                        <h2>{% trans "The sense of partnership and the ability to anticipate" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="ceo-message-sec">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <img src="{% static "images/team_670_546.jpg" %}" alt="Team">
+                            </div>
+                            <div class="col-md-5">
+                                <div class="ceo-message">
+                                    <span>{% trans "Our team" %}</span>
+                                    <h3>{% trans "Insurance broker and advisor" %}</h3>
+                                    <p>{% trans "Through our staff experience and our partnership with DIOT, 5<sup>th</sup> best french insurance broker, we find the best guarantees, in the best companies, for the best prices." %}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% if self.products %}
+        <section class="block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading4">
+                            <h2>{% trans "WE INSURE" %}</h2>
+                        </div>
+                        <div class="portfolio-mini-sec">
+                            <div class="row">
+                                {% for product in self.products %}
+                                    <div class="col-md-4">
+                                        <div class="mini-portfolio">
+                                            {% image product.value.image width-500 as theimage %}
+                                            <img src="{{ theimage.url }}" width="{{ theimage.width }}"
+                                                 height="{{ theimage.height }}"
+                                                 alt="{{ theimage.alt }}"/>
+                                            <div class="portfolio-info">
+                                                <h3>{% dynamic_trans product.value 'caption' %}</h3>
+                                                <p>
+                                                    {% dynamic_trans product.value 'description' as description%}
+                                                    {{ description |richtext|truncatewords_html:10  }}
+
+                                                </p>
+                                                <ul>
+                                                    <li><a class="product_popup" data-id="product_{{ forloop.counter }}"
+                                                           href="javascript:void(0)"><i class="fa fa-search"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- Portfolio Box -->
+                                        <div id="product_{{ forloop.counter }}" class="account-popup-sec">
+                                            <div class="account-popup-area">
+                                                <div class="account-popup">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="registration-sec">
+                                                                <div class="heading4">
+                                                                    <h3> {% dynamic_trans product.value 'caption' %}</h3>
+                                                                </div>
+                                                                <p>
+                                                                   {{ description |richtext }}
+                                                                </p>
+                                                            </div><!-- Registration sec -->
+                                                        </div>
+                                                    </div>
+                                                    <span data-id="product_{{ forloop.counter }}"
+                                                          class="product_close-popup close-popup"><i
+                                                            class="fa fa-close"></i></span>
+                                                </div>
+                                            </div>
+                                        </div><!-- Account Popup Sec -->
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endif %}
     {% with current_active_offers=self.offers|active_offers %}
         {% if current_active_offers %}
             <section class="block">
@@ -38,41 +134,6 @@
             </section>
         {% endif %}
     {% endwith %}
-    {% if self.products %}
-        <section class="block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="heading4">
-                            <h2>{% trans "WE INSURE" %}</h2>
-                        </div>
-                        <div class="square-services-sec">
-                            <div class="row">
-                                {% for product in self.products %}
-                                    <div class="col-md-4">
-                                        <div class="square-services">
-                                            {% image product.value.image width-500 as theimage %}
-                                            <img src="{{ theimage.url }}" width="{{ theimage.width }}"
-                                                 height="{{ theimage.height }}"
-                                                 alt="{{ theimage.alt }}"/>
-                                            <div class="square-infos">
-                                                <h3>
-                                                    {% dynamic_trans product.value 'caption' %}
-                                                </h3>
-                                                <p>
-                                                    {% dynamic_trans product.value 'description' %}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    {% endif %}
     <section class="block">
         <div class="container">
             <div class="row">
@@ -150,35 +211,6 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="heading4">
-                        <h2>{% trans "The sense of partnership and the ability to anticipate" %}</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="ceo-message-sec">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <img src="{% static "images/team_670_546.jpg" %}" alt="Team">
-                            </div>
-                            <div class="col-md-5">
-                                <div class="ceo-message">
-                                    <span>{% trans "Our team" %}</span>
-                                    <h3>{% trans "Insurance broker and advisor" %}</h3>
-                                    <p>{% trans "Through our staff experience and our partnership with DIOT, 5<sup>th</sup> best french insurance broker, we find the best guarantees, in the best companies, for the best prices." %}</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

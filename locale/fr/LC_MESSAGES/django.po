@@ -63,6 +63,9 @@ msgstr "NOS PARTENAIRES"
 msgid "OUR CLIENTS"
 msgstr "NOS CLIENTS"
 
+msgid "OUR PROMOTIONAL OFFERS"
+msgstr "NOS OFFRES PROMOTIONNELLES"
+
 msgid "Partnership with DIOT"
 msgstr "Notre partenariat avec DIOT"
 
