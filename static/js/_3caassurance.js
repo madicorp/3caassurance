@@ -18,8 +18,20 @@ jQuery(document).ready(function(){
         $("html").addClass("no-scroll");
     });
 
+    $(".product_popup").on("click", function(){
+        var id = $(this).data("id");
+        $("#"+id).addClass("active");
+        $("html").addClass("no-scroll");
+    });
+
     $(".close-popup").on("click", function(){
         $(".account-popup-sec").removeClass("active");
+        $("html").removeClass("no-scroll");
+    });
+
+    $(".product_close-popup").on("click", function(){
+         var id = $(this).data("id");
+        $("#"+id).removeClass("active");
         $("html").removeClass("no-scroll");
     });
 
