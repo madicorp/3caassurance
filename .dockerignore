@@ -1,0 +1,6 @@
+.vagrant
+test
+venv
+.gitignore
+*.sqlite3
+*.log
