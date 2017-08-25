@@ -2,3 +2,6 @@
 .idea
 *.log
 *sqlite3
+locale
+static
+venv
